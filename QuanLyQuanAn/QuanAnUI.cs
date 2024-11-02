@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QuanLyQuanAn.Class;
+using QuanLyQuanAn.Components;
 
 namespace QuanLyQuanAn
 {
     public partial class QuanAnUI : Form
     {
+        CQuanAn dsQuan = new CQuanAn();
         public QuanAnUI()
         {
             InitializeComponent();
@@ -25,6 +28,7 @@ namespace QuanLyQuanAn
         private void QuanAnUI_Load(object sender, EventArgs e)
         {
             //nhanSuPage.Hide();
+            hienthi();
             quanAnPage.Show();
         }
 
@@ -38,6 +42,29 @@ namespace QuanLyQuanAn
         {
             //quanAnPage.Hide();
             //nhanSuPage.Show();
+        }
+
+        private void hienthi()
+        {
+            dgvQuanAn.DataSource = dsQuan.quanAn.ToList();
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            FThemQuanAn f = new FThemQuanAn();
+            f.ShowDialog();
+            
+            CQuanAn quanAn = new CQuanAn();
+            quanAn.MaQuan = f.MaQuan;
+            quanAn.TenQuan = f.TenQuan;
+            quanAn.DiaChi = f.DiaChi;
+            quanAn.Sdt = f.Sdt;
+            quanAn.Email = f.Email;
+            quanAn.MoTa = f.MoTa;
+            quanAn.NgayDangKy = f.NgayDangKy;
+
+            dsQuan.quanAn.Add(quanAn);
+            hienthi();
         }
     }
 }

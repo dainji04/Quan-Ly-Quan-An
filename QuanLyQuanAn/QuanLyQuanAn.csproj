@@ -52,6 +52,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\CQuanAn.cs" />
+    <Compile Include="Components\FThemQuanAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\FThemQuanAn.Designer.cs">
+      <DependentUpon>FThemQuanAn.cs</DependentUpon>
+    </Compile>
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +73,9 @@
     <Compile Include="QuanAnUI.Designer.cs">
       <DependentUpon>QuanAnUI.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Components\FThemQuanAn.resx">
+      <DependentUpon>FThemQuanAn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
