@@ -42,6 +42,7 @@
             this.txtMoTa = new Guna.UI2.WinForms.Guna2TextBox();
             this.dtpThanhLap = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.btnThem = new Guna.UI2.WinForms.Guna2Button();
+            this.msgLuu = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.SuspendLayout();
             // 
             // txtMaQuan
@@ -89,7 +90,7 @@
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Location = new System.Drawing.Point(16, 30);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(67, 22);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(45, 15);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "Mã quán";
             // 
@@ -98,7 +99,7 @@
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(208, 30);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(72, 22);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(49, 15);
             this.guna2HtmlLabel2.TabIndex = 2;
             this.guna2HtmlLabel2.Text = "Tên quán";
             // 
@@ -107,7 +108,7 @@
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(21, 114);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(54, 22);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(36, 15);
             this.guna2HtmlLabel3.TabIndex = 3;
             this.guna2HtmlLabel3.Text = "Địa chỉ";
             // 
@@ -135,7 +136,7 @@
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(21, 189);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(97, 22);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(66, 15);
             this.guna2HtmlLabel4.TabIndex = 5;
             this.guna2HtmlLabel4.Text = "Số điện thoại";
             // 
@@ -182,7 +183,7 @@
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Location = new System.Drawing.Point(286, 189);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(44, 22);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(28, 15);
             this.guna2HtmlLabel5.TabIndex = 8;
             this.guna2HtmlLabel5.Text = "Email";
             // 
@@ -191,7 +192,7 @@
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(21, 264);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(46, 22);
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(30, 15);
             this.guna2HtmlLabel6.TabIndex = 9;
             this.guna2HtmlLabel6.Text = "Mô tả";
             // 
@@ -243,6 +244,15 @@
             this.btnThem.Text = "Thêm Quán";
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
+            // msgLuu
+            // 
+            this.msgLuu.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OKCancel;
+            this.msgLuu.Caption = "Are you sure";
+            this.msgLuu.Icon = Guna.UI2.WinForms.MessageDialogIcon.None;
+            this.msgLuu.Parent = this;
+            this.msgLuu.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
+            this.msgLuu.Text = "Bạn Muốn Thêm Quán ?";
+            // 
             // FThemQuanAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -263,7 +273,7 @@
             this.Controls.Add(this.txtTenQuan);
             this.Controls.Add(this.txtMaQuan);
             this.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FThemQuanAn";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm Quán";
@@ -288,5 +298,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtMoTa;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpThanhLap;
         private Guna.UI2.WinForms.Guna2Button btnThem;
+        private Guna.UI2.WinForms.Guna2MessageDialog msgLuu;
     }
 }

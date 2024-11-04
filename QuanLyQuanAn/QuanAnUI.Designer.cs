@@ -410,7 +410,13 @@
             // 
             // dgvQuanAn
             // 
+            this.dgvQuanAn.AllowDrop = true;
+            this.dgvQuanAn.AllowUserToAddRows = false;
+            this.dgvQuanAn.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(20)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
             this.dgvQuanAn.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
@@ -432,19 +438,21 @@
             this.NgayDangKy});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Times New Roman", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvQuanAn.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvQuanAn.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvQuanAn.Location = new System.Drawing.Point(29, 92);
+            this.dgvQuanAn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dgvQuanAn.Location = new System.Drawing.Point(9, 92);
             this.dgvQuanAn.Name = "dgvQuanAn";
             this.dgvQuanAn.RowHeadersVisible = false;
-            this.dgvQuanAn.RowHeadersWidth = 45;
-            this.dgvQuanAn.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dgvQuanAn.Size = new System.Drawing.Size(851, 568);
+            this.dgvQuanAn.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dgvQuanAn.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Times New Roman", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgvQuanAn.RowTemplate.Height = 50;
+            this.dgvQuanAn.Size = new System.Drawing.Size(884, 541);
             this.dgvQuanAn.TabIndex = 3;
             this.dgvQuanAn.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvQuanAn.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -464,9 +472,10 @@
             this.dgvQuanAn.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvQuanAn.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvQuanAn.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvQuanAn.ThemeStyle.RowsStyle.Height = 22;
+            this.dgvQuanAn.ThemeStyle.RowsStyle.Height = 50;
             this.dgvQuanAn.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvQuanAn.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvQuanAn.DoubleClick += new System.EventHandler(this.dgvQuanAn_DoubleClick);
             // 
             // btnTimKiem
             // 
@@ -495,43 +504,48 @@
             this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSearch.ForeColor = System.Drawing.Color.Black;
             this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(29, 21);
+            this.txtSearch.Location = new System.Drawing.Point(9, 21);
             this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderText = "Type Something...";
             this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(497, 48);
+            this.txtSearch.Size = new System.Drawing.Size(517, 48);
             this.txtSearch.TabIndex = 1;
             // 
             // id
             // 
+            this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.id.DataPropertyName = "MaQuan";
-            this.id.FillWeight = 190.0315F;
+            this.id.FillWeight = 226.5833F;
             this.id.HeaderText = "id";
             this.id.MinimumWidth = 6;
             this.id.Name = "id";
+            this.id.Width = 50;
             // 
             // TenQuan
             // 
+            this.TenQuan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.TenQuan.DataPropertyName = "TenQuan";
-            this.TenQuan.FillWeight = 362.6942F;
+            this.TenQuan.FillWeight = 149.8677F;
             this.TenQuan.HeaderText = "Tên quán";
             this.TenQuan.MinimumWidth = 6;
             this.TenQuan.Name = "TenQuan";
             // 
             // DiaChi
             // 
+            this.DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.FillWeight = 29.45488F;
+            this.DiaChi.FillWeight = 12.17096F;
             this.DiaChi.HeaderText = "Địa Chỉ";
             this.DiaChi.MinimumWidth = 6;
             this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 250;
             // 
             // SDT
             // 
             this.SDT.DataPropertyName = "Sdt";
-            this.SDT.FillWeight = 29.45488F;
+            this.SDT.FillWeight = 12.17096F;
             this.SDT.HeaderText = "Số Điện Thoại";
             this.SDT.MinimumWidth = 6;
             this.SDT.Name = "SDT";
@@ -539,7 +553,7 @@
             // Email
             // 
             this.Email.DataPropertyName = "Email";
-            this.Email.FillWeight = 29.45488F;
+            this.Email.FillWeight = 12.17096F;
             this.Email.HeaderText = "Email";
             this.Email.MinimumWidth = 6;
             this.Email.Name = "Email";
@@ -547,7 +561,7 @@
             // MoTa
             // 
             this.MoTa.DataPropertyName = "MoTa";
-            this.MoTa.FillWeight = 29.45488F;
+            this.MoTa.FillWeight = 12.17096F;
             this.MoTa.HeaderText = "Mô Tả";
             this.MoTa.MinimumWidth = 6;
             this.MoTa.Name = "MoTa";
@@ -555,7 +569,7 @@
             // NgayDangKy
             // 
             this.NgayDangKy.DataPropertyName = "NgayDangKy";
-            this.NgayDangKy.FillWeight = 29.45488F;
+            this.NgayDangKy.FillWeight = 12.17096F;
             this.NgayDangKy.HeaderText = "Ngày Đăng Ký";
             this.NgayDangKy.MinimumWidth = 6;
             this.NgayDangKy.Name = "NgayDangKy";

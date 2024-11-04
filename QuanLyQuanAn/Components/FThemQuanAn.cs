@@ -13,6 +13,7 @@ namespace QuanLyQuanAn.Components
 {
     public partial class FThemQuanAn : Form
     {
+        public bool isButtonClicked = false;
         public string MaQuan { get; private set; }
         public string TenQuan { get; private set; }
         public string DiaChi { get; private set; }
@@ -27,16 +28,21 @@ namespace QuanLyQuanAn.Components
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            CQuanAn QuanAn = new CQuanAn();
-            MaQuan = txtMaQuan.Text;
-            TenQuan = txtTenQuan.Text;
-            DiaChi = txtDiaChi.Text;
-            Sdt = txtSdt.Text;
-            Email = txtEmail.Text;
-            QuanAn.MoTa = txtMoTa.Text;
-            NgayDangKy = DateTime.Now;
-
-            this.Close();
+            var result = msgLuu.Show();
+            if(result == DialogResult.Yes)
+            {
+                isButtonClicked = true;
+                CQuanAn QuanAn = new CQuanAn();
+                MaQuan = txtMaQuan.Text;
+                TenQuan = txtTenQuan.Text;
+                DiaChi = txtDiaChi.Text;
+                Sdt = txtSdt.Text;
+                Email = txtEmail.Text;
+                MoTa = txtMoTa.Text;
+                NgayDangKy = Convert.ToDateTime(dtpThanhLap);
+                this.Close();
+            }
         }
+
     }
 }
