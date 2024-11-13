@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using QuanLyQuanAn.Class;
 using QuanLyQuanAn.Components;
 using QuanLyQuanAn.Controller;
+using QuanLyQuanAn.Views;
 
 namespace QuanLyQuanAn
 {
@@ -113,6 +114,10 @@ namespace QuanLyQuanAn
             if (e.KeyCode == Keys.Enter)
             {
                 MessageBox.Show($"ma quan {currentMaQuan}");
+                FDatBan f = new FDatBan();
+                f.MaQuan = currentMaQuan;
+                f.Show();
+                this.Hide();
             }
         }
     }
