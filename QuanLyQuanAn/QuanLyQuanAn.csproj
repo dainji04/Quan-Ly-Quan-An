@@ -65,6 +65,12 @@
     <Compile Include="Components\FThemQuanAn.Designer.cs">
       <DependentUpon>FThemQuanAn.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\FXoaQuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\FXoaQuan.Designer.cs">
+      <DependentUpon>FXoaQuan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller\CXuLyQuanAn.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
@@ -80,11 +86,20 @@
     <Compile Include="QuanAnUI.Designer.cs">
       <DependentUpon>QuanAnUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\FDatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FDatBan.Designer.cs">
+      <DependentUpon>FDatBan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Components\FSuaQuan.resx">
       <DependentUpon>FSuaQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\FThemQuanAn.resx">
       <DependentUpon>FThemQuanAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\FXoaQuan.resx">
+      <DependentUpon>FXoaQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>
@@ -100,6 +115,9 @@
     </Compile>
     <EmbeddedResource Include="QuanAnUI.resx">
       <DependentUpon>QuanAnUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FDatBan.resx">
+      <DependentUpon>FDatBan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

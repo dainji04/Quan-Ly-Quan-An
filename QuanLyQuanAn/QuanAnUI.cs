@@ -19,6 +19,10 @@ namespace QuanLyQuanAn
     public partial class QuanAnUI : Form
     {
         private CXuLyQuanAn xulyQuan = new CXuLyQuanAn();
+        private string currentMaQuan = "";
+
+        public string CurrentMaQuan { get => currentMaQuan; set => currentMaQuan = value; }
+
         public QuanAnUI()
         {
             InitializeComponent();
@@ -53,41 +57,62 @@ namespace QuanLyQuanAn
             dgvQuanAn.DataSource = xulyQuan.QuanAn.ToList();
         }
 
-        private void dgvQuanAn_DoubleClick(object sender, EventArgs e)
-        {
-            MessageBox.Show("Double Click");
-        }
-
         private void mnsThem_Click(object sender, EventArgs e)
         {
             FThemQuanAn f = new FThemQuanAn();
             f.ShowDialog();
-            if (f.isButtonClicked)
-            {
-                //    if(xulyQuan.tim() == null)
-                //    {
-                //        CQuanAn quanAn = new CQuanAn();
-                //        quanAn.MaQuan = f.MaQuan;
-                //        quanAn.TenQuan = f.TenQuan;
-                //        quanAn.DiaChi = f.DiaChi;
-                //        quanAn.Sdt = f.Sdt;
-                //        quanAn.Email = f.Email;
-                //        quanAn.MoTa = f.MoTa;
-                //        quanAn.NgayDangKy = f.NgayDangKy;
-                //        xulyQuan.QuanAn.Add(quanAn);
-                //        xulyQuan.ghiFile(quanAn);
-                //    }
-                hienthi();
-            }
+            hienthi();
         }
 
         private void mnsSua_Click(object sender, EventArgs e)
         {
             FSuaQuan sq = new FSuaQuan();
             sq.ShowDialog();
-            if(sq.isFixed)
+            hienthi();
+        }
+
+        private void mnsXoa_Click(object sender, EventArgs e)
+        {
+            FXoaQuan xq = new FXoaQuan();
+            xq.ShowDialog();
+            hienthi();
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            CQuanAn temp = xulyQuan.tim(txtSearch.Text);
+            if(temp != null)
+            {
+                dgvQuanAn.DataSource = new List<CQuanAn> { temp };
+            }
+            else if(txtSearch.Text == string.Empty)
             {
                 hienthi();
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy quán ăn");
+            }
+        }
+
+        private void dgvQuanAn_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            CQuanAn qa = new CQuanAn();
+            qa.MaQuan = dgvQuanAn.Rows[e.RowIndex].Cells[0].Value.ToString();
+            qa.TenQuan = dgvQuanAn.Rows[e.RowIndex].Cells[1].Value.ToString();
+            qa.DiaChi = dgvQuanAn.Rows[e.RowIndex].Cells[2].Value.ToString();
+            qa.Sdt = dgvQuanAn.Rows[e.RowIndex].Cells[3].Value.ToString();
+            qa.Email = dgvQuanAn.Rows[e.RowIndex].Cells[4].Value.ToString();
+            qa.MoTa = dgvQuanAn.Rows[e.RowIndex].Cells[5].Value.ToString();
+            qa.NgayDangKy = DateTime.Parse(dgvQuanAn.Rows[e.RowIndex].Cells[6].Value.ToString());
+            CurrentMaQuan = qa.MaQuan;
+        }
+
+        private void dgvQuanAn_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                MessageBox.Show($"ma quan {currentMaQuan}");
             }
         }
     }

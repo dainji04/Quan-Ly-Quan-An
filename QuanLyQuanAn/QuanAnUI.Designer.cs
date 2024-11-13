@@ -460,6 +460,7 @@
             this.mnsXoa.Name = "mnsXoa";
             this.mnsXoa.Size = new System.Drawing.Size(198, 26);
             this.mnsXoa.Text = "Xoa Quan";
+            this.mnsXoa.Click += new System.EventHandler(this.mnsXoa_Click);
             // 
             // dgvQuanAn
             // 
@@ -501,6 +502,7 @@
             this.dgvQuanAn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.dgvQuanAn.Location = new System.Drawing.Point(8, 134);
             this.dgvQuanAn.Name = "dgvQuanAn";
+            this.dgvQuanAn.ReadOnly = true;
             this.dgvQuanAn.RowHeadersVisible = false;
             this.dgvQuanAn.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvQuanAn.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Times New Roman", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -520,7 +522,7 @@
             this.dgvQuanAn.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvQuanAn.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dgvQuanAn.ThemeStyle.HeaderStyle.Height = 25;
-            this.dgvQuanAn.ThemeStyle.ReadOnly = false;
+            this.dgvQuanAn.ThemeStyle.ReadOnly = true;
             this.dgvQuanAn.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvQuanAn.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvQuanAn.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -528,7 +530,8 @@
             this.dgvQuanAn.ThemeStyle.RowsStyle.Height = 50;
             this.dgvQuanAn.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvQuanAn.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvQuanAn.DoubleClick += new System.EventHandler(this.dgvQuanAn_DoubleClick);
+            this.dgvQuanAn.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQuanAn_RowEnter);
+            this.dgvQuanAn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvQuanAn_KeyDown);
             // 
             // id
             // 
@@ -538,6 +541,7 @@
             this.id.HeaderText = "id";
             this.id.MinimumWidth = 6;
             this.id.Name = "id";
+            this.id.ReadOnly = true;
             this.id.Width = 50;
             // 
             // TenQuan
@@ -548,6 +552,7 @@
             this.TenQuan.HeaderText = "Tên quán";
             this.TenQuan.MinimumWidth = 6;
             this.TenQuan.Name = "TenQuan";
+            this.TenQuan.ReadOnly = true;
             this.TenQuan.Width = 110;
             // 
             // DiaChi
@@ -558,6 +563,7 @@
             this.DiaChi.HeaderText = "Địa Chỉ";
             this.DiaChi.MinimumWidth = 6;
             this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
             this.DiaChi.Width = 250;
             // 
             // SDT
@@ -567,6 +573,7 @@
             this.SDT.HeaderText = "Số Điện Thoại";
             this.SDT.MinimumWidth = 6;
             this.SDT.Name = "SDT";
+            this.SDT.ReadOnly = true;
             // 
             // Email
             // 
@@ -575,6 +582,7 @@
             this.Email.HeaderText = "Email";
             this.Email.MinimumWidth = 6;
             this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
             // 
             // MoTa
             // 
@@ -583,6 +591,7 @@
             this.MoTa.HeaderText = "Mô Tả";
             this.MoTa.MinimumWidth = 6;
             this.MoTa.Name = "MoTa";
+            this.MoTa.ReadOnly = true;
             // 
             // NgayDangKy
             // 
@@ -591,6 +600,7 @@
             this.NgayDangKy.HeaderText = "Ngày Đăng Ký";
             this.NgayDangKy.MinimumWidth = 6;
             this.NgayDangKy.Name = "NgayDangKy";
+            this.NgayDangKy.ReadOnly = true;
             // 
             // btnTimKiem
             // 
@@ -606,6 +616,7 @@
             this.btnTimKiem.Size = new System.Drawing.Size(177, 48);
             this.btnTimKiem.TabIndex = 2;
             this.btnTimKiem.Text = "Tìm Kiếm";
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
             // txtSearch
             // 

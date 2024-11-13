@@ -15,7 +15,6 @@ namespace QuanLyQuanAn.Components
     public partial class FThemQuanAn : Form
     {
         CXuLyQuanAn xulyquan = new CXuLyQuanAn();
-        public bool isButtonClicked = false;
         public string MaQuan { get; private set; }
         public string TenQuan { get; private set; }
         public string DiaChi { get; private set; }
@@ -37,7 +36,6 @@ namespace QuanLyQuanAn.Components
                 {
                     if(xulyquan.tim(txtMaQuan.Text) == null)
                     {
-                        isButtonClicked = true;
                         CQuanAn qa = new CQuanAn();
                         qa.MaQuan = txtMaQuan.Text;
                         qa.TenQuan = txtTenQuan.Text;
@@ -48,7 +46,6 @@ namespace QuanLyQuanAn.Components
                         qa.NgayDangKy = dtpThanhLap.Value;
                         xulyquan.QuanAn.Add(qa);
                         xulyquan.ghiFile(qa);
-                        this.Close();
                     }
                     else
                     {
