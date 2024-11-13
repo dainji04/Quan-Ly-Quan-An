@@ -9,7 +9,6 @@ namespace QuanLyQuanAn.Class
     [Serializable]
     internal class CQuanAn
     {
-        public List<CQuanAn> quanAn = new List<CQuanAn>();
         private string _maQuanAn;
         private string _tenQuanAn;
         private string _diaChi;

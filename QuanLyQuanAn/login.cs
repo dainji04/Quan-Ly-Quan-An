@@ -26,12 +26,13 @@ namespace QuanLyQuanAn
             QuanAnUI quanAnUI = new QuanAnUI();
             quanAnUI.Show();
             this.Hide();
-            //quanAnUI.Show(); // Correct the variable name
-                             //}
-                             //else
-                             //{
-                             //    msgError.Show("Sai tên đăng nhập hoặc mật khẩu");
-                             //}
+            //quanAnUI.Show(); 
+            // Correct the variable name
+            //}
+            //else
+            //{
+            //    msgError.Show("Sai tên đăng nhập hoặc mật khẩu");
+            //}
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

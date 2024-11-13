@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using QuanLyQuanAn.Class;
+using QuanLyQuanAn.Controller;
 
 namespace QuanLyQuanAn.Components
 {
     public partial class FThemQuanAn : Form
     {
+        CXuLyQuanAn xulyquan = new CXuLyQuanAn();
         public bool isButtonClicked = false;
         public string MaQuan { get; private set; }
         public string TenQuan { get; private set; }
@@ -31,16 +33,33 @@ namespace QuanLyQuanAn.Components
             var result = msgLuu.Show();
             if(result == DialogResult.Yes)
             {
-                isButtonClicked = true;
-                CQuanAn QuanAn = new CQuanAn();
-                MaQuan = txtMaQuan.Text;
-                TenQuan = txtTenQuan.Text;
-                DiaChi = txtDiaChi.Text;
-                Sdt = txtSdt.Text;
-                Email = txtEmail.Text;
-                MoTa = txtMoTa.Text;
-                NgayDangKy = Convert.ToDateTime(dtpThanhLap);
-                this.Close();
+                if(txtMaQuan.Text != string.Empty && txtTenQuan.Text != string.Empty && txtEmail.Text != string.Empty && txtDiaChi.Text != string.Empty)
+                {
+                    if(xulyquan.tim(txtMaQuan.Text) == null)
+                    {
+                        isButtonClicked = true;
+                        CQuanAn qa = new CQuanAn();
+                        qa.MaQuan = txtMaQuan.Text;
+                        qa.TenQuan = txtTenQuan.Text;
+                        qa.DiaChi = txtDiaChi.Text;
+                        qa.Sdt = txtSdt.Text;
+                        qa.Email = txtEmail.Text;
+                        qa.MoTa = txtMoTa.Text;
+                        qa.NgayDangKy = dtpThanhLap.Value;
+                        xulyquan.QuanAn.Add(qa);
+                        xulyquan.ghiFile(qa);
+                        this.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ma Quan da ton tai");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                }
+
             }
         }
 

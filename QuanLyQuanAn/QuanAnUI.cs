@@ -8,15 +8,17 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
+// using by me
 using System.Windows.Forms;
 using QuanLyQuanAn.Class;
 using QuanLyQuanAn.Components;
+using QuanLyQuanAn.Controller;
 
 namespace QuanLyQuanAn
 {
     public partial class QuanAnUI : Form
     {
-        CQuanAn dsQuan = new CQuanAn();
+        private CXuLyQuanAn xulyQuan = new CXuLyQuanAn();
         public QuanAnUI()
         {
             InitializeComponent();
@@ -29,23 +31,6 @@ namespace QuanLyQuanAn
 
         private void QuanAnUI_Load(object sender, EventArgs e)
         {
-            dsQuan.quanAn = new List<CQuanAn>();
-            try
-            {
-                FileStream fs = new FileStream("..\\..\\Database\\QuanAn.dat", FileMode.Open);
-                BinaryFormatter bf = new BinaryFormatter();
-                dsQuan.quanAn = (List<CQuanAn>)bf.Deserialize(fs);
-                fs.Close();
-                hienthi();
-            }
-            catch
-            {
-                var result = MessageBox.Show("Có Lỗi khi đọc database hoặc database rỗng!!!", "Thông Báo", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
-                if (result == DialogResult.Retry)
-                {
-                    QuanAnUI_Load(sender, e);
-                }
-            }
             quanAnPage.Show();
             hienthi();
         }
@@ -64,46 +49,46 @@ namespace QuanLyQuanAn
 
         private void hienthi()
         {
-            dgvQuanAn.DataSource = dsQuan.quanAn.ToList();
-        }
-
-        private void btnThem_Click(object sender, EventArgs e)
-        {
-            FThemQuanAn f = new FThemQuanAn();
-            f.ShowDialog();
-            if(f.isButtonClicked)
-            {
-                CQuanAn quanAn = new CQuanAn();
-                quanAn.MaQuan = f.MaQuan;
-                quanAn.TenQuan = f.TenQuan;
-                quanAn.DiaChi = f.DiaChi;
-                quanAn.Sdt = f.Sdt;
-                quanAn.Email = f.Email;
-                quanAn.MoTa = f.MoTa;
-                quanAn.NgayDangKy = f.NgayDangKy;
-                try
-                {
-                    dsQuan.quanAn.Add(quanAn);
-                    FileStream fs = new FileStream("..\\..\\Database\\QuanAn.dat", FileMode.Create);
-                    BinaryFormatter bf = new BinaryFormatter();
-                    bf.Serialize(fs, dsQuan.quanAn);
-                    fs.Close();
-                    hienthi();
-                }
-                catch
-                {
-                    var result = MessageBox.Show("Có Lỗi khi thêm vào database", "Thông Báo", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
-                    if (result == DialogResult.Retry)
-                    {
-                        btnThem_Click(sender, e);
-                    }
-                }
-            }
+            xulyQuan.docFile();
+            dgvQuanAn.DataSource = xulyQuan.QuanAn.ToList();
         }
 
         private void dgvQuanAn_DoubleClick(object sender, EventArgs e)
         {
             MessageBox.Show("Double Click");
+        }
+
+        private void mnsThem_Click(object sender, EventArgs e)
+        {
+            FThemQuanAn f = new FThemQuanAn();
+            f.ShowDialog();
+            if (f.isButtonClicked)
+            {
+                //    if(xulyQuan.tim() == null)
+                //    {
+                //        CQuanAn quanAn = new CQuanAn();
+                //        quanAn.MaQuan = f.MaQuan;
+                //        quanAn.TenQuan = f.TenQuan;
+                //        quanAn.DiaChi = f.DiaChi;
+                //        quanAn.Sdt = f.Sdt;
+                //        quanAn.Email = f.Email;
+                //        quanAn.MoTa = f.MoTa;
+                //        quanAn.NgayDangKy = f.NgayDangKy;
+                //        xulyQuan.QuanAn.Add(quanAn);
+                //        xulyQuan.ghiFile(quanAn);
+                //    }
+                hienthi();
+            }
+        }
+
+        private void mnsSua_Click(object sender, EventArgs e)
+        {
+            FSuaQuan sq = new FSuaQuan();
+            sq.ShowDialog();
+            if(sq.isFixed)
+            {
+                hienthi();
+            }
         }
     }
 }
