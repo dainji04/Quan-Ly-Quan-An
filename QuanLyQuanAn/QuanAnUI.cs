@@ -20,6 +20,7 @@ namespace QuanLyQuanAn
     public partial class QuanAnUI : Form
     {
         private CXuLyQuanAn xulyQuan = new CXuLyQuanAn();
+        private XuLyMon XuLyMon = new XuLyMon();
         private string currentMaQuan = "";
 
         public string CurrentMaQuan { get => currentMaQuan; set => currentMaQuan = value; }
@@ -36,26 +37,26 @@ namespace QuanLyQuanAn
 
         private void QuanAnUI_Load(object sender, EventArgs e)
         {
+            pnlQLMA.Hide();
             quanAnPage.Show();
             hienthi();
         }
 
         private void QuanLyQuanAn_Click(object sender, EventArgs e)
         {
-            //nhanSuPage.Hide();
+            pnlQLMA.Hide();
             quanAnPage.Show();
-        }
-
-        private void QuanLyNhanSu_Click(object sender, EventArgs e)
-        {
-            //quanAnPage.Hide();
-            //nhanSuPage.Show();
         }
 
         private void hienthi()
         {
             xulyQuan.docFile();
             dgvQuanAn.DataSource = xulyQuan.QuanAn.ToList();
+        }
+        private void hienthiMon()
+        {
+            XuLyMon.docFile();
+            dgvFood.DataSource = XuLyMon.DsMon.ToList();
         }
 
         private void mnsThem_Click(object sender, EventArgs e)
@@ -119,6 +120,21 @@ namespace QuanLyQuanAn
                 f.Show();
                 this.Hide();
             }
+        }
+
+        private void QLQA_Click(object sender, EventArgs e)
+        {
+            pnlQLMA.Show();
+            hienthiMon();
+            //quanAnPage.Hide();
+        }
+
+        private void mnsThemMon_Click(object sender, EventArgs e)
+        {
+            FThemMon f = new FThemMon();
+            f.ShowDialog();
+
+            hienthiMon();
         }
     }
 }

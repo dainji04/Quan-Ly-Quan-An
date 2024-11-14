@@ -49,7 +49,7 @@ namespace QuanLyQuanAn.Components
                 if (qa != null)
                 {
                     xulyQuan.QuanAn.Remove(qa);
-                    xulyQuan.ghiFile(qa);
+                    xulyQuan.ghiFile();
                     MessageBox.Show("Xóa thành công");
                     txtMaQuan.Text = "";
                     txtTenQuan.Text = "";

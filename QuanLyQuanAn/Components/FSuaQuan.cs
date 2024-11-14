@@ -51,7 +51,7 @@ namespace QuanLyQuanAn.Components
                     qa.Email = txtEmail.Text;
                     qa.MoTa = txtMoTa.Text;
                     qa.NgayDangKy = dtpThanhLap.Value;
-                    xulyQuan.ghiFile(qa);
+                    xulyQuan.ghiFile();
                     MessageBox.Show("Sửa thành công");
                     //isFixed = true;
                     //this.Close();

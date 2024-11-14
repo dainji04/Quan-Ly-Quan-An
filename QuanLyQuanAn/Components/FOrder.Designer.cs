@@ -39,7 +39,7 @@
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlFood = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -177,14 +177,14 @@
             this.guna2Button1.TabIndex = 24;
             this.guna2Button1.Text = "Search";
             // 
-            // guna2Panel2
+            // pnlFood
             // 
-            this.guna2Panel2.AutoSize = true;
-            this.guna2Panel2.FillColor = System.Drawing.Color.Black;
-            this.guna2Panel2.Location = new System.Drawing.Point(12, 87);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(711, 672);
-            this.guna2Panel2.TabIndex = 25;
+            this.pnlFood.AutoScroll = true;
+            this.pnlFood.FillColor = System.Drawing.Color.Black;
+            this.pnlFood.Location = new System.Drawing.Point(12, 87);
+            this.pnlFood.Name = "pnlFood";
+            this.pnlFood.Size = new System.Drawing.Size(711, 672);
+            this.pnlFood.TabIndex = 25;
             // 
             // guna2Panel3
             // 
@@ -201,7 +201,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1160, 771);
             this.Controls.Add(this.guna2Panel3);
-            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.pnlFood);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2TextBox1);
             this.Controls.Add(this.guna2HtmlLabel4);
@@ -215,10 +215,11 @@
             this.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "FOrder";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FOrder";
+            this.Load += new System.EventHandler(this.FOrder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -237,7 +238,7 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel pnlFood;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
     }
 }

@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\CFood.cs" />
     <Compile Include="Class\CQuanAn.cs" />
     <Compile Include="Components\FOrder.cs">
       <SubType>Form</SubType>
@@ -64,6 +65,12 @@
     </Compile>
     <Compile Include="Components\FSuaQuan.Designer.cs">
       <DependentUpon>FSuaQuan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\FThemMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\FThemMon.Designer.cs">
+      <DependentUpon>FThemMon.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\FThemQuanAn.cs">
       <SubType>Form</SubType>
@@ -78,6 +85,7 @@
       <DependentUpon>FXoaQuan.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\CXuLyQuanAn.cs" />
+    <Compile Include="Controller\XuLyMon.cs" />
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\FSuaQuan.resx">
       <DependentUpon>FSuaQuan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\FThemMon.resx">
+      <DependentUpon>FThemMon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\FThemQuanAn.resx">
       <DependentUpon>FThemQuanAn.cs</DependentUpon>

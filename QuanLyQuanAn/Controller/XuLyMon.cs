@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyQuanAn.Class;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,22 +7,21 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using QuanLyQuanAn.Class;
 
 namespace QuanLyQuanAn.Controller
 {
-    internal class CXuLyQuanAn
+    internal class XuLyMon
     {
-        private List<CQuanAn> quanAn = new List<CQuanAn>();
-        internal List<CQuanAn> QuanAn { get => quanAn; set => quanAn = value; }
-        
+        private List<CFood> dsMon = new List<CFood>();
+        internal List<CFood> DsMon { get => dsMon; set => dsMon = value; }
+
         public void docFile()
         {
             try
             {
-                FileStream fs = new FileStream("..\\..\\Database\\QuanAn.dat", FileMode.Open);
+                FileStream fs = new FileStream("..\\..\\Database\\dsMon.dat", FileMode.Open);
                 BinaryFormatter bf = new BinaryFormatter();
-                QuanAn = (List<CQuanAn>)bf.Deserialize(fs);
+                DsMon = (List<CFood>)bf.Deserialize(fs);
                 fs.Close();
             }
             catch
@@ -38,9 +38,9 @@ namespace QuanLyQuanAn.Controller
         {
             try
             {
-                FileStream fs = new FileStream("..\\..\\Database\\QuanAn.dat", FileMode.Create);
+                FileStream fs = new FileStream("..\\..\\Database\\dsMon.dat", FileMode.Create);
                 BinaryFormatter bf = new BinaryFormatter();
-                bf.Serialize(fs, QuanAn);
+                bf.Serialize(fs, DsMon);
                 fs.Close();
             }
             catch
@@ -53,12 +53,12 @@ namespace QuanLyQuanAn.Controller
             }
         }
 
-        public CQuanAn tim(string ma)
+        public CFood tim(string ma)
         {
             docFile();
-            foreach (CQuanAn qa in QuanAn)
+            foreach (CFood qa in DsMon)
             {
-                if (qa.MaQuan == ma)
+                if (qa.Ma == ma)
                 {
                     return qa;
                 }

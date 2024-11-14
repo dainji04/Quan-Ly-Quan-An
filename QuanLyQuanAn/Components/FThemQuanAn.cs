@@ -45,7 +45,7 @@ namespace QuanLyQuanAn.Components
                         qa.MoTa = txtMoTa.Text;
                         qa.NgayDangKy = dtpThanhLap.Value;
                         xulyquan.QuanAn.Add(qa);
-                        xulyquan.ghiFile(qa);
+                        xulyquan.ghiFile();
                     }
                     else
                     {
