@@ -13,7 +13,9 @@ namespace QuanLyQuanAn.Controller
     internal class XuLyMon
     {
         private List<CFood> dsMon = new List<CFood>();
+        private List<CFood> dsOrder = new List<CFood>();
         internal List<CFood> DsMon { get => dsMon; set => dsMon = value; }
+        internal List<CFood> DsOrder { get => dsOrder; set => dsOrder = value; }
 
         public void docFile()
         {
@@ -64,6 +66,27 @@ namespace QuanLyQuanAn.Controller
                 }
             }
             return null;
+        }
+
+        public bool XulyThemMon(string id)
+        {
+            foreach(CFood qa in DsMon)
+            {
+                if (qa.Ma == id)
+                {
+                    foreach(CFood qa1 in DsOrder)
+                    {
+                        if (qa1.Ma == id)
+                        {
+                            qa1.soluong++;
+                            return false;
+                        }
+                    }
+                    DsOrder.Add(qa);
+                    break;
+                }
+            }
+            return true;
         }
     }
 }

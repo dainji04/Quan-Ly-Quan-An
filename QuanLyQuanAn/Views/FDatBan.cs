@@ -27,9 +27,11 @@ namespace QuanLyQuanAn.Views
             lblMaQuan.Text = maQuan;
         }
 
-        private void guna2Button1_DoubleClick(object sender, EventArgs e)
+        private void btnBan_DoubleClick(object sender, EventArgs e)
         {
+            Guna.UI2.WinForms.Guna2Button btn = sender as Guna.UI2.WinForms.Guna2Button;
             FOrder fo = new FOrder();
+            fo.CurrentBan = btn.Text;
             fo.ShowDialog();
         }
     }

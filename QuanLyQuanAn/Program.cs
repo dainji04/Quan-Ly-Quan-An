@@ -1,4 +1,5 @@
 ﻿using QuanLyQuanAn.Components;
+using QuanLyQuanAn.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace QuanLyQuanAn
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new login());
+            Application.Run(new QuanAnUI());
         }
     }
 }

@@ -601,7 +601,7 @@
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(180, 45);
             this.guna2Button1.TabIndex = 0;
-            this.guna2Button1.Text = "guna2Button1";
+            this.guna2Button1.Text = "Food";
             // 
             // toolStripContainer1
             // 

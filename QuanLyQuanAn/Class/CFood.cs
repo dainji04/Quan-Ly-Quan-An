@@ -15,6 +15,7 @@ namespace QuanLyQuanAn.Class
         private double m_giatien;
         private string m_loaimon;
         private Image m_hinhanh;
+        public int soluong = 1;
 
         public string Ma { get => m_ma; set => m_ma = value; }
         public string Tenmon { get => m_tenmon; set => m_tenmon = value; }
