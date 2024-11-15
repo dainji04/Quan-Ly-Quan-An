@@ -10,7 +10,7 @@ using QuanLyQuanAn.Class;
 
 namespace QuanLyQuanAn.Controller
 {
-    internal class CXuLyHoaDon
+    internal class CXuLyHoaDon: CHoaDon
     {
         List<CHoaDon> dsHoaDon = new List<CHoaDon>();
         internal List<CHoaDon> DsHoaDon { get => dsHoaDon; set => dsHoaDon = value; }

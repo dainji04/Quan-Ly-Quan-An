@@ -83,7 +83,7 @@ namespace QuanLyQuanAn.Views
             FOrder fo = new FOrder();
             CQuanAn qa = xlqa.tim(MaQuan);
             fo.CurrentBan = btn.Text;
-            fo.CurrentQuan = qa.TenQuan;
+            fo.CurrentQuan = qa;
             this.Close();
             fo.Show();
         }

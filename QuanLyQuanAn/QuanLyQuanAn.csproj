@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\CBill.cs" />
     <Compile Include="Class\CFood.cs" />
     <Compile Include="Class\CHoaDon.cs" />
     <Compile Include="Class\CQuanAn.cs" />

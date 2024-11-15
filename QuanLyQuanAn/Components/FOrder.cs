@@ -23,9 +23,9 @@ namespace QuanLyQuanAn.Components
         CXuLyHoaDon XuLyHoaDon = new CXuLyHoaDon();
 
         private string currentBan;
-        private string currentQuan;
+        private CQuanAn currentQuan;
         public string CurrentBan { get => currentBan; set => currentBan = value; }
-        public string CurrentQuan { get => currentQuan; set => currentQuan = value; }
+        internal CQuanAn CurrentQuan { get => currentQuan; set => currentQuan = value; }
 
         public FOrder()
         {
@@ -122,14 +122,14 @@ namespace QuanLyQuanAn.Components
                 lblTen.BackColor = Color.Transparent;
                 lblTen.Size = new Size(210, 20);
 
-                lblGia.Text = (odf.Giatien*odf.soluong).ToString() + "$";
+                lblGia.Text = (odf.Giatien*odf.Soluong).ToString() + "$";
                 lblGia.Location = new Point(275, 10);
                 lblGia.ForeColor = Color.White;
                 lblGia.Font = new Font("Times New Roman", 14, FontStyle.Bold);
                 lblGia.BackColor = Color.Transparent;
                 lblGia.Size = new Size(40, 40);
 
-                lblSoLuong.Text = odf.soluong.ToString();
+                lblSoLuong.Text = odf.Soluong.ToString();
                 lblSoLuong.Location = new Point(220, 10);
                 lblGia.Size = new Size(40, 40);
                 lblSoLuong.ForeColor = Color.White;
@@ -161,7 +161,7 @@ namespace QuanLyQuanAn.Components
                 pnlItem.Controls.Add(btnXoa);
                 pnlOrder.Controls.Add(pnlItem);
                 
-                sum += odf.Giatien * odf.soluong;
+                sum += odf.Giatien * odf.Soluong;
                 i++;
             }
             lblThanhTien.Text = sum.ToString() + "$";
@@ -190,6 +190,7 @@ namespace QuanLyQuanAn.Components
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             FDatBan db = new FDatBan();
+            db.MaQuan = CurrentQuan.MaQuan;
             db.Show();
             this.Hide();
         }
@@ -205,7 +206,7 @@ namespace QuanLyQuanAn.Components
         {
             CHoaDon hd = new CHoaDon();
             hd.Ma = "HD" + DateTime.Now.ToString("ddMMyyyyHHmmss");
-            hd.TenQuan = currentQuan;
+            hd.TenQuan = CurrentQuan.TenQuan;
             hd.SoBan = currentBan;
             hd.NgayLap = DateTime.Now;
             hd.TongTien = Convert.ToDouble(lblThanhTien.Text.Trim(char.Parse("$")));
@@ -215,16 +216,20 @@ namespace QuanLyQuanAn.Components
             XuLyHoaDon.DsHoaDon.Add(hd);
             XuLyHoaDon.ghiFile();
 
-            XuLyMon.DsOrder.Clear();
-            pnlOrder.Controls.Clear();
-
-            XuLyMon.ghiFile(currentBan);
+           
 
             hienthi();
 
             FHoaDon fhd = new FHoaDon();
             this.Close();
+            fhd.CurrentBan = currentBan;
+            fhd.QuanAn = CurrentQuan;
             fhd.Show();
+
+            XuLyMon.DsOrder.Clear();
+            pnlOrder.Controls.Clear();
+
+            XuLyMon.ghiFile(currentBan);
         }
     }
 }

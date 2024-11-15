@@ -117,7 +117,7 @@ namespace QuanLyQuanAn.Controller
                     {
                         if (qa1.Ma == id)
                         {
-                            qa1.soluong++;
+                            qa1.Soluong++;
                             ghiFile(ban);
                             return false;
                         }

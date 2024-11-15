@@ -168,5 +168,12 @@ namespace QuanLyQuanAn
             pnlDoanhThu.Show();
             hienthiHD();
         }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            login lg = new login();
+            lg.Show();
+            this.Close();
+        }
     }
 }
