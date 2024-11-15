@@ -21,9 +21,11 @@ namespace QuanLyQuanAn
     {
         private CXuLyQuanAn xulyQuan = new CXuLyQuanAn();
         private XuLyMon XuLyMon = new XuLyMon();
+        private CXuLyHoaDon XuLyHoaDon = new CXuLyHoaDon();
         private string currentMaQuan = "";
 
         public string CurrentMaQuan { get => currentMaQuan; set => currentMaQuan = value; }
+        internal CXuLyHoaDon XuLyHoaDon1 { get => XuLyHoaDon; set => XuLyHoaDon = value; }
 
         public QuanAnUI()
         {
@@ -38,6 +40,7 @@ namespace QuanLyQuanAn
         private void QuanAnUI_Load(object sender, EventArgs e)
         {
             pnlQLMA.Hide();
+            pnlDoanhThu.Hide();
             quanAnPage.Show();
             hienthi();
         }
@@ -45,6 +48,7 @@ namespace QuanLyQuanAn
         private void QuanLyQuanAn_Click(object sender, EventArgs e)
         {
             pnlQLMA.Hide();
+            pnlDoanhThu.Hide();
             quanAnPage.Show();
         }
 
@@ -57,6 +61,12 @@ namespace QuanLyQuanAn
         {
             XuLyMon.docFile();
             dgvFood.DataSource = XuLyMon.DsMon.ToList();
+        }
+
+        private void hienthiHD()
+        {
+            XuLyHoaDon.docFile();
+            dgvHD.DataSource = XuLyHoaDon.DsHoaDon.ToList();
         }
 
         private void mnsThem_Click(object sender, EventArgs e)
@@ -123,9 +133,9 @@ namespace QuanLyQuanAn
 
         private void QLQA_Click(object sender, EventArgs e)
         {
+            pnlDoanhThu.Hide();
             pnlQLMA.Show();
             hienthiMon();
-            //quanAnPage.Hide();
         }
 
         private void mnsThemMon_Click(object sender, EventArgs e)
@@ -150,6 +160,13 @@ namespace QuanLyQuanAn
             f.ShowDialog();
 
             hienthiMon();
+        }
+
+        private void btnDoanhThu_Click(object sender, EventArgs e)
+        {
+            pnlQLMA.Show();
+            pnlDoanhThu.Show();
+            hienthiHD();
         }
     }
 }

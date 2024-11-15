@@ -40,7 +40,7 @@ namespace QuanLyQuanAn.Controller
         {
             try
             {
-                FileStream fs = new FileStream("..\\..\\Database\\dsMon.dat", FileMode.Create);
+                FileStream fs = new FileStream("..\\..\\Database\\DsMon.dat", FileMode.Create);
                 BinaryFormatter bf = new BinaryFormatter();
                 bf.Serialize(fs, DsMon);
                 fs.Close();
@@ -128,6 +128,20 @@ namespace QuanLyQuanAn.Controller
                 }
             }
             return true;
+        }
+
+        public void XuLyXoaMon(string id, string ban)
+        {
+            docFile();
+            foreach (CFood qa in DsOrder)
+            {
+                if (qa.Ma == id)
+                {
+                    DsOrder.Remove(qa);
+                    ghiFile(ban);
+                    break;
+                }
+            }
         }
 
         public bool checkBan(string soBan)

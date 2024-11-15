@@ -60,6 +60,7 @@ namespace QuanLyQuanAn.Components
                     dtpThanhLap.Value = DateTime.Now;
                     txtSearch.Text = "";
                 }
+                txtSearch.Focus();
             }
         }
     }

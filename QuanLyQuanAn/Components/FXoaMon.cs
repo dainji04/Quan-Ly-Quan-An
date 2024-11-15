@@ -54,6 +54,7 @@ namespace QuanLyQuanAn.Components
                 XuLyMon.DsMon.Remove(f);
                 XuLyMon.ghiFile();
                 MessageBox.Show("Xóa món thành công");
+                txtSearch.Focus();
             }
         }
     }

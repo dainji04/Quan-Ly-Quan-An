@@ -81,7 +81,7 @@
             this.txtMa.PlaceholderText = "";
             this.txtMa.SelectedText = "";
             this.txtMa.Size = new System.Drawing.Size(109, 31);
-            this.txtMa.TabIndex = 2;
+            this.txtMa.TabIndex = 1;
             // 
             // txtTenMon
             // 
@@ -119,7 +119,7 @@
             this.txtGia.PlaceholderText = "";
             this.txtGia.SelectedText = "";
             this.txtGia.Size = new System.Drawing.Size(143, 31);
-            this.txtGia.TabIndex = 2;
+            this.txtGia.TabIndex = 3;
             // 
             // guna2HtmlLabel3
             // 
@@ -148,7 +148,7 @@
             this.txtLoai.PlaceholderText = "";
             this.txtLoai.SelectedText = "";
             this.txtLoai.Size = new System.Drawing.Size(143, 31);
-            this.txtLoai.TabIndex = 2;
+            this.txtLoai.TabIndex = 4;
             // 
             // guna2HtmlLabel4
             // 

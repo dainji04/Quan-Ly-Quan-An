@@ -53,6 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\CFood.cs" />
+    <Compile Include="Class\CHoaDon.cs" />
     <Compile Include="Class\CQuanAn.cs" />
     <Compile Include="Components\FOrder.cs">
       <SubType>Form</SubType>
@@ -96,6 +97,7 @@
     <Compile Include="Components\FXoaQuan.Designer.cs">
       <DependentUpon>FXoaQuan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Controller\CXuLyHoaDon.cs" />
     <Compile Include="Controller\CXuLyQuanAn.cs" />
     <Compile Include="Controller\XuLyMon.cs" />
     <Compile Include="login.cs">
@@ -117,6 +119,12 @@
     </Compile>
     <Compile Include="Views\FDatBan.Designer.cs">
       <DependentUpon>FDatBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FHoaDon.Designer.cs">
+      <DependentUpon>FHoaDon.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Components\FOrder.resx">
       <DependentUpon>FOrder.cs</DependentUpon>
@@ -156,6 +164,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FDatBan.resx">
       <DependentUpon>FDatBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\FHoaDon.resx">
+      <DependentUpon>FHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
