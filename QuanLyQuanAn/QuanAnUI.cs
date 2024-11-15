@@ -114,7 +114,6 @@ namespace QuanLyQuanAn
         {
             if (e.KeyCode == Keys.Enter)
             {
-                MessageBox.Show($"ma quan {currentMaQuan}");
                 FDatBan f = new FDatBan();
                 f.MaQuan = currentMaQuan;
                 f.Show();
@@ -132,6 +131,22 @@ namespace QuanLyQuanAn
         private void mnsThemMon_Click(object sender, EventArgs e)
         {
             FThemMon f = new FThemMon();
+            f.ShowDialog();
+
+            hienthiMon();
+        }
+
+        private void mnsSuaMon_Click(object sender, EventArgs e)
+        {
+            FSuaMon f = new FSuaMon();
+            f.ShowDialog();
+
+            hienthiMon();
+        }
+
+        private void xóaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FXoaMon f = new FXoaMon();
             f.ShowDialog();
 
             hienthiMon();

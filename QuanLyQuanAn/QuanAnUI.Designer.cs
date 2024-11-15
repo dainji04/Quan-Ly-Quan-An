@@ -76,7 +76,7 @@
             this.mnsXoa = new System.Windows.Forms.ToolStripMenuItem();
             this.mónĂnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsThemMon = new System.Windows.Forms.ToolStripMenuItem();
-            this.sửaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnsSuaMon = new System.Windows.Forms.ToolStripMenuItem();
             this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvQuanAn = new Guna.UI2.WinForms.Guna2DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -670,7 +670,7 @@
             // 
             this.mónĂnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.mnsThemMon,
-            this.sửaToolStripMenuItem,
+            this.mnsSuaMon,
             this.xóaToolStripMenuItem});
             this.mónĂnToolStripMenuItem.Name = "mónĂnToolStripMenuItem";
             this.mónĂnToolStripMenuItem.Size = new System.Drawing.Size(84, 25);
@@ -683,17 +683,19 @@
             this.mnsThemMon.Text = "Thêm";
             this.mnsThemMon.Click += new System.EventHandler(this.mnsThemMon_Click);
             // 
-            // sửaToolStripMenuItem
+            // mnsSuaMon
             // 
-            this.sửaToolStripMenuItem.Name = "sửaToolStripMenuItem";
-            this.sửaToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
-            this.sửaToolStripMenuItem.Text = "Sửa";
+            this.mnsSuaMon.Name = "mnsSuaMon";
+            this.mnsSuaMon.Size = new System.Drawing.Size(129, 26);
+            this.mnsSuaMon.Text = "Sửa";
+            this.mnsSuaMon.Click += new System.EventHandler(this.mnsSuaMon_Click);
             // 
             // xóaToolStripMenuItem
             // 
             this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
             this.xóaToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.xóaToolStripMenuItem.Text = "Xóa";
+            this.xóaToolStripMenuItem.Click += new System.EventHandler(this.xóaToolStripMenuItem_Click);
             // 
             // dgvQuanAn
             // 
@@ -952,7 +954,7 @@
         private System.Windows.Forms.ToolStripContainer toolStripContainer1;
         private System.Windows.Forms.ToolStripMenuItem mónĂnToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mnsThemMon;
-        private System.Windows.Forms.ToolStripMenuItem sửaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mnsSuaMon;
         private System.Windows.Forms.ToolStripMenuItem xóaToolStripMenuItem;
         private Guna.UI2.WinForms.Guna2Panel pnlQLMA;
         private Guna.UI2.WinForms.Guna2DataGridView dgvFood;

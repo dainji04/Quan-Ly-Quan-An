@@ -18,6 +18,7 @@ namespace QuanLyQuanAn.Components
     public partial class FOrder : Form
     {
         XuLyMon XuLyMon = new XuLyMon();
+
         private string currentBan;
         public string CurrentBan { get => currentBan; set => currentBan = value; }
         public FOrder()
@@ -27,6 +28,7 @@ namespace QuanLyQuanAn.Components
 
         private void FOrder_Load(object sender, EventArgs e)
         {
+            hienthi();
             lblBanSo.Text = CurrentBan;
             XuLyMon.docFile();
             int i = 0;
@@ -59,10 +61,10 @@ namespace QuanLyQuanAn.Components
                 btnThem.Location = new Point(50, 280);
                 btnThem.Size = new Size(pnl.Width-100, 40);
                 btnThem.BackColor = Color.White;
-                //btnThem.Click += Btn_Click;
+                
                 btnThem.Click += (s, eArgs) =>
                 {
-                    if(XuLyMon.XulyThemMon(mon.Ma))
+                    if(XuLyMon.XulyThemMon(mon.Ma, currentBan))
                     {
                         hienthi();
                     }
@@ -90,6 +92,7 @@ namespace QuanLyQuanAn.Components
         }
         public void hienthi()
         {
+            XuLyMon.docFile(currentBan);
             int i = 0;
             double sum = 0;
             foreach(CFood odf in XuLyMon.DsOrder)

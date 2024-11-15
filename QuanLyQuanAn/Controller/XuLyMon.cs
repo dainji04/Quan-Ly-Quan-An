@@ -55,6 +55,45 @@ namespace QuanLyQuanAn.Controller
             }
         }
 
+        public void docFile(string soBan)
+        {
+            try
+            {
+                FileStream fs = new FileStream($"..\\..\\Database\\Ban\\{soBan}.dat", FileMode.Open);
+                BinaryFormatter bf = new BinaryFormatter();
+                DsOrder = (List<CFood>)bf.Deserialize(fs);
+                fs.Close();
+            }
+            catch
+            {
+                //var result = MessageBox.Show("Có Lỗi khi đọc database hoặc database rỗng!!!", "Thông Báo", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                //if (result == DialogResult.Retry)
+                //{
+                //    docFile(soBan);
+                //}
+            }
+        }
+
+        public void ghiFile(string soBan)
+        {
+            docFile();
+            try
+            {
+                FileStream fs = new FileStream($"..\\..\\Database\\Ban\\{soBan}.dat", FileMode.Create);
+                BinaryFormatter bf = new BinaryFormatter();
+                bf.Serialize(fs, DsOrder);
+                fs.Close();
+            }
+            catch
+            {
+                var result = MessageBox.Show("Có Lỗi khi thêm vào database", "Thông Báo", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+                if (result == DialogResult.Retry)
+                {
+                    ghiFile(soBan);
+                }
+            }
+        }
+
         public CFood tim(string ma)
         {
             docFile();
@@ -68,7 +107,7 @@ namespace QuanLyQuanAn.Controller
             return null;
         }
 
-        public bool XulyThemMon(string id)
+        public bool XulyThemMon(string id, string ban)
         {
             foreach(CFood qa in DsMon)
             {
@@ -79,14 +118,24 @@ namespace QuanLyQuanAn.Controller
                         if (qa1.Ma == id)
                         {
                             qa1.soluong++;
+                            ghiFile(ban);
                             return false;
                         }
                     }
                     DsOrder.Add(qa);
+                    ghiFile(ban);
                     break;
                 }
             }
             return true;
+        }
+
+        public bool checkBan(string soBan)
+        {
+            dsOrder = new List<CFood>();
+
+            docFile(soBan);
+            return dsOrder.Count > 0;
         }
     }
 }

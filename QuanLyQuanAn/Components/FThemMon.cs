@@ -30,7 +30,6 @@ namespace QuanLyQuanAn.Components
                 ptbImage.Image = Image.FromFile(ofdImage.FileName);
                 ptbImage.SizeMode = PictureBoxSizeMode.StretchImage;
             }
-            
         }
 
         private void btnThemMon_Click(object sender, EventArgs e)

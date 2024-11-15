@@ -60,6 +60,12 @@
     <Compile Include="Components\FOrder.Designer.cs">
       <DependentUpon>FOrder.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\FSuaMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\FSuaMon.Designer.cs">
+      <DependentUpon>FSuaMon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\FSuaQuan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,6 +83,12 @@
     </Compile>
     <Compile Include="Components\FThemQuanAn.Designer.cs">
       <DependentUpon>FThemQuanAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\FXoaMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\FXoaMon.Designer.cs">
+      <DependentUpon>FXoaMon.cs</DependentUpon>
     </Compile>
     <Compile Include="Components\FXoaQuan.cs">
       <SubType>Form</SubType>
@@ -109,6 +121,9 @@
     <EmbeddedResource Include="Components\FOrder.resx">
       <DependentUpon>FOrder.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Components\FSuaMon.resx">
+      <DependentUpon>FSuaMon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\FSuaQuan.resx">
       <DependentUpon>FSuaQuan.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +132,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\FThemQuanAn.resx">
       <DependentUpon>FThemQuanAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\FXoaMon.resx">
+      <DependentUpon>FXoaMon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Components\FXoaQuan.resx">
       <DependentUpon>FXoaQuan.cs</DependentUpon>
