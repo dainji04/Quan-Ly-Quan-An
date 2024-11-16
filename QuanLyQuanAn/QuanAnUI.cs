@@ -175,5 +175,47 @@ namespace QuanLyQuanAn
             lg.Show();
             this.Close();
         }
+
+        private void btnFood_Click(object sender, EventArgs e)
+        {
+            XuLyMon.timKiemTheoLoai("food");
+            dgvFood.DataSource = XuLyMon.Filter.ToList();
+        }
+
+        private void btnSoup_Click(object sender, EventArgs e)
+        {
+            XuLyMon.timKiemTheoLoai("soup");
+            dgvFood.DataSource = XuLyMon.Filter.ToList();
+        }
+
+        private void btnDrink_Click(object sender, EventArgs e)
+        {
+            XuLyMon.timKiemTheoLoai("drink");
+            dgvFood.DataSource = XuLyMon.Filter.ToList();
+        }
+
+        private void btnDessert_Click(object sender, EventArgs e)
+        {
+            XuLyMon.timKiemTheoLoai("dessert");
+            dgvFood.DataSource = XuLyMon.Filter.ToList();
+        }
+
+        private void btnAll_Click(object sender, EventArgs e)
+        {
+            dgvFood.DataSource = XuLyMon.DsMon.ToList();
+        }
+
+        private void btnSearchByDate_Click(object sender, EventArgs e)
+        {
+            if(txtDay.Text != string.Empty)
+            {
+                XuLyHoaDon.timKiemTheoNgay(txtDay.Text);
+                dgvHD.DataSource = XuLyHoaDon.FilterHD.ToList();
+            }
+            else
+            {
+                hienthiHD();
+            }
+        }
     }
 }

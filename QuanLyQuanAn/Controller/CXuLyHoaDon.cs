@@ -10,10 +10,12 @@ using QuanLyQuanAn.Class;
 
 namespace QuanLyQuanAn.Controller
 {
-    internal class CXuLyHoaDon: CHoaDon
+    internal class CXuLyHoaDon : CHoaDon
     {
         List<CHoaDon> dsHoaDon = new List<CHoaDon>();
+        List<CHoaDon> filterHD = new List<CHoaDon>();
         internal List<CHoaDon> DsHoaDon { get => dsHoaDon; set => dsHoaDon = value; }
+        internal List<CHoaDon> FilterHD { get => filterHD; set => filterHD = value; }
 
         public void docFile()
         {
@@ -43,7 +45,7 @@ namespace QuanLyQuanAn.Controller
                 bf.Serialize(fs, dsHoaDon);
                 fs.Close();
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 MessageBox.Show(e.Message);
                 //var result = MessageBox.Show("Có Lỗi khi thêm vào database", "Thông Báo", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
@@ -51,6 +53,19 @@ namespace QuanLyQuanAn.Controller
                 //{
                 //    ghiFile();
                 //}
+            }
+        }
+
+        public void timKiemTheoNgay(string day)
+        {
+            docFile();
+            FilterHD.Clear();
+            foreach (CHoaDon hd in dsHoaDon)
+            {
+                if (hd.NgayLap.Day == Convert.ToInt32(day))
+                {
+                    FilterHD.Add(hd);
+                }
             }
         }
     }

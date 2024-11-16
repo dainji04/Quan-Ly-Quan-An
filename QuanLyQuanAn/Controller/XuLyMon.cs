@@ -14,8 +14,10 @@ namespace QuanLyQuanAn.Controller
     {
         private List<CFood> dsMon = new List<CFood>();
         private List<CFood> dsOrder = new List<CFood>();
+        private List<CFood> filter = new List<CFood>();
         internal List<CFood> DsMon { get => dsMon; set => dsMon = value; }
         internal List<CFood> DsOrder { get => dsOrder; set => dsOrder = value; }
+        internal List<CFood> Filter { get => filter; set => filter = value; }
 
         public void docFile()
         {
@@ -55,11 +57,11 @@ namespace QuanLyQuanAn.Controller
             }
         }
 
-        public void docFile(string soBan)
+        public void docFile(string soBan, string index)
         {
             try
             {
-                FileStream fs = new FileStream($"..\\..\\Database\\Ban\\{soBan}.dat", FileMode.Open);
+                FileStream fs = new FileStream($"..\\..\\Database\\Quan{index}\\{soBan}.dat", FileMode.Open);
                 BinaryFormatter bf = new BinaryFormatter();
                 DsOrder = (List<CFood>)bf.Deserialize(fs);
                 fs.Close();
@@ -74,12 +76,12 @@ namespace QuanLyQuanAn.Controller
             }
         }
 
-        public void ghiFile(string soBan)
+        public void ghiFile(string soBan, string index)
         {
             docFile();
             try
             {
-                FileStream fs = new FileStream($"..\\..\\Database\\Ban\\{soBan}.dat", FileMode.Create);
+                FileStream fs = new FileStream($"..\\..\\Database\\Quan{index}\\{soBan}.dat", FileMode.Create);
                 BinaryFormatter bf = new BinaryFormatter();
                 bf.Serialize(fs, DsOrder);
                 fs.Close();
@@ -89,7 +91,7 @@ namespace QuanLyQuanAn.Controller
                 var result = MessageBox.Show("Có Lỗi khi thêm vào database", "Thông Báo", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
                 if (result == DialogResult.Retry)
                 {
-                    ghiFile(soBan);
+                    ghiFile(soBan, index);
                 }
             }
         }
@@ -107,30 +109,30 @@ namespace QuanLyQuanAn.Controller
             return null;
         }
 
-        public bool XulyThemMon(string id, string ban)
+        public bool XulyThemMon(string id, string ban, string currentQuan)
         {
-            foreach(CFood qa in DsMon)
+            foreach (CFood qa in DsMon)
             {
                 if (qa.Ma == id)
                 {
-                    foreach(CFood qa1 in DsOrder)
+                    foreach (CFood qa1 in DsOrder)
                     {
                         if (qa1.Ma == id)
                         {
                             qa1.Soluong++;
-                            ghiFile(ban);
+                            ghiFile(ban, currentQuan);
                             return false;
                         }
                     }
                     DsOrder.Add(qa);
-                    ghiFile(ban);
+                    ghiFile(ban, currentQuan);
                     break;
                 }
             }
             return true;
         }
 
-        public void XuLyXoaMon(string id, string ban)
+        public void XuLyXoaMon(string id, string ban, string currentQuan)
         {
             docFile();
             foreach (CFood qa in DsOrder)
@@ -138,18 +140,31 @@ namespace QuanLyQuanAn.Controller
                 if (qa.Ma == id)
                 {
                     DsOrder.Remove(qa);
-                    ghiFile(ban);
+                    ghiFile(ban, currentQuan);
                     break;
                 }
             }
         }
 
-        public bool checkBan(string soBan)
+        public bool checkBan(string soBan, string index)
         {
             dsOrder = new List<CFood>();
 
-            docFile(soBan);
+            docFile(soBan, index);
             return dsOrder.Count > 0;
+        }
+
+        public void timKiemTheoLoai(string loai)
+        {
+            docFile();
+            Filter = new List<CFood>();
+            foreach (CFood qa in DsMon)
+            {
+                if (qa.Loaimon == loai)
+                {
+                    Filter.Add(qa);
+                }
+            }
         }
     }
 }

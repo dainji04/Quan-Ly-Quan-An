@@ -41,16 +41,12 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnDiemDanh = new Guna.UI2.WinForms.Guna2Button();
             this.btnQLNS = new Guna.UI2.WinForms.Guna2Button();
             this.btnDangXuat = new Guna.UI2.WinForms.Guna2Button();
             this.btnThoat = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSetting = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.btnDoanhThu = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -62,6 +58,8 @@
             this.quanAnPage = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlQLMA = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlDoanhThu = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtDay = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnSearchByDate = new Guna.UI2.WinForms.Guna2Button();
             this.dgvHD = new Guna.UI2.WinForms.Guna2DataGridView();
             this.Ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenQuanHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -74,6 +72,7 @@
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Image = new System.Windows.Forms.DataGridViewImageColumn();
+            this.btnAll = new Guna.UI2.WinForms.Guna2Button();
             this.btnDessert = new Guna.UI2.WinForms.Guna2Button();
             this.btnDrink = new Guna.UI2.WinForms.Guna2Button();
             this.btnSoup = new Guna.UI2.WinForms.Guna2Button();
@@ -88,6 +87,9 @@
             this.mnsThemMon = new System.Windows.Forms.ToolStripMenuItem();
             this.mnsSuaMon = new System.Windows.Forms.ToolStripMenuItem();
             this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.doanhThuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.quánToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dgvQuanAn = new Guna.UI2.WinForms.Guna2DataGridView();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -101,8 +103,6 @@
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -122,16 +122,12 @@
             // 
             this.guna2Panel1.Controls.Add(this.guna2PictureBox8);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox7);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox6);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox5);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox4);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox3);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
-            this.guna2Panel1.Controls.Add(this.btnDiemDanh);
             this.guna2Panel1.Controls.Add(this.btnQLNS);
             this.guna2Panel1.Controls.Add(this.btnDangXuat);
             this.guna2Panel1.Controls.Add(this.btnThoat);
-            this.guna2Panel1.Controls.Add(this.btnSetting);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel5);
             this.guna2Panel1.Controls.Add(this.btnDoanhThu);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel4);
@@ -151,7 +147,7 @@
             // 
             this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
             this.guna2PictureBox8.ImageRotate = 0F;
-            this.guna2PictureBox8.Location = new System.Drawing.Point(24, 533);
+            this.guna2PictureBox8.Location = new System.Drawing.Point(24, 425);
             this.guna2PictureBox8.Name = "guna2PictureBox8";
             this.guna2PictureBox8.Size = new System.Drawing.Size(27, 22);
             this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -162,34 +158,12 @@
             // 
             this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
             this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(24, 450);
+            this.guna2PictureBox7.Location = new System.Drawing.Point(24, 342);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
             this.guna2PictureBox7.Size = new System.Drawing.Size(27, 22);
             this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox7.TabIndex = 1;
             this.guna2PictureBox7.TabStop = false;
-            // 
-            // guna2PictureBox6
-            // 
-            this.guna2PictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox6.Image")));
-            this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(24, 398);
-            this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.Size = new System.Drawing.Size(27, 22);
-            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox6.TabIndex = 1;
-            this.guna2PictureBox6.TabStop = false;
-            // 
-            // guna2PictureBox5
-            // 
-            this.guna2PictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox5.Image")));
-            this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(24, 314);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.Size = new System.Drawing.Size(27, 22);
-            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox5.TabIndex = 1;
-            this.guna2PictureBox5.TabStop = false;
             // 
             // guna2PictureBox4
             // 
@@ -224,24 +198,6 @@
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // btnDiemDanh
-            // 
-            this.btnDiemDanh.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnDiemDanh.BorderColor = System.Drawing.Color.Transparent;
-            this.btnDiemDanh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDiemDanh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDiemDanh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDiemDanh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDiemDanh.FillColor = System.Drawing.Color.Transparent;
-            this.btnDiemDanh.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiemDanh.ForeColor = System.Drawing.Color.Black;
-            this.btnDiemDanh.Location = new System.Drawing.Point(12, 303);
-            this.btnDiemDanh.Name = "btnDiemDanh";
-            this.btnDiemDanh.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(20)))));
-            this.btnDiemDanh.Size = new System.Drawing.Size(226, 45);
-            this.btnDiemDanh.TabIndex = 19;
-            this.btnDiemDanh.Text = "Doanh Thu Món";
-            // 
             // btnQLNS
             // 
             this.btnQLNS.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -272,7 +228,7 @@
             this.btnDangXuat.FillColor = System.Drawing.Color.Transparent;
             this.btnDangXuat.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangXuat.ForeColor = System.Drawing.Color.Black;
-            this.btnDangXuat.Location = new System.Drawing.Point(12, 439);
+            this.btnDangXuat.Location = new System.Drawing.Point(12, 333);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(20)))));
             this.btnDangXuat.Size = new System.Drawing.Size(226, 45);
@@ -291,7 +247,7 @@
             this.btnThoat.FillColor = System.Drawing.Color.Transparent;
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.Black;
-            this.btnThoat.Location = new System.Drawing.Point(12, 522);
+            this.btnThoat.Location = new System.Drawing.Point(12, 416);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(20)))));
             this.btnThoat.Size = new System.Drawing.Size(226, 45);
@@ -299,29 +255,11 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
-            // btnSetting
-            // 
-            this.btnSetting.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnSetting.BorderColor = System.Drawing.Color.Transparent;
-            this.btnSetting.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSetting.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSetting.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSetting.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSetting.FillColor = System.Drawing.Color.Transparent;
-            this.btnSetting.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSetting.ForeColor = System.Drawing.Color.Black;
-            this.btnSetting.Location = new System.Drawing.Point(12, 388);
-            this.btnSetting.Name = "btnSetting";
-            this.btnSetting.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(20)))));
-            this.btnSetting.Size = new System.Drawing.Size(226, 45);
-            this.btnSetting.TabIndex = 19;
-            this.btnSetting.Text = "Cài Đặt";
-            // 
             // guna2HtmlLabel5
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Times New Roman", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(12, 497);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(12, 391);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(37, 19);
             this.guna2HtmlLabel5.TabIndex = 1;
@@ -350,7 +288,7 @@
             // 
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Times New Roman", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(12, 363);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(12, 308);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(49, 19);
             this.guna2HtmlLabel4.TabIndex = 1;
@@ -439,6 +377,7 @@
             // 
             this.pnlQLMA.Controls.Add(this.pnlDoanhThu);
             this.pnlQLMA.Controls.Add(this.dgvFood);
+            this.pnlQLMA.Controls.Add(this.btnAll);
             this.pnlQLMA.Controls.Add(this.btnDessert);
             this.pnlQLMA.Controls.Add(this.btnDrink);
             this.pnlQLMA.Controls.Add(this.btnSoup);
@@ -451,11 +390,49 @@
             // 
             // pnlDoanhThu
             // 
+            this.pnlDoanhThu.Controls.Add(this.txtDay);
+            this.pnlDoanhThu.Controls.Add(this.btnSearchByDate);
             this.pnlDoanhThu.Controls.Add(this.dgvHD);
-            this.pnlDoanhThu.Location = new System.Drawing.Point(0, 2);
+            this.pnlDoanhThu.Location = new System.Drawing.Point(0, 0);
             this.pnlDoanhThu.Name = "pnlDoanhThu";
             this.pnlDoanhThu.Size = new System.Drawing.Size(903, 726);
             this.pnlDoanhThu.TabIndex = 2;
+            // 
+            // txtDay
+            // 
+            this.txtDay.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDay.DefaultText = "";
+            this.txtDay.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDay.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDay.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDay.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDay.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDay.Location = new System.Drawing.Point(27, 15);
+            this.txtDay.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtDay.Name = "txtDay";
+            this.txtDay.PasswordChar = '\0';
+            this.txtDay.PlaceholderText = "Nhập ngày bạn muốn tìm...";
+            this.txtDay.SelectedText = "";
+            this.txtDay.Size = new System.Drawing.Size(438, 45);
+            this.txtDay.TabIndex = 3;
+            // 
+            // btnSearchByDate
+            // 
+            this.btnSearchByDate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchByDate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchByDate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchByDate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchByDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(136)))), ((int)(((byte)(77)))));
+            this.btnSearchByDate.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchByDate.ForeColor = System.Drawing.Color.White;
+            this.btnSearchByDate.Location = new System.Drawing.Point(473, 15);
+            this.btnSearchByDate.Name = "btnSearchByDate";
+            this.btnSearchByDate.Size = new System.Drawing.Size(180, 45);
+            this.btnSearchByDate.TabIndex = 2;
+            this.btnSearchByDate.Text = "Tìm Kiếm";
+            this.btnSearchByDate.Click += new System.EventHandler(this.btnSearchByDate_Click);
             // 
             // dgvHD
             // 
@@ -490,14 +467,14 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvHD.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvHD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvHD.Location = new System.Drawing.Point(0, 166);
+            this.dgvHD.Location = new System.Drawing.Point(0, 84);
             this.dgvHD.MultiSelect = false;
             this.dgvHD.Name = "dgvHD";
             this.dgvHD.ReadOnly = true;
             this.dgvHD.RowHeadersVisible = false;
             this.dgvHD.RowHeadersWidth = 80;
             this.dgvHD.RowTemplate.Height = 80;
-            this.dgvHD.Size = new System.Drawing.Size(903, 550);
+            this.dgvHD.Size = new System.Drawing.Size(903, 644);
             this.dgvHD.TabIndex = 0;
             this.dgvHD.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvHD.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -679,6 +656,22 @@
             this.Image.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Image.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
             // 
+            // btnAll
+            // 
+            this.btnAll.BorderRadius = 20;
+            this.btnAll.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAll.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAll.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAll.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAll.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAll.ForeColor = System.Drawing.Color.White;
+            this.btnAll.Location = new System.Drawing.Point(734, 5);
+            this.btnAll.Name = "btnAll";
+            this.btnAll.Size = new System.Drawing.Size(147, 45);
+            this.btnAll.TabIndex = 0;
+            this.btnAll.Text = "All";
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
+            // 
             // btnDessert
             // 
             this.btnDessert.BorderRadius = 20;
@@ -688,11 +681,12 @@
             this.btnDessert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDessert.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDessert.ForeColor = System.Drawing.Color.White;
-            this.btnDessert.Location = new System.Drawing.Point(609, 5);
+            this.btnDessert.Location = new System.Drawing.Point(564, 5);
             this.btnDessert.Name = "btnDessert";
-            this.btnDessert.Size = new System.Drawing.Size(180, 45);
+            this.btnDessert.Size = new System.Drawing.Size(147, 45);
             this.btnDessert.TabIndex = 0;
             this.btnDessert.Text = "Dessert";
+            this.btnDessert.Click += new System.EventHandler(this.btnDessert_Click);
             // 
             // btnDrink
             // 
@@ -703,11 +697,12 @@
             this.btnDrink.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnDrink.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDrink.ForeColor = System.Drawing.Color.White;
-            this.btnDrink.Location = new System.Drawing.Point(411, 5);
+            this.btnDrink.Location = new System.Drawing.Point(381, 5);
             this.btnDrink.Name = "btnDrink";
-            this.btnDrink.Size = new System.Drawing.Size(180, 45);
+            this.btnDrink.Size = new System.Drawing.Size(147, 45);
             this.btnDrink.TabIndex = 0;
             this.btnDrink.Text = "Drink";
+            this.btnDrink.Click += new System.EventHandler(this.btnDrink_Click);
             // 
             // btnSoup
             // 
@@ -718,11 +713,12 @@
             this.btnSoup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnSoup.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSoup.ForeColor = System.Drawing.Color.White;
-            this.btnSoup.Location = new System.Drawing.Point(214, 5);
+            this.btnSoup.Location = new System.Drawing.Point(197, 5);
             this.btnSoup.Name = "btnSoup";
-            this.btnSoup.Size = new System.Drawing.Size(180, 45);
+            this.btnSoup.Size = new System.Drawing.Size(147, 45);
             this.btnSoup.TabIndex = 0;
             this.btnSoup.Text = "Soup";
+            this.btnSoup.Click += new System.EventHandler(this.btnSoup_Click);
             // 
             // btnFood
             // 
@@ -735,9 +731,10 @@
             this.btnFood.ForeColor = System.Drawing.Color.White;
             this.btnFood.Location = new System.Drawing.Point(18, 5);
             this.btnFood.Name = "btnFood";
-            this.btnFood.Size = new System.Drawing.Size(180, 45);
+            this.btnFood.Size = new System.Drawing.Size(147, 45);
             this.btnFood.TabIndex = 0;
             this.btnFood.Text = "Food";
+            this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
             // 
             // toolStripContainer1
             // 
@@ -763,7 +760,8 @@
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.optionsToolStripMenuItem,
-            this.mónĂnToolStripMenuItem});
+            this.mónĂnToolStripMenuItem,
+            this.doanhThuToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(883, 29);
@@ -832,6 +830,27 @@
             this.xóaToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
             this.xóaToolStripMenuItem.Text = "Xóa";
             this.xóaToolStripMenuItem.Click += new System.EventHandler(this.xóaToolStripMenuItem_Click);
+            // 
+            // doanhThuToolStripMenuItem
+            // 
+            this.doanhThuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.quánToolStripMenuItem,
+            this.mónToolStripMenuItem});
+            this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
+            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(106, 25);
+            this.doanhThuToolStripMenuItem.Text = "Doanh Thu";
+            // 
+            // quánToolStripMenuItem
+            // 
+            this.quánToolStripMenuItem.Name = "quánToolStripMenuItem";
+            this.quánToolStripMenuItem.Size = new System.Drawing.Size(126, 26);
+            this.quánToolStripMenuItem.Text = "Quán";
+            // 
+            // mónToolStripMenuItem
+            // 
+            this.mónToolStripMenuItem.Name = "mónToolStripMenuItem";
+            this.mónToolStripMenuItem.Size = new System.Drawing.Size(126, 26);
+            this.mónToolStripMenuItem.Text = "Món ";
             // 
             // dgvQuanAn
             // 
@@ -1028,8 +1047,6 @@
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
@@ -1060,14 +1077,10 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2Button btnQLNS;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
-        private Guna.UI2.WinForms.Guna2Button btnDiemDanh;
-        private Guna.UI2.WinForms.Guna2Button btnSetting;
         private Guna.UI2.WinForms.Guna2Button btnDoanhThu;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
         private Guna.UI2.WinForms.Guna2Panel quanAnPage;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
@@ -1112,5 +1125,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SoBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayLap;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
+        private Guna.UI2.WinForms.Guna2Button btnAll;
+        private Guna.UI2.WinForms.Guna2Button btnSearchByDate;
+        private Guna.UI2.WinForms.Guna2TextBox txtDay;
+        private System.Windows.Forms.ToolStripMenuItem doanhThuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem quánToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mónToolStripMenuItem;
     }
 }

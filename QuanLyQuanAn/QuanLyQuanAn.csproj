@@ -41,6 +41,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,6 +57,12 @@
     <Compile Include="Class\CFood.cs" />
     <Compile Include="Class\CHoaDon.cs" />
     <Compile Include="Class\CQuanAn.cs" />
+    <Compile Include="Components\FDoanhThuQuan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\FDoanhThuQuan.Designer.cs">
+      <DependentUpon>FDoanhThuQuan.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\FOrder.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +134,9 @@
     <Compile Include="Views\FHoaDon.Designer.cs">
       <DependentUpon>FHoaDon.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Components\FDoanhThuQuan.resx">
+      <DependentUpon>FDoanhThuQuan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\FOrder.resx">
       <DependentUpon>FOrder.cs</DependentUpon>
     </EmbeddedResource>

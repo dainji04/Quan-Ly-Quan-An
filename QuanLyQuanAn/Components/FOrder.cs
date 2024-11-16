@@ -72,7 +72,7 @@ namespace QuanLyQuanAn.Components
                 
                 btnThem.Click += (s, eArgs) =>
                 {
-                    if(XuLyMon.XulyThemMon(mon.Ma, currentBan))
+                    if(XuLyMon.XulyThemMon(mon.Ma, currentBan, currentQuan.MaQuan))
                     {
                         hienthi();
                     }
@@ -100,7 +100,7 @@ namespace QuanLyQuanAn.Components
         }
         public void hienthi()
         {
-            XuLyMon.docFile(currentBan);
+            XuLyMon.docFile(currentBan, currentQuan.MaQuan);
             int i = 0;
             double sum = 0;
             foreach(CFood odf in XuLyMon.DsOrder)
@@ -149,7 +149,7 @@ namespace QuanLyQuanAn.Components
                 btnXoa.BringToFront();
                 btnXoa.Click += (s, eArgs) =>
                 {
-                    XuLyMon.XuLyXoaMon(odf.Ma, currentBan);
+                    XuLyMon.XuLyXoaMon(odf.Ma, currentBan, currentQuan.MaQuan);
                     pnlOrder.Controls.Clear();
                     hienthi();
                 };
@@ -224,12 +224,14 @@ namespace QuanLyQuanAn.Components
             this.Close();
             fhd.CurrentBan = currentBan;
             fhd.QuanAn = CurrentQuan;
+            fhd.MaHD = hd.Ma;
+            fhd.TongTien = lblThanhTien.Text;
             fhd.Show();
 
             XuLyMon.DsOrder.Clear();
             pnlOrder.Controls.Clear();
 
-            XuLyMon.ghiFile(currentBan);
+            XuLyMon.ghiFile(currentBan, currentQuan.MaQuan);
         }
     }
 }

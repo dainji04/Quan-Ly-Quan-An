@@ -19,25 +19,30 @@ namespace QuanLyQuanAn
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            //if(txtUser.Text == "admin" && txtPwd.Text == "admin")
-            //{
-            //    msgSignIn.Show("Đăng nhập thành công");
-            //CQuanAnUI quanAnUI = new CQuanAnUI();
-            QuanAnUI quanAnUI = new QuanAnUI();
-            quanAnUI.Show();
-            this.Hide();
-            //quanAnUI.Show(); 
-            // Correct the variable name
-            //}
-            //else
-            //{
-            //    msgError.Show("Sai tên đăng nhập hoặc mật khẩu");
-            //}
+            if (txtUser.Text == "admin" && txtPwd.Text == "admin")
+            {
+                msgSignIn.Show("Đăng nhập thành công");
+                QuanAnUI quanAnUI = new QuanAnUI();
+                quanAnUI.Show();
+                this.Hide();
+            }
+            else
+            {
+                msgError.Show("Sai tên đăng nhập hoặc mật khẩu");
+            }
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtPwd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(e.KeyChar == (char)Keys.Enter)
+            {
+                btnSignIn_Click(sender, e);
+            }
         }
     }
 }

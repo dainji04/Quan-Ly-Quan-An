@@ -53,7 +53,7 @@ namespace QuanLyQuanAn.Views
             for (int i = 0; i < 16; i++)
             {
                 int index = i + 1;
-                xulymon.docFile("Bàn " + index);
+                xulymon.docFile("Bàn " + index, maQuan);
                 Guna2Button btn = new Guna2Button();
                 btn.Text = "Bàn " + index;
                 btn.Size = new Size(176, 146);
@@ -66,7 +66,7 @@ namespace QuanLyQuanAn.Views
                 btn.BackColor = Color.Transparent;
 
                 btn.Location = new Point(35 + (i % 4) * 200, 20 + (i / 4) * 170);
-                if (xulymon.checkBan("Bàn " + index))
+                if (xulymon.checkBan("Bàn " + index, maQuan))
                 {
                     btn.FillColor = Color.FromArgb(255, 128, 0);
                 }
