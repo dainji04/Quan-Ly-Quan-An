@@ -55,12 +55,22 @@ namespace QuanLyQuanAn
         private void hienthi()
         {
             xulyQuan.docFile();
+            
             dgvQuanAn.DataSource = xulyQuan.QuanAn.ToList();
         }
         private void hienthiMon()
         {
             XuLyMon.docFile();
-            dgvFood.DataSource = XuLyMon.DsMon.ToList();
+            var query = from mon in XuLyMon.DsMon
+                        select new
+                        {
+                            Ma = mon.Ma,
+                            TenMon = mon.Tenmon,
+                            GiaTien = mon.Giatien,
+                            Loaimon = mon.Loaimon,
+                            Hinhanh = mon.Hinhanh
+                        };
+            dgvFood.DataSource = query.ToList();
         }
 
         private void hienthiHD()
@@ -179,30 +189,75 @@ namespace QuanLyQuanAn
         private void btnFood_Click(object sender, EventArgs e)
         {
             XuLyMon.timKiemTheoLoai("food");
-            dgvFood.DataSource = XuLyMon.Filter.ToList();
+            var query = from mon in XuLyMon.Filter
+                        select new
+                        {
+                            Ma = mon.Ma,
+                            TenMon = mon.Tenmon,
+                            GiaTien = mon.Giatien,
+                            Loaimon = mon.Loaimon,
+                            Hinhanh = mon.Hinhanh
+                        };
+            dgvFood.DataSource = query.ToList();
         }
 
         private void btnSoup_Click(object sender, EventArgs e)
         {
             XuLyMon.timKiemTheoLoai("soup");
-            dgvFood.DataSource = XuLyMon.Filter.ToList();
+            var query = from mon in XuLyMon.Filter
+                        select new
+                        {
+                            Ma = mon.Ma,
+                            TenMon = mon.Tenmon,
+                            GiaTien = mon.Giatien,
+                            Loaimon = mon.Loaimon,
+                            Hinhanh = mon.Hinhanh
+                        };
+            dgvFood.DataSource = query.ToList();
         }
 
         private void btnDrink_Click(object sender, EventArgs e)
         {
             XuLyMon.timKiemTheoLoai("drink");
-            dgvFood.DataSource = XuLyMon.Filter.ToList();
+            var query = from mon in XuLyMon.Filter
+                        select new
+                        {
+                            Ma = mon.Ma,
+                            TenMon = mon.Tenmon,
+                            GiaTien = mon.Giatien,
+                            Loaimon = mon.Loaimon,
+                            Hinhanh = mon.Hinhanh
+                        };
+            dgvFood.DataSource = query.ToList();
         }
 
         private void btnDessert_Click(object sender, EventArgs e)
         {
             XuLyMon.timKiemTheoLoai("dessert");
-            dgvFood.DataSource = XuLyMon.Filter.ToList();
+            var query = from mon in XuLyMon.Filter
+                        select new
+                        {
+                            Ma = mon.Ma,
+                            TenMon = mon.Tenmon,
+                            GiaTien = mon.Giatien,
+                            Loaimon = mon.Loaimon,
+                            Hinhanh = mon.Hinhanh
+                        };
+            dgvFood.DataSource = query.ToList();
         }
 
         private void btnAll_Click(object sender, EventArgs e)
         {
-            dgvFood.DataSource = XuLyMon.DsMon.ToList();
+            var query = from mon in XuLyMon.DsMon
+                        select new
+                        {
+                            Ma = mon.Ma,
+                            TenMon = mon.Tenmon,
+                            GiaTien = mon.Giatien,
+                            Loaimon = mon.Loaimon,
+                            Hinhanh = mon.Hinhanh
+                        };
+            dgvFood.DataSource = query.ToList();
         }
 
         private void btnSearchByDate_Click(object sender, EventArgs e)
@@ -216,6 +271,17 @@ namespace QuanLyQuanAn
             {
                 hienthiHD();
             }
+        }
+
+        private void mónToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void quánToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FDoanhThuQuan dtq = new FDoanhThuQuan();
+            dtq.ShowDialog();
         }
     }
 }

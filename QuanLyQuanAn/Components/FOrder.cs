@@ -154,7 +154,6 @@ namespace QuanLyQuanAn.Components
                     hienthi();
                 };
 
-
                 pnlItem.Controls.Add(lblTen);
                 pnlItem.Controls.Add(lblGia);
                 pnlItem.Controls.Add(lblSoLuong);

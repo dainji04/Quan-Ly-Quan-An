@@ -31,10 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FOrder));
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblFood = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblSoup = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblDrink = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblDessert = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.pnlFood = new Guna.UI2.WinForms.Guna2Panel();
@@ -48,7 +44,6 @@
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.lblAll = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel3.SuspendLayout();
             this.SuspendLayout();
@@ -76,50 +71,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1292, 1);
             this.guna2Panel1.TabIndex = 21;
-            // 
-            // lblFood
-            // 
-            this.lblFood.BackColor = System.Drawing.Color.Transparent;
-            this.lblFood.Font = new System.Drawing.Font("Times New Roman", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFood.ForeColor = System.Drawing.Color.White;
-            this.lblFood.Location = new System.Drawing.Point(30, 87);
-            this.lblFood.Name = "lblFood";
-            this.lblFood.Size = new System.Drawing.Size(52, 29);
-            this.lblFood.TabIndex = 22;
-            this.lblFood.Text = "Food";
-            // 
-            // lblSoup
-            // 
-            this.lblSoup.BackColor = System.Drawing.Color.Transparent;
-            this.lblSoup.Font = new System.Drawing.Font("Times New Roman", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoup.ForeColor = System.Drawing.Color.White;
-            this.lblSoup.Location = new System.Drawing.Point(130, 87);
-            this.lblSoup.Name = "lblSoup";
-            this.lblSoup.Size = new System.Drawing.Size(51, 29);
-            this.lblSoup.TabIndex = 22;
-            this.lblSoup.Text = "Soup";
-            // 
-            // lblDrink
-            // 
-            this.lblDrink.BackColor = System.Drawing.Color.Transparent;
-            this.lblDrink.Font = new System.Drawing.Font("Times New Roman", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDrink.ForeColor = System.Drawing.Color.White;
-            this.lblDrink.Location = new System.Drawing.Point(230, 87);
-            this.lblDrink.Name = "lblDrink";
-            this.lblDrink.Size = new System.Drawing.Size(58, 29);
-            this.lblDrink.TabIndex = 22;
-            this.lblDrink.Text = "Drink";
-            // 
-            // lblDessert
-            // 
-            this.lblDessert.BackColor = System.Drawing.Color.Transparent;
-            this.lblDessert.Font = new System.Drawing.Font("Times New Roman", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDessert.ForeColor = System.Drawing.Color.White;
-            this.lblDessert.Location = new System.Drawing.Point(330, 87);
-            this.lblDessert.Name = "lblDessert";
-            this.lblDessert.Size = new System.Drawing.Size(75, 29);
-            this.lblDessert.TabIndex = 22;
-            this.lblDessert.Text = "Dessert";
             // 
             // guna2TextBox1
             // 
@@ -169,9 +120,9 @@
             // 
             this.pnlFood.AutoScroll = true;
             this.pnlFood.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
-            this.pnlFood.Location = new System.Drawing.Point(12, 122);
+            this.pnlFood.Location = new System.Drawing.Point(12, 101);
             this.pnlFood.Name = "pnlFood";
-            this.pnlFood.Size = new System.Drawing.Size(711, 637);
+            this.pnlFood.Size = new System.Drawing.Size(711, 658);
             this.pnlFood.TabIndex = 25;
             // 
             // guna2Panel3
@@ -304,33 +255,17 @@
             this.guna2Button2.Text = "Back";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // lblAll
-            // 
-            this.lblAll.BackColor = System.Drawing.Color.Transparent;
-            this.lblAll.Font = new System.Drawing.Font("Times New Roman", 16.30189F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAll.ForeColor = System.Drawing.Color.White;
-            this.lblAll.Location = new System.Drawing.Point(449, 87);
-            this.lblAll.Name = "lblAll";
-            this.lblAll.Size = new System.Drawing.Size(32, 29);
-            this.lblAll.TabIndex = 28;
-            this.lblAll.Text = "All";
-            // 
             // FOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1160, 771);
-            this.Controls.Add(this.lblAll);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.pnlFood);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.lblDessert);
-            this.Controls.Add(this.lblDrink);
-            this.Controls.Add(this.lblSoup);
-            this.Controls.Add(this.lblFood);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -345,7 +280,6 @@
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -353,10 +287,6 @@
 
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblFood;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblSoup;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblDrink;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblDessert;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2Panel pnlFood;
@@ -370,6 +300,5 @@
         private Guna.UI2.WinForms.Guna2Button btnThanhToan;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblThanhTien;
-        private Guna.UI2.WinForms.Guna2HtmlLabel lblAll;
     }
 }

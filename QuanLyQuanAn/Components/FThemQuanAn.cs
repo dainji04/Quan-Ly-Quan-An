@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -46,6 +47,16 @@ namespace QuanLyQuanAn.Components
                         qa.NgayDangKy = dtpThanhLap.Value;
                         xulyquan.QuanAn.Add(qa);
                         xulyquan.ghiFile();
+
+                        string path = "..\\..\\Database\\Quan" + txtMaQuan.Text;
+                        System.IO.Directory.CreateDirectory(path);
+                        for(int i = 0; i < 16; i++)
+                        {
+                            int index = i + 1;
+                            string pathFile = "..\\..\\Database\\Quan" + txtMaQuan.Text + "\\Ban " + index + ".dat";
+                            FileStream fs = File.Create(pathFile);
+                        }
+                        MessageBox.Show("Them thanh cong");
                     }
                     else
                     {
