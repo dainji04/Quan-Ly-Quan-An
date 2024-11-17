@@ -54,11 +54,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\CBill.cs" />
+    <Compile Include="Class\CDoanhThuMon.cs" />
     <Compile Include="Class\CDoanhThuQuan.cs" />
     <Compile Include="Class\CFood.cs" />
     <Compile Include="Class\CHoaDon.cs" />
     <Compile Include="Class\CQuanAn.cs" />
+    <Compile Include="Controller\CXuLyDoanhThuMon.cs" />
     <Compile Include="Controller\CXuLyDoanhThuQuan.cs" />
+    <Compile Include="Views\FDoanhThuMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\FDoanhThuMon.Designer.cs">
+      <DependentUpon>FDoanhThuMon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\FDoanhThuQuan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +144,9 @@
     <Compile Include="Views\FHoaDon.Designer.cs">
       <DependentUpon>FHoaDon.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\FDoanhThuMon.resx">
+      <DependentUpon>FDoanhThuMon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FDoanhThuQuan.resx">
       <DependentUpon>FDoanhThuQuan.cs</DependentUpon>
     </EmbeddedResource>

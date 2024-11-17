@@ -38,25 +38,25 @@
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
             System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FDoanhThuQuan));
-            this.chartDTMon = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartDTQuan = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.pieDoanhThu = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.chartDTMon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartDTQuan)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pieDoanhThu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // chartDTMon
+            // chartDTQuan
             // 
             chartArea1.Name = "ChartArea1";
-            this.chartDTMon.ChartAreas.Add(chartArea1);
+            this.chartDTQuan.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
-            this.chartDTMon.Legends.Add(legend1);
-            this.chartDTMon.Location = new System.Drawing.Point(23, 122);
-            this.chartDTMon.Name = "chartDTMon";
-            this.chartDTMon.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
+            this.chartDTQuan.Legends.Add(legend1);
+            this.chartDTQuan.Location = new System.Drawing.Point(23, 122);
+            this.chartDTQuan.Name = "chartDTQuan";
+            this.chartDTQuan.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             series1.ChartArea = "ChartArea1";
             series1.Legend = "Legend1";
             series1.Name = "Food";
@@ -69,28 +69,29 @@
             series4.ChartArea = "ChartArea1";
             series4.Legend = "Legend1";
             series4.Name = "Dessert";
-            this.chartDTMon.Series.Add(series1);
-            this.chartDTMon.Series.Add(series2);
-            this.chartDTMon.Series.Add(series3);
-            this.chartDTMon.Series.Add(series4);
-            this.chartDTMon.Size = new System.Drawing.Size(871, 488);
-            this.chartDTMon.TabIndex = 0;
-            this.chartDTMon.Text = "chart1";
+            this.chartDTQuan.Series.Add(series1);
+            this.chartDTQuan.Series.Add(series2);
+            this.chartDTQuan.Series.Add(series3);
+            this.chartDTQuan.Series.Add(series4);
+            this.chartDTQuan.Size = new System.Drawing.Size(871, 488);
+            this.chartDTQuan.TabIndex = 0;
+            this.chartDTQuan.Text = "chart1";
             // 
             // pieDoanhThu
             // 
+            this.pieDoanhThu.BackColor = System.Drawing.Color.Transparent;
             chartArea2.Name = "ChartArea1";
             this.pieDoanhThu.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.pieDoanhThu.Legends.Add(legend2);
-            this.pieDoanhThu.Location = new System.Drawing.Point(898, 33);
+            this.pieDoanhThu.Location = new System.Drawing.Point(873, 33);
             this.pieDoanhThu.Name = "pieDoanhThu";
             series5.ChartArea = "ChartArea1";
             series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
             series5.Legend = "Legend1";
             series5.Name = "DoanhThu";
             this.pieDoanhThu.Series.Add(series5);
-            this.pieDoanhThu.Size = new System.Drawing.Size(300, 300);
+            this.pieDoanhThu.Size = new System.Drawing.Size(325, 302);
             this.pieDoanhThu.TabIndex = 1;
             // 
             // guna2HtmlLabel1
@@ -139,12 +140,12 @@
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.pieDoanhThu);
-            this.Controls.Add(this.chartDTMon);
+            this.Controls.Add(this.chartDTQuan);
             this.Name = "FDoanhThuQuan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doanh Thu Quán";
             this.Load += new System.EventHandler(this.FDoanhThuQuan_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.chartDTMon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartDTQuan)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pieDoanhThu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -154,7 +155,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataVisualization.Charting.Chart chartDTMon;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartDTQuan;
         private System.Windows.Forms.DataVisualization.Charting.Chart pieDoanhThu;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;

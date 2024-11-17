@@ -32,10 +32,10 @@ namespace QuanLyQuanAn.Components
 
             foreach(CDoanhThuQuan  dtq in xuLyDoanhThuQuan.DoanhThuQuan)
             {
-                chartDTMon.Series["Food"].Points.AddXY($"{dtq.TenQuan}", dtq.Food);
-                chartDTMon.Series["Drink"].Points.AddXY($"{dtq.TenQuan}", dtq.Drink);
-                chartDTMon.Series["Dessert"].Points.AddXY($"{dtq.TenQuan}", dtq.Dessert);
-                chartDTMon.Series["Soup"].Points.AddXY($"{dtq.TenQuan}", dtq.Soup);
+                chartDTQuan.Series["Food"].Points.AddXY($"{dtq.TenQuan}", dtq.Food);
+                chartDTQuan.Series["Drink"].Points.AddXY($"{dtq.TenQuan}", dtq.Drink);
+                chartDTQuan.Series["Dessert"].Points.AddXY($"{dtq.TenQuan}", dtq.Dessert);
+                chartDTQuan.Series["Soup"].Points.AddXY($"{dtq.TenQuan}", dtq.Soup);
             }
 
             pieDoanhThu.Series["DoanhThu"].Points.AddXY("Food", xuLyDoanhThuQuan.DoanhThuQuan.Sum(x => x.Food));

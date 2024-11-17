@@ -273,15 +273,21 @@ namespace QuanLyQuanAn
             }
         }
 
-        private void mónToolStripMenuItem_Click(object sender, EventArgs e)
+        private void QuanAnUI_FormClosed(object sender, FormClosedEventArgs e)
         {
-
+            Application.Exit();
         }
 
-        private void quánToolStripMenuItem_Click(object sender, EventArgs e)
+        private void mnsQuan_Click(object sender, EventArgs e)
         {
             FDoanhThuQuan dtq = new FDoanhThuQuan();
             dtq.ShowDialog();
+        }
+
+        private void mnsMon_Click(object sender, EventArgs e)
+        {
+            FDoanhThuMon dtm = new FDoanhThuMon();
+            dtm.ShowDialog();
         }
     }
 }
