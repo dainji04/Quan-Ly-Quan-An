@@ -8,16 +8,16 @@ namespace QuanLyQuanAn.Class
 {
     internal class CDoanhThuMon
     {
-        private string tenMon;
+        private string id;
         private int soLuong;
         private double doanhThu;
-        public string TenMon { get => tenMon; set => tenMon = value; }
+        public string Id { get => id; set => id = value; }
         public int SoLuong { get => soLuong; set => soLuong = value; }
         public double DoanhThu { get => doanhThu; set => doanhThu = value; }
 
         public CDoanhThuMon()
         {
-            TenMon = "";
+            Id = "";
             SoLuong = 0;
             DoanhThu = 0;
         }

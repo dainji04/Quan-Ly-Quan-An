@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace QuanLyQuanAn.Views
 {
@@ -24,11 +25,19 @@ namespace QuanLyQuanAn.Views
             CXuLyDoanhThuMon XLDTMon = new CXuLyDoanhThuMon();
             XLDTMon.xuLyDoanhThuMon();
 
-            foreach(CDoanhThuMon dtMon in XLDTMon.ListDTMon)
+            int i = 0;
+            foreach (CDoanhThuMon dtMon in XLDTMon.ListDTMon)
             {
-                chartDTMon.Series["Số Lượng"].Points.AddXY(dtMon.TenMon, dtMon.SoLuong);
-                chartDTMon.Series["Doanh Thu"].Points.AddXY(dtMon.TenMon, dtMon.DoanhThu);
+                chartDTMon.Series["Doanh Thu"].Points.AddXY(Convert.ToInt32(dtMon.Id), dtMon.DoanhThu);
             }
+
+            //chartDTMon.Series["Doanh Thu"].Points.AddXY(1, 10);
+            //chartDTMon.Series["Doanh Thu"].Points.AddXY(2, 10);
+            //chartDTMon.Series["Doanh Thu"].Points.AddXY(3, 10);
+            //chartDTMon.Series["Doanh Thu"].Points.AddXY(4, 10);
+            //chartDTMon.Series["Doanh Thu"].Points.AddXY(5, 10);
+            //chartDTMon.Series["Doanh Thu"].Points.AddXY(6, 10);
+            //chartDTMon.Series["Doanh Thu"].Points.AddXY(7, 10);
         }
     }
 }

@@ -20,7 +20,7 @@ namespace QuanLyQuanAn.Controller
             foreach(CFood mon in xuLyMon.DsMon)
             {
                 CDoanhThuMon dtMon = new CDoanhThuMon();
-                dtMon.TenMon = mon.Tenmon;
+                dtMon.Id = mon.Ma;
                 ListDTMon.Add(dtMon);
             }
 
@@ -32,7 +32,7 @@ namespace QuanLyQuanAn.Controller
                 {
                     foreach(CDoanhThuMon dtMon in ListDTMon)
                     {
-                        if (dtMon.TenMon == food.Tenmon)
+                        if (dtMon.Id == food.Ma)
                         {
                             dtMon.SoLuong++;
                             dtMon.DoanhThu += food.Giatien;

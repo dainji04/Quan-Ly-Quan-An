@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
@@ -48,6 +49,17 @@ namespace QuanLyQuanAn.Components
                 CQuanAn qa = xulyQuan.tim(txtMaQuan.Text);
                 if (qa != null)
                 {
+                    try
+                    {
+                        string path = "..\\..\\Database\\Quan" + txtMaQuan.Text;
+                        //Directory.CreateDirectory(path);
+                        Directory.Delete(path, true);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Xóa csdl thất bại");
+                    }
+
                     xulyQuan.QuanAn.Remove(qa);
                     xulyQuan.ghiFile();
                     MessageBox.Show("Xóa thành công");

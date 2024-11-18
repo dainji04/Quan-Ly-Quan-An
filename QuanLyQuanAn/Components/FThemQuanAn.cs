@@ -48,8 +48,16 @@ namespace QuanLyQuanAn.Components
                         xulyquan.QuanAn.Add(qa);
                         xulyquan.ghiFile();
 
-                        string path = "..\\..\\Database\\Quan" + txtMaQuan.Text;
-                        System.IO.Directory.CreateDirectory(path);
+                        try
+                        {
+                            string path = "..\\..\\Database\\Quan" + txtMaQuan.Text;
+                            System.IO.Directory.CreateDirectory(path);
+                        }
+                        catch
+                        {
+                            MessageBox.Show("Tạo thư mục thất bại");
+                        }
+
                         for(int i = 0; i < 16; i++)
                         {
                             int index = i + 1;

@@ -183,7 +183,7 @@ namespace QuanLyQuanAn
         {
             login lg = new login();
             lg.Show();
-            this.Close();
+            this.Hide();
         }
 
         private void btnFood_Click(object sender, EventArgs e)
@@ -281,13 +281,13 @@ namespace QuanLyQuanAn
         private void mnsQuan_Click(object sender, EventArgs e)
         {
             FDoanhThuQuan dtq = new FDoanhThuQuan();
-            dtq.ShowDialog();
+            dtq.Show();
         }
 
         private void mnsMon_Click(object sender, EventArgs e)
         {
             FDoanhThuMon dtm = new FDoanhThuMon();
-            dtm.ShowDialog();
+            dtm.Show();
         }
     }
 }
