@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanLyQuanAn.Controller;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,10 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using QuanLyQuanAn.Class;
+using QuanLyQuanAn.GLOBAL_CONSTANTS;
+
 namespace QuanLyQuanAn
 {
     public partial class login : Form
     {
+        CQuanLyTaiKhoan qltk = new CQuanLyTaiKhoan();
         public login()
         {
             InitializeComponent();
@@ -19,17 +24,19 @@ namespace QuanLyQuanAn
 
         private void btnSignIn_Click(object sender, EventArgs e)
         {
-            if (txtUser.Text == "admin" && txtPwd.Text == "admin")
+            foreach(CTaiKhoan tk in qltk.ListTaiKhoan)
             {
-                msgSignIn.Show("Đăng nhập thành công");
-                QuanAnUI quanAnUI = new QuanAnUI();
-                quanAnUI.Show();
-                this.Hide();
+                if (txtUser.Text == tk.TenDangNhap && txtPwd.Text == tk.MatKhau)
+                {
+                    CONST.TAIKHOAN = tk;
+                    msgSignIn.Show("Đăng nhập thành công");
+                    QuanAnUI quanAnUI = new QuanAnUI();
+                    quanAnUI.Show();
+                    this.Hide();
+                    return;
+                }
             }
-            else
-            {
-                msgError.Show("Sai tên đăng nhập hoặc mật khẩu");
-            }
+            msgError.Show("Sai tên đăng nhập hoặc mật khẩu");
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

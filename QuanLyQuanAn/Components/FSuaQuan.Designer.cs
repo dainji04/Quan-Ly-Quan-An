@@ -253,7 +253,7 @@
             this.msgLuu.Icon = Guna.UI2.WinForms.MessageDialogIcon.None;
             this.msgLuu.Parent = this;
             this.msgLuu.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
-            this.msgLuu.Text = "Bạn Muốn Sửa Quán ?";
+            this.msgLuu.Text = "Bạn Muốn Xoá Quán ?";
             // 
             // btnTimKiem
             // 

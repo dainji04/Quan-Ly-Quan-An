@@ -63,5 +63,10 @@ namespace QuanLyQuanAn.Components
                 }
             }
         }
+
+        private void ptbImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

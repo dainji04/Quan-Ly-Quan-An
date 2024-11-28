@@ -32,12 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -56,50 +50,15 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.quanAnPage = new Guna.UI2.WinForms.Guna2Panel();
-            this.pnlQLMA = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlDoanhThu = new Guna.UI2.WinForms.Guna2Panel();
-            this.txtDay = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnSearchByDate = new Guna.UI2.WinForms.Guna2Button();
             this.dgvHD = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.Ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenQuanHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvFood = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.idFood = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenFood = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Type = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Image = new System.Windows.Forms.DataGridViewImageColumn();
-            this.btnAll = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDessert = new Guna.UI2.WinForms.Guna2Button();
-            this.btnDrink = new Guna.UI2.WinForms.Guna2Button();
-            this.btnSoup = new Guna.UI2.WinForms.Guna2Button();
-            this.btnFood = new Guna.UI2.WinForms.Guna2Button();
-            this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsThem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsSua = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsXoa = new System.Windows.Forms.ToolStripMenuItem();
-            this.mónĂnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsThemMon = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsSuaMon = new System.Windows.Forms.ToolStripMenuItem();
-            this.xóaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.doanhThuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsQuan = new System.Windows.Forms.ToolStripMenuItem();
-            this.mnsMon = new System.Windows.Forms.ToolStripMenuItem();
-            this.dgvQuanAn = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MoTa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
-            this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.NgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenQuanHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSearchByDate = new Guna.UI2.WinForms.Guna2Button();
+            this.txtDay = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
@@ -108,14 +67,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.quanAnPage.SuspendLayout();
-            this.pnlQLMA.SuspendLayout();
             this.pnlDoanhThu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).BeginInit();
-            this.toolStripContainer1.TopToolStripPanel.SuspendLayout();
-            this.toolStripContainer1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvQuanAn)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -140,7 +93,7 @@
             this.guna2Panel1.FillColor = System.Drawing.Color.White;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(258, 760);
+            this.guna2Panel1.Size = new System.Drawing.Size(258, 840);
             this.guna2Panel1.TabIndex = 0;
             // 
             // guna2PictureBox8
@@ -215,7 +168,7 @@
             this.btnQLNS.Size = new System.Drawing.Size(226, 45);
             this.btnQLNS.TabIndex = 19;
             this.btnQLNS.Text = "Quản Lý Món Ăn";
-            this.btnQLNS.Click += new System.EventHandler(this.QLQA_Click);
+            this.btnQLNS.Click += new System.EventHandler(this.QLMonAn_Click);
             // 
             // btnDangXuat
             // 
@@ -361,78 +314,24 @@
             // 
             // quanAnPage
             // 
-            this.quanAnPage.Controls.Add(this.pnlQLMA);
-            this.quanAnPage.Controls.Add(this.toolStripContainer1);
-            this.quanAnPage.Controls.Add(this.dgvQuanAn);
-            this.quanAnPage.Controls.Add(this.btnTimKiem);
-            this.quanAnPage.Controls.Add(this.txtSearch);
-            this.quanAnPage.Dock = System.Windows.Forms.DockStyle.Right;
+            this.quanAnPage.Controls.Add(this.pnlDoanhThu);
+            this.quanAnPage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.quanAnPage.FillColor = System.Drawing.Color.White;
-            this.quanAnPage.Location = new System.Drawing.Point(256, 0);
+            this.quanAnPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.471698F);
+            this.quanAnPage.Location = new System.Drawing.Point(258, 0);
             this.quanAnPage.Name = "quanAnPage";
-            this.quanAnPage.Size = new System.Drawing.Size(903, 760);
+            this.quanAnPage.Size = new System.Drawing.Size(1235, 840);
             this.quanAnPage.TabIndex = 1;
-            // 
-            // pnlQLMA
-            // 
-            this.pnlQLMA.Controls.Add(this.pnlDoanhThu);
-            this.pnlQLMA.Controls.Add(this.dgvFood);
-            this.pnlQLMA.Controls.Add(this.btnAll);
-            this.pnlQLMA.Controls.Add(this.btnDessert);
-            this.pnlQLMA.Controls.Add(this.btnDrink);
-            this.pnlQLMA.Controls.Add(this.btnSoup);
-            this.pnlQLMA.Controls.Add(this.btnFood);
-            this.pnlQLMA.FillColor = System.Drawing.Color.White;
-            this.pnlQLMA.Location = new System.Drawing.Point(0, 32);
-            this.pnlQLMA.Name = "pnlQLMA";
-            this.pnlQLMA.Size = new System.Drawing.Size(903, 760);
-            this.pnlQLMA.TabIndex = 4;
             // 
             // pnlDoanhThu
             // 
             this.pnlDoanhThu.Controls.Add(this.txtDay);
             this.pnlDoanhThu.Controls.Add(this.btnSearchByDate);
             this.pnlDoanhThu.Controls.Add(this.dgvHD);
-            this.pnlDoanhThu.Location = new System.Drawing.Point(0, 0);
+            this.pnlDoanhThu.Location = new System.Drawing.Point(52, 753);
             this.pnlDoanhThu.Name = "pnlDoanhThu";
             this.pnlDoanhThu.Size = new System.Drawing.Size(903, 726);
             this.pnlDoanhThu.TabIndex = 2;
-            // 
-            // txtDay
-            // 
-            this.txtDay.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtDay.DefaultText = "";
-            this.txtDay.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtDay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtDay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDay.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtDay.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDay.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDay.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtDay.Location = new System.Drawing.Point(27, 15);
-            this.txtDay.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txtDay.Name = "txtDay";
-            this.txtDay.PasswordChar = '\0';
-            this.txtDay.PlaceholderText = "Nhập ngày bạn muốn tìm...";
-            this.txtDay.SelectedText = "";
-            this.txtDay.Size = new System.Drawing.Size(438, 45);
-            this.txtDay.TabIndex = 3;
-            // 
-            // btnSearchByDate
-            // 
-            this.btnSearchByDate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchByDate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSearchByDate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSearchByDate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSearchByDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(136)))), ((int)(((byte)(77)))));
-            this.btnSearchByDate.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchByDate.ForeColor = System.Drawing.Color.White;
-            this.btnSearchByDate.Location = new System.Drawing.Point(473, 15);
-            this.btnSearchByDate.Name = "btnSearchByDate";
-            this.btnSearchByDate.Size = new System.Drawing.Size(180, 45);
-            this.btnSearchByDate.TabIndex = 2;
-            this.btnSearchByDate.Text = "Tìm Kiếm";
-            this.btnSearchByDate.Click += new System.EventHandler(this.btnSearchByDate_Click);
             // 
             // dgvHD
             // 
@@ -444,7 +343,7 @@
             this.dgvHD.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.471698F);
             dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -460,7 +359,7 @@
             this.TongTien});
             dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.471698F);
             dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
@@ -498,21 +397,23 @@
             this.dgvHD.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvHD.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
-            // Ma
+            // TongTien
             // 
-            this.Ma.DataPropertyName = "Ma";
-            this.Ma.HeaderText = "Mã";
-            this.Ma.MinimumWidth = 6;
-            this.Ma.Name = "Ma";
-            this.Ma.ReadOnly = true;
+            this.TongTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.TongTien.DataPropertyName = "TongTien";
+            this.TongTien.HeaderText = "Tổng Tiền";
+            this.TongTien.MinimumWidth = 6;
+            this.TongTien.Name = "TongTien";
+            this.TongTien.ReadOnly = true;
+            this.TongTien.Width = 140;
             // 
-            // TenQuanHD
+            // NgayLap
             // 
-            this.TenQuanHD.DataPropertyName = "TenQuan";
-            this.TenQuanHD.HeaderText = "Tên Quán";
-            this.TenQuanHD.MinimumWidth = 6;
-            this.TenQuanHD.Name = "TenQuanHD";
-            this.TenQuanHD.ReadOnly = true;
+            this.NgayLap.DataPropertyName = "NgayLap";
+            this.NgayLap.HeaderText = "Ngày Lập";
+            this.NgayLap.MinimumWidth = 6;
+            this.NgayLap.Name = "NgayLap";
+            this.NgayLap.ReadOnly = true;
             // 
             // SoBan
             // 
@@ -524,518 +425,63 @@
             this.SoBan.ReadOnly = true;
             this.SoBan.Width = 120;
             // 
-            // NgayLap
-            // 
-            this.NgayLap.DataPropertyName = "NgayLap";
-            this.NgayLap.HeaderText = "Ngày Lập";
-            this.NgayLap.MinimumWidth = 6;
-            this.NgayLap.Name = "NgayLap";
-            this.NgayLap.ReadOnly = true;
-            // 
-            // TongTien
-            // 
-            this.TongTien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.TongTien.DataPropertyName = "TongTien";
-            this.TongTien.HeaderText = "Tổng Tiền";
-            this.TongTien.MinimumWidth = 6;
-            this.TongTien.Name = "TongTien";
-            this.TongTien.ReadOnly = true;
-            this.TongTien.Width = 140;
-            // 
-            // dgvFood
-            // 
-            this.dgvFood.AllowDrop = true;
-            this.dgvFood.AllowUserToAddRows = false;
-            this.dgvFood.AllowUserToDeleteRows = false;
-            this.dgvFood.AllowUserToResizeColumns = false;
-            this.dgvFood.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.dgvFood.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            this.dgvFood.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFood.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
-            this.dgvFood.ColumnHeadersHeight = 25;
-            this.dgvFood.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvFood.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idFood,
-            this.TenFood,
-            this.Price,
-            this.Type,
-            this.Image});
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvFood.DefaultCellStyle = dataGridViewCellStyle15;
-            this.dgvFood.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvFood.Location = new System.Drawing.Point(18, 66);
-            this.dgvFood.Name = "dgvFood";
-            this.dgvFood.ReadOnly = true;
-            this.dgvFood.RowHeadersVisible = false;
-            this.dgvFood.RowHeadersWidth = 45;
-            this.dgvFood.Size = new System.Drawing.Size(873, 650);
-            this.dgvFood.TabIndex = 1;
-            this.dgvFood.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvFood.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvFood.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvFood.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvFood.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvFood.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvFood.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvFood.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgvFood.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvFood.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvFood.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvFood.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvFood.ThemeStyle.HeaderStyle.Height = 25;
-            this.dgvFood.ThemeStyle.ReadOnly = true;
-            this.dgvFood.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvFood.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvFood.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvFood.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvFood.ThemeStyle.RowsStyle.Height = 22;
-            this.dgvFood.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvFood.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // idFood
-            // 
-            this.idFood.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.idFood.DataPropertyName = "Ma";
-            this.idFood.FillWeight = 25.90674F;
-            this.idFood.HeaderText = "ID";
-            this.idFood.MinimumWidth = 6;
-            this.idFood.Name = "idFood";
-            this.idFood.ReadOnly = true;
-            this.idFood.Width = 50;
-            // 
-            // TenFood
-            // 
-            this.TenFood.DataPropertyName = "Tenmon";
-            this.TenFood.FillWeight = 118.5233F;
-            this.TenFood.HeaderText = "Tên Món";
-            this.TenFood.MinimumWidth = 6;
-            this.TenFood.Name = "TenFood";
-            this.TenFood.ReadOnly = true;
-            // 
-            // Price
-            // 
-            this.Price.DataPropertyName = "Giatien";
-            this.Price.FillWeight = 118.5233F;
-            this.Price.HeaderText = "Giá Tiền";
-            this.Price.MinimumWidth = 6;
-            this.Price.Name = "Price";
-            this.Price.ReadOnly = true;
-            // 
-            // Type
-            // 
-            this.Type.DataPropertyName = "Loaimon";
-            this.Type.FillWeight = 118.5233F;
-            this.Type.HeaderText = "Loại";
-            this.Type.MinimumWidth = 6;
-            this.Type.Name = "Type";
-            this.Type.ReadOnly = true;
-            // 
-            // Image
-            // 
-            this.Image.DataPropertyName = "Hinhanh";
-            this.Image.FillWeight = 118.5233F;
-            this.Image.HeaderText = "Ảnh";
-            this.Image.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.Image.MinimumWidth = 6;
-            this.Image.Name = "Image";
-            this.Image.ReadOnly = true;
-            this.Image.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Image.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // btnAll
-            // 
-            this.btnAll.BorderRadius = 20;
-            this.btnAll.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnAll.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnAll.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnAll.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnAll.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAll.ForeColor = System.Drawing.Color.White;
-            this.btnAll.Location = new System.Drawing.Point(734, 5);
-            this.btnAll.Name = "btnAll";
-            this.btnAll.Size = new System.Drawing.Size(147, 45);
-            this.btnAll.TabIndex = 0;
-            this.btnAll.Text = "All";
-            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
-            // 
-            // btnDessert
-            // 
-            this.btnDessert.BorderRadius = 20;
-            this.btnDessert.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDessert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDessert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDessert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDessert.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDessert.ForeColor = System.Drawing.Color.White;
-            this.btnDessert.Location = new System.Drawing.Point(564, 5);
-            this.btnDessert.Name = "btnDessert";
-            this.btnDessert.Size = new System.Drawing.Size(147, 45);
-            this.btnDessert.TabIndex = 0;
-            this.btnDessert.Text = "Dessert";
-            this.btnDessert.Click += new System.EventHandler(this.btnDessert_Click);
-            // 
-            // btnDrink
-            // 
-            this.btnDrink.BorderRadius = 20;
-            this.btnDrink.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnDrink.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnDrink.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnDrink.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnDrink.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDrink.ForeColor = System.Drawing.Color.White;
-            this.btnDrink.Location = new System.Drawing.Point(381, 5);
-            this.btnDrink.Name = "btnDrink";
-            this.btnDrink.Size = new System.Drawing.Size(147, 45);
-            this.btnDrink.TabIndex = 0;
-            this.btnDrink.Text = "Drink";
-            this.btnDrink.Click += new System.EventHandler(this.btnDrink_Click);
-            // 
-            // btnSoup
-            // 
-            this.btnSoup.BorderRadius = 20;
-            this.btnSoup.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSoup.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSoup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSoup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSoup.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSoup.ForeColor = System.Drawing.Color.White;
-            this.btnSoup.Location = new System.Drawing.Point(197, 5);
-            this.btnSoup.Name = "btnSoup";
-            this.btnSoup.Size = new System.Drawing.Size(147, 45);
-            this.btnSoup.TabIndex = 0;
-            this.btnSoup.Text = "Soup";
-            this.btnSoup.Click += new System.EventHandler(this.btnSoup_Click);
-            // 
-            // btnFood
-            // 
-            this.btnFood.BorderRadius = 20;
-            this.btnFood.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnFood.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnFood.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnFood.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnFood.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFood.ForeColor = System.Drawing.Color.White;
-            this.btnFood.Location = new System.Drawing.Point(18, 5);
-            this.btnFood.Name = "btnFood";
-            this.btnFood.Size = new System.Drawing.Size(147, 45);
-            this.btnFood.TabIndex = 0;
-            this.btnFood.Text = "Food";
-            this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
-            // 
-            // toolStripContainer1
-            // 
-            // 
-            // toolStripContainer1.ContentPanel
-            // 
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(883, 0);
-            this.toolStripContainer1.Location = new System.Drawing.Point(8, 3);
-            this.toolStripContainer1.Name = "toolStripContainer1";
-            this.toolStripContainer1.Size = new System.Drawing.Size(883, 28);
-            this.toolStripContainer1.TabIndex = 2;
-            this.toolStripContainer1.Text = "toolStripContainer1";
-            // 
-            // toolStripContainer1.TopToolStripPanel
-            // 
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.menuStrip1);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.BackColor = System.Drawing.Color.Transparent;
-            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
-            this.menuStrip1.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(18, 18);
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.optionsToolStripMenuItem,
-            this.mónĂnToolStripMenuItem,
-            this.doanhThuToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(883, 29);
-            this.menuStrip1.TabIndex = 5;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // optionsToolStripMenuItem
-            // 
-            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnsThem,
-            this.mnsSua,
-            this.mnsXoa});
-            this.optionsToolStripMenuItem.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(89, 25);
-            this.optionsToolStripMenuItem.Text = "Quán Ăn";
-            // 
-            // mnsThem
-            // 
-            this.mnsThem.Name = "mnsThem";
-            this.mnsThem.Size = new System.Drawing.Size(174, 26);
-            this.mnsThem.Text = "Them Quan";
-            this.mnsThem.Click += new System.EventHandler(this.mnsThem_Click);
-            // 
-            // mnsSua
-            // 
-            this.mnsSua.Name = "mnsSua";
-            this.mnsSua.Size = new System.Drawing.Size(174, 26);
-            this.mnsSua.Text = "Sua Quan";
-            this.mnsSua.Click += new System.EventHandler(this.mnsSua_Click);
-            // 
-            // mnsXoa
-            // 
-            this.mnsXoa.Name = "mnsXoa";
-            this.mnsXoa.Size = new System.Drawing.Size(174, 26);
-            this.mnsXoa.Text = "Xoa Quan";
-            this.mnsXoa.Click += new System.EventHandler(this.mnsXoa_Click);
-            // 
-            // mónĂnToolStripMenuItem
-            // 
-            this.mónĂnToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnsThemMon,
-            this.mnsSuaMon,
-            this.xóaToolStripMenuItem});
-            this.mónĂnToolStripMenuItem.Name = "mónĂnToolStripMenuItem";
-            this.mónĂnToolStripMenuItem.Size = new System.Drawing.Size(84, 25);
-            this.mónĂnToolStripMenuItem.Text = "Món Ăn";
-            // 
-            // mnsThemMon
-            // 
-            this.mnsThemMon.Name = "mnsThemMon";
-            this.mnsThemMon.Size = new System.Drawing.Size(129, 26);
-            this.mnsThemMon.Text = "Thêm";
-            this.mnsThemMon.Click += new System.EventHandler(this.mnsThemMon_Click);
-            // 
-            // mnsSuaMon
-            // 
-            this.mnsSuaMon.Name = "mnsSuaMon";
-            this.mnsSuaMon.Size = new System.Drawing.Size(129, 26);
-            this.mnsSuaMon.Text = "Sửa";
-            this.mnsSuaMon.Click += new System.EventHandler(this.mnsSuaMon_Click);
-            // 
-            // xóaToolStripMenuItem
-            // 
-            this.xóaToolStripMenuItem.Name = "xóaToolStripMenuItem";
-            this.xóaToolStripMenuItem.Size = new System.Drawing.Size(129, 26);
-            this.xóaToolStripMenuItem.Text = "Xóa";
-            this.xóaToolStripMenuItem.Click += new System.EventHandler(this.xóaToolStripMenuItem_Click);
-            // 
-            // doanhThuToolStripMenuItem
-            // 
-            this.doanhThuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.mnsQuan,
-            this.mnsMon});
-            this.doanhThuToolStripMenuItem.Name = "doanhThuToolStripMenuItem";
-            this.doanhThuToolStripMenuItem.Size = new System.Drawing.Size(106, 25);
-            this.doanhThuToolStripMenuItem.Text = "Doanh Thu";
-            // 
-            // mnsQuan
-            // 
-            this.mnsQuan.Name = "mnsQuan";
-            this.mnsQuan.Size = new System.Drawing.Size(126, 26);
-            this.mnsQuan.Text = "Quán";
-            this.mnsQuan.Click += new System.EventHandler(this.mnsQuan_Click);
-            // 
-            // mnsMon
-            // 
-            this.mnsMon.Name = "mnsMon";
-            this.mnsMon.Size = new System.Drawing.Size(126, 26);
-            this.mnsMon.Text = "Món ";
-            this.mnsMon.Click += new System.EventHandler(this.mnsMon_Click);
-            // 
-            // dgvQuanAn
-            // 
-            this.dgvQuanAn.AllowDrop = true;
-            this.dgvQuanAn.AllowUserToAddRows = false;
-            this.dgvQuanAn.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle16.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(20)))));
-            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvQuanAn.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle16;
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle17.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvQuanAn.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
-            this.dgvQuanAn.ColumnHeadersHeight = 50;
-            this.dgvQuanAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvQuanAn.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.id,
-            this.TenQuan,
-            this.DiaChi,
-            this.SDT,
-            this.Email,
-            this.MoTa,
-            this.NgayDangKy});
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle18.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvQuanAn.DefaultCellStyle = dataGridViewCellStyle18;
-            this.dgvQuanAn.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvQuanAn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dgvQuanAn.Location = new System.Drawing.Point(8, 134);
-            this.dgvQuanAn.Name = "dgvQuanAn";
-            this.dgvQuanAn.ReadOnly = true;
-            this.dgvQuanAn.RowHeadersVisible = false;
-            this.dgvQuanAn.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            this.dgvQuanAn.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Times New Roman", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvQuanAn.RowTemplate.Height = 50;
-            this.dgvQuanAn.Size = new System.Drawing.Size(884, 614);
-            this.dgvQuanAn.TabIndex = 3;
-            this.dgvQuanAn.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvQuanAn.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.dgvQuanAn.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.dgvQuanAn.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.dgvQuanAn.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvQuanAn.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.dgvQuanAn.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvQuanAn.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.dgvQuanAn.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvQuanAn.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvQuanAn.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.dgvQuanAn.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvQuanAn.ThemeStyle.HeaderStyle.Height = 50;
-            this.dgvQuanAn.ThemeStyle.ReadOnly = true;
-            this.dgvQuanAn.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.dgvQuanAn.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.dgvQuanAn.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgvQuanAn.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvQuanAn.ThemeStyle.RowsStyle.Height = 50;
-            this.dgvQuanAn.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvQuanAn.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvQuanAn.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQuanAn_RowEnter);
-            this.dgvQuanAn.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvQuanAn_KeyDown);
-            // 
-            // id
-            // 
-            this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.id.DataPropertyName = "MaQuan";
-            this.id.FillWeight = 226.5833F;
-            this.id.HeaderText = "id";
-            this.id.MinimumWidth = 6;
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 50;
-            // 
-            // TenQuan
-            // 
-            this.TenQuan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.TenQuan.DataPropertyName = "TenQuan";
-            this.TenQuan.FillWeight = 149.8677F;
-            this.TenQuan.HeaderText = "Tên quán";
-            this.TenQuan.MinimumWidth = 6;
-            this.TenQuan.Name = "TenQuan";
-            this.TenQuan.ReadOnly = true;
-            this.TenQuan.Width = 110;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.FillWeight = 12.17096F;
-            this.DiaChi.HeaderText = "Địa Chỉ";
-            this.DiaChi.MinimumWidth = 6;
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.ReadOnly = true;
-            this.DiaChi.Width = 250;
-            // 
-            // SDT
-            // 
-            this.SDT.DataPropertyName = "Sdt";
-            this.SDT.FillWeight = 12.17096F;
-            this.SDT.HeaderText = "Số Điện Thoại";
-            this.SDT.MinimumWidth = 6;
-            this.SDT.Name = "SDT";
-            this.SDT.ReadOnly = true;
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "Email";
-            this.Email.FillWeight = 12.17096F;
-            this.Email.HeaderText = "Email";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            // 
-            // MoTa
-            // 
-            this.MoTa.DataPropertyName = "MoTa";
-            this.MoTa.FillWeight = 12.17096F;
-            this.MoTa.HeaderText = "Mô Tả";
-            this.MoTa.MinimumWidth = 6;
-            this.MoTa.Name = "MoTa";
-            this.MoTa.ReadOnly = true;
-            // 
-            // NgayDangKy
-            // 
-            this.NgayDangKy.DataPropertyName = "NgayDangKy";
-            this.NgayDangKy.FillWeight = 12.17096F;
-            this.NgayDangKy.HeaderText = "Ngày Đăng Ký";
-            this.NgayDangKy.MinimumWidth = 6;
-            this.NgayDangKy.Name = "NgayDangKy";
-            this.NgayDangKy.ReadOnly = true;
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimKiem.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnTimKiem.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnTimKiem.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnTimKiem.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(20)))));
-            this.btnTimKiem.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Location = new System.Drawing.Point(659, 52);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(177, 48);
-            this.btnTimKiem.TabIndex = 2;
-            this.btnTimKiem.Text = "Tìm Kiếm";
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtSearch.DefaultText = "";
-            this.txtSearch.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtSearch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtSearch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtSearch.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.Black;
-            this.txtSearch.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtSearch.Location = new System.Drawing.Point(69, 52);
-            this.txtSearch.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "Type Something...";
-            this.txtSearch.SelectedText = "";
-            this.txtSearch.Size = new System.Drawing.Size(557, 48);
-            this.txtSearch.TabIndex = 1;
+            // TenQuanHD
+            // 
+            this.TenQuanHD.DataPropertyName = "TenQuan";
+            this.TenQuanHD.HeaderText = "Tên Quán";
+            this.TenQuanHD.MinimumWidth = 6;
+            this.TenQuanHD.Name = "TenQuanHD";
+            this.TenQuanHD.ReadOnly = true;
+            // 
+            // Ma
+            // 
+            this.Ma.DataPropertyName = "Ma";
+            this.Ma.HeaderText = "Mã";
+            this.Ma.MinimumWidth = 6;
+            this.Ma.Name = "Ma";
+            this.Ma.ReadOnly = true;
+            // 
+            // btnSearchByDate
+            // 
+            this.btnSearchByDate.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchByDate.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSearchByDate.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSearchByDate.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSearchByDate.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(136)))), ((int)(((byte)(77)))));
+            this.btnSearchByDate.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchByDate.ForeColor = System.Drawing.Color.White;
+            this.btnSearchByDate.Location = new System.Drawing.Point(473, 15);
+            this.btnSearchByDate.Name = "btnSearchByDate";
+            this.btnSearchByDate.Size = new System.Drawing.Size(180, 45);
+            this.btnSearchByDate.TabIndex = 2;
+            this.btnSearchByDate.Text = "Tìm Kiếm";
+            this.btnSearchByDate.Click += new System.EventHandler(this.btnSearchByDate_Click);
+            // 
+            // txtDay
+            // 
+            this.txtDay.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDay.DefaultText = "";
+            this.txtDay.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDay.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDay.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDay.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDay.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDay.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDay.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDay.Location = new System.Drawing.Point(27, 15);
+            this.txtDay.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txtDay.Name = "txtDay";
+            this.txtDay.PasswordChar = '\0';
+            this.txtDay.PlaceholderText = "Nhập ngày bạn muốn tìm...";
+            this.txtDay.SelectedText = "";
+            this.txtDay.Size = new System.Drawing.Size(438, 45);
+            this.txtDay.TabIndex = 3;
             // 
             // QuanAnUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1159, 760);
+            this.ClientSize = new System.Drawing.Size(1493, 840);
             this.Controls.Add(this.quanAnPage);
             this.Controls.Add(this.guna2Panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1055,17 +501,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.quanAnPage.ResumeLayout(false);
-            this.pnlQLMA.ResumeLayout(false);
             this.pnlDoanhThu.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvFood)).EndInit();
-            this.toolStripContainer1.TopToolStripPanel.ResumeLayout(false);
-            this.toolStripContainer1.TopToolStripPanel.PerformLayout();
-            this.toolStripContainer1.ResumeLayout(false);
-            this.toolStripContainer1.PerformLayout();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvQuanAn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1084,55 +521,20 @@
         private Guna.UI2.WinForms.Guna2Button btnDoanhThu;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2Panel quanAnPage;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
         private Guna.UI2.WinForms.Guna2Button btnDangXuat;
         private Guna.UI2.WinForms.Guna2Button btnThoat;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2TextBox txtSearch;
-        private Guna.UI2.WinForms.Guna2Button btnTimKiem;
-        private Guna.UI2.WinForms.Guna2DataGridView dgvQuanAn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenQuan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MoTa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayDangKy;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnsThem;
-        private System.Windows.Forms.ToolStripMenuItem mnsSua;
-        private System.Windows.Forms.ToolStripMenuItem mnsXoa;
-        private System.Windows.Forms.ToolStripContainer toolStripContainer1;
-        private System.Windows.Forms.ToolStripMenuItem mónĂnToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnsThemMon;
-        private System.Windows.Forms.ToolStripMenuItem mnsSuaMon;
-        private System.Windows.Forms.ToolStripMenuItem xóaToolStripMenuItem;
-        private Guna.UI2.WinForms.Guna2Panel pnlQLMA;
-        private Guna.UI2.WinForms.Guna2DataGridView dgvFood;
-        private Guna.UI2.WinForms.Guna2Button btnDessert;
-        private Guna.UI2.WinForms.Guna2Button btnDrink;
-        private Guna.UI2.WinForms.Guna2Button btnSoup;
-        private Guna.UI2.WinForms.Guna2Button btnFood;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idFood;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenFood;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Type;
-        private System.Windows.Forms.DataGridViewImageColumn Image;
+        private Guna.UI2.WinForms.Guna2Panel quanAnPage;
         private Guna.UI2.WinForms.Guna2Panel pnlDoanhThu;
+        private Guna.UI2.WinForms.Guna2TextBox txtDay;
+        private Guna.UI2.WinForms.Guna2Button btnSearchByDate;
         private Guna.UI2.WinForms.Guna2DataGridView dgvHD;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ma;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenQuanHD;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayLap;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongTien;
-        private Guna.UI2.WinForms.Guna2Button btnAll;
-        private Guna.UI2.WinForms.Guna2Button btnSearchByDate;
-        private Guna.UI2.WinForms.Guna2TextBox txtDay;
-        private System.Windows.Forms.ToolStripMenuItem doanhThuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem mnsQuan;
-        private System.Windows.Forms.ToolStripMenuItem mnsMon;
     }
 }

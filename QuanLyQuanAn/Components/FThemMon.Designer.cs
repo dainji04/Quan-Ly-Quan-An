@@ -184,6 +184,7 @@
             this.ptbImage.Size = new System.Drawing.Size(314, 302);
             this.ptbImage.TabIndex = 6;
             this.ptbImage.TabStop = false;
+            this.ptbImage.Click += new System.EventHandler(this.ptbImage_Click);
             // 
             // ofdImage
             // 
@@ -218,7 +219,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 543);
+            this.ClientSize = new System.Drawing.Size(1160, 713);
             this.Controls.Add(this.btnThemMon);
             this.Controls.Add(this.ptbImage);
             this.Controls.Add(this.guna2Button1);

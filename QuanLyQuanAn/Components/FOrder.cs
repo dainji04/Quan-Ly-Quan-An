@@ -82,13 +82,13 @@ namespace QuanLyQuanAn.Components
                         hienthi();
                     }
                 };
-
+                
                 pnl.Text = mon.Tenmon;
                 pnl.Size = new Size(200, 339);
                 pnl.Location = new Point(10 + (i % 3) * (200 + 30), 10 + (i / 3) * (339 + 15));
                 pnl.Paint += panel1_Paint;
                 pnl.BackColor = Color.Black;
-
+                
                 pnl.Controls.Add(pic);
                 pnl.Controls.Add(lblTen);
                 pnl.Controls.Add(lblGia);

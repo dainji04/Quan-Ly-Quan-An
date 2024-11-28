@@ -53,14 +53,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class\CBill.cs" />
     <Compile Include="Class\CDoanhThuMon.cs" />
     <Compile Include="Class\CDoanhThuQuan.cs" />
     <Compile Include="Class\CFood.cs" />
     <Compile Include="Class\CHoaDon.cs" />
     <Compile Include="Class\CQuanAn.cs" />
+    <Compile Include="Class\CTaiKhoan.cs" />
+    <Compile Include="Components\FQuanLyMon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\FQuanLyMon.Designer.cs">
+      <DependentUpon>FQuanLyMon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\FQuanLyQuanAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\FQuanLyQuanAn.Designer.cs">
+      <DependentUpon>FQuanLyQuanAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller\CQuanLyTaiKhoan.cs" />
     <Compile Include="Controller\CXuLyDoanhThuMon.cs" />
     <Compile Include="Controller\CXuLyDoanhThuQuan.cs" />
+    <Compile Include="GLOBAL_CONSTANTS\CONST.cs" />
     <Compile Include="Views\FDoanhThuMon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +158,12 @@
     <Compile Include="Views\FHoaDon.Designer.cs">
       <DependentUpon>FHoaDon.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Components\FQuanLyMon.resx">
+      <DependentUpon>FQuanLyMon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\FQuanLyQuanAn.resx">
+      <DependentUpon>FQuanLyQuanAn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\FDoanhThuMon.resx">
       <DependentUpon>FDoanhThuMon.cs</DependentUpon>
     </EmbeddedResource>
