@@ -99,7 +99,7 @@ namespace QuanLyQuanAn.Components
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            var result = msgLuu.Show();
+            var result = MessageBox.Show("Bạn có chắc chắn muốn xóa quán ăn này?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 CQuanAn qa = xulyQuan.tim(txtMaQuan.Text);
@@ -146,7 +146,7 @@ namespace QuanLyQuanAn.Components
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            var result = msgLuu.Show();
+            var result = MessageBox.Show("Bạn có chắc chắn muốn sửa quán ăn này?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 CQuanAn qa = xulyQuan.tim(txtMaQuan.Text);
