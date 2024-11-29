@@ -110,7 +110,7 @@
             this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(48)))), ((int)(((byte)(62)))));
             this.guna2Button1.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(579, 7);
+            this.guna2Button1.Location = new System.Drawing.Point(561, 7);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(128, 51);
             this.guna2Button1.TabIndex = 24;
@@ -122,7 +122,7 @@
             this.pnlFood.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
             this.pnlFood.Location = new System.Drawing.Point(12, 101);
             this.pnlFood.Name = "pnlFood";
-            this.pnlFood.Size = new System.Drawing.Size(711, 658);
+            this.pnlFood.Size = new System.Drawing.Size(747, 658);
             this.pnlFood.TabIndex = 25;
             // 
             // guna2Panel3

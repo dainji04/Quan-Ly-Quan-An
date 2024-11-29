@@ -10,9 +10,11 @@ using System.Text;
 using System.Threading.Tasks;
 // using by me
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 using QuanLyQuanAn.Class;
 using QuanLyQuanAn.Components;
 using QuanLyQuanAn.Controller;
+using QuanLyQuanAn.GLOBAL_CONSTANTS;
 using QuanLyQuanAn.Views;
 
 namespace QuanLyQuanAn
@@ -39,6 +41,16 @@ namespace QuanLyQuanAn
 
         private void QuanAnUI_Load(object sender, EventArgs e)
         {
+            if(CONST.TAIKHOAN.LoaiTaiKhoan != "admin")
+            {
+                btnDTMon.Enabled = false;
+                btnDTQuan.Enabled = false;
+            } 
+            else
+            {
+                btnDTMon.Enabled = true;
+                btnDTQuan.Enabled = true;
+            }
             FQuanLyQuanAn qlqa = new FQuanLyQuanAn(); // Assume FQuanLyQuanAn is now a UserControl
             qlqa.TopLevel = false;
             quanAnPage.Controls.Add(qlqa);
@@ -60,56 +72,15 @@ namespace QuanLyQuanAn
             qlqa.Show();
         }
 
-
-        private void hienthiHD()
-        {
-            XuLyHoaDon.docFile();
-            dgvHD.DataSource = XuLyHoaDon.DsHoaDon.ToList();
-        }
-
-        private void btnDoanhThu_Click(object sender, EventArgs e)
-        {
-            pnlDoanhThu.Show();
-            hienthiHD();
-        }
-
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             login lg = new login();
             lg.Show();
             this.Hide();
         }
-
-        
-
-        private void btnSearchByDate_Click(object sender, EventArgs e)
-        {
-            if(txtDay.Text != string.Empty)
-            {
-                XuLyHoaDon.timKiemTheoNgay(txtDay.Text);
-                dgvHD.DataSource = XuLyHoaDon.FilterHD.ToList();
-            }
-            else
-            {
-                hienthiHD();
-            }
-        }
-
         private void QuanAnUI_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
-        }
-
-        private void mnsQuan_Click(object sender, EventArgs e)
-        {
-            FDoanhThuQuan dtq = new FDoanhThuQuan();
-            dtq.Show();
-        }
-
-        private void mnsMon_Click(object sender, EventArgs e)
-        {
-            FDoanhThuMon dtm = new FDoanhThuMon();
-            dtm.Show();
         }
 
         private void QLMonAn_Click(object sender, EventArgs e)
@@ -121,6 +92,39 @@ namespace QuanLyQuanAn
             qlmon.Dock = DockStyle.Fill;
             qlmon.Show();
             quanAnPage.Controls.Add(qlmon);
+        }
+
+        private void btnDTQuan_Click(object sender, EventArgs e)
+        {
+            FDoanhThuQuan dtquan = new FDoanhThuQuan();
+            dtquan.Dock = DockStyle.Fill;
+            dtquan.TopLevel = false;
+            dtquan.FormBorderStyle = FormBorderStyle.None;
+            quanAnPage.Controls.Clear();
+            quanAnPage.Controls.Add(dtquan);
+            dtquan.Show();
+        }
+
+        private void btnDTMon_Click(object sender, EventArgs e)
+        {
+            FDoanhThuMon dtmon = new FDoanhThuMon();
+            dtmon.Dock = DockStyle.Fill;
+            dtmon.TopLevel = false;
+            dtmon.FormBorderStyle = FormBorderStyle.None;
+            quanAnPage.Controls.Clear();
+            quanAnPage.Controls.Add(dtmon);
+            dtmon.Show();
+        }
+
+        private void btnLSHD_Click(object sender, EventArgs e)
+        {
+            FQuanLyHoaDon qlhd = new FQuanLyHoaDon();
+            qlhd.Dock = DockStyle.Fill;
+            qlhd.TopLevel = false;
+            qlhd.FormBorderStyle = FormBorderStyle.None;
+            quanAnPage.Controls.Clear();
+            quanAnPage.Controls.Add(qlhd);
+            qlhd.Show();
         }
     }
 }

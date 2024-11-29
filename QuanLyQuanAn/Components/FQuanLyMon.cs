@@ -172,7 +172,7 @@ namespace QuanLyQuanAn.Components
                         food.Ma = txtMa.Text;
                         food.Tenmon = txtTenMon.Text;
                         food.Giatien = double.Parse(txtGia.Text);
-                        food.Loaimon = txtLoai.Text;
+                        food.Loaimon = cbxLoai.Text;
 
                         food.Hinhanh = ptbImage.Image;
                         XuLyMon.DsMon.Add(food);
@@ -196,7 +196,7 @@ namespace QuanLyQuanAn.Components
             txtMa.Text = dgvFood.Rows[e.RowIndex].Cells[0].Value.ToString();
             txtTenMon.Text = dgvFood.Rows[e.RowIndex].Cells[1].Value.ToString();
             txtGia.Text = dgvFood.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtLoai.Text = dgvFood.Rows[e.RowIndex].Cells[3].Value.ToString();
+            cbxLoai.Text = dgvFood.Rows[e.RowIndex].Cells[3].Value.ToString();
             ptbImage.Image = (Image)dgvFood.Rows[e.RowIndex].Cells[4].Value;
             ptbImage.Width = 217;
             ptbImage.Height = 217;
@@ -217,7 +217,7 @@ namespace QuanLyQuanAn.Components
                         f.Ma = txtMa.Text;
                         f.Tenmon = txtTenMon.Text;
                         f.Giatien = int.Parse(txtGia.Text);
-                        f.Loaimon = txtLoai.Text;
+                        f.Loaimon = cbxLoai.Text;
                         f.Hinhanh = ptbImage.Image;
                         XuLyMon.ghiFile();
                         MessageBox.Show("Sửa món thành công");
@@ -255,7 +255,7 @@ namespace QuanLyQuanAn.Components
             txtMa.Text = "";
             txtTenMon.Text = "";
             txtGia.Text = "";
-            txtLoai.Text = "";
+            cbxLoai.Text = "";
             ptbImage.Image = null;
         }
         private void btnReset_Click(object sender, EventArgs e)

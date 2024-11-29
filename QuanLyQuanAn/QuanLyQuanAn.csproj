@@ -59,6 +59,12 @@
     <Compile Include="Class\CHoaDon.cs" />
     <Compile Include="Class\CQuanAn.cs" />
     <Compile Include="Class\CTaiKhoan.cs" />
+    <Compile Include="Components\FQuanLyHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\FQuanLyHoaDon.Designer.cs">
+      <DependentUpon>FQuanLyHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\FQuanLyMon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,42 +99,6 @@
     <Compile Include="Components\FOrder.Designer.cs">
       <DependentUpon>FOrder.cs</DependentUpon>
     </Compile>
-    <Compile Include="Components\FSuaMon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Components\FSuaMon.Designer.cs">
-      <DependentUpon>FSuaMon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\FSuaQuan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Components\FSuaQuan.Designer.cs">
-      <DependentUpon>FSuaQuan.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\FThemMon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Components\FThemMon.Designer.cs">
-      <DependentUpon>FThemMon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\FThemQuanAn.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Components\FThemQuanAn.Designer.cs">
-      <DependentUpon>FThemQuanAn.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\FXoaMon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Components\FXoaMon.Designer.cs">
-      <DependentUpon>FXoaMon.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Components\FXoaQuan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Components\FXoaQuan.Designer.cs">
-      <DependentUpon>FXoaQuan.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controller\CXuLyHoaDon.cs" />
     <Compile Include="Controller\CXuLyQuanAn.cs" />
     <Compile Include="Controller\XuLyMon.cs" />
@@ -158,6 +128,9 @@
     <Compile Include="Views\FHoaDon.Designer.cs">
       <DependentUpon>FHoaDon.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Components\FQuanLyHoaDon.resx">
+      <DependentUpon>FQuanLyHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Components\FQuanLyMon.resx">
       <DependentUpon>FQuanLyMon.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,24 +145,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Components\FOrder.resx">
       <DependentUpon>FOrder.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\FSuaMon.resx">
-      <DependentUpon>FSuaMon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\FSuaQuan.resx">
-      <DependentUpon>FSuaQuan.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\FThemMon.resx">
-      <DependentUpon>FThemMon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\FThemQuanAn.resx">
-      <DependentUpon>FThemQuanAn.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\FXoaMon.resx">
-      <DependentUpon>FXoaMon.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Components\FXoaQuan.resx">
-      <DependentUpon>FXoaQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.cs</DependentUpon>

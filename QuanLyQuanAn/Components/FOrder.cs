@@ -88,7 +88,12 @@ namespace QuanLyQuanAn.Components
                 pnl.Location = new Point(10 + (i % 3) * (200 + 30), 10 + (i / 3) * (339 + 15));
                 pnl.Paint += panel1_Paint;
                 pnl.BackColor = Color.Black;
-                
+
+                pnl.HorizontalScroll.Maximum = 0;
+                pnl.AutoScroll = false;
+                pnl.VerticalScroll.Visible = false;
+                pnl.AutoScroll = true;
+
                 pnl.Controls.Add(pic);
                 pnl.Controls.Add(lblTen);
                 pnl.Controls.Add(lblGia);
@@ -214,8 +219,6 @@ namespace QuanLyQuanAn.Components
             XuLyHoaDon.docFile();
             XuLyHoaDon.DsHoaDon.Add(hd);
             XuLyHoaDon.ghiFile();
-
-           
 
             hienthi();
 

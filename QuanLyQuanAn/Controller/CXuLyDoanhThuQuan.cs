@@ -37,19 +37,19 @@ namespace QuanLyQuanAn.Controller
                         {
                             if (food.Loaimon == "food")
                             {
-                                dt.Food += food.Giatien;
+                                dt.Food += food.Tongtien;
                             }
                             else if (food.Loaimon == "drink")
                             {
-                                dt.Drink += food.Giatien;
+                                dt.Drink += food.Tongtien;
                             }
                             else if (food.Loaimon == "dessert")
                             {
-                                dt.Dessert += food.Giatien;
+                                dt.Dessert += food.Tongtien;
                             }
                             else if (food.Loaimon == "soup")
                             {
-                                dt.Soup += food.Giatien;
+                                dt.Soup += food.Tongtien;
                             }
                             break;
                         }

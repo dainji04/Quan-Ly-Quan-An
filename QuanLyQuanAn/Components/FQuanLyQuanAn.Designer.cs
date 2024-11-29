@@ -32,13 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvQuanAn = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MoTa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnTimKiem = new Guna.UI2.WinForms.Guna2Button();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnThem = new Guna.UI2.WinForms.Guna2Button();
@@ -61,6 +54,13 @@
             this.guna2MessageDialog1 = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.btnReset = new Guna.UI2.WinForms.Guna2Button();
             this.btnVaoQuan = new Guna.UI2.WinForms.Guna2Button();
+            this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenQuan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MoTa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvQuanAn)).BeginInit();
             this.SuspendLayout();
             // 
@@ -102,14 +102,14 @@
             this.dgvQuanAn.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvQuanAn.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvQuanAn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dgvQuanAn.Location = new System.Drawing.Point(28, 417);
+            this.dgvQuanAn.Location = new System.Drawing.Point(12, 417);
             this.dgvQuanAn.Name = "dgvQuanAn";
             this.dgvQuanAn.ReadOnly = true;
             this.dgvQuanAn.RowHeadersVisible = false;
             this.dgvQuanAn.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgvQuanAn.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Times New Roman", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgvQuanAn.RowTemplate.Height = 50;
-            this.dgvQuanAn.Size = new System.Drawing.Size(1185, 379);
+            this.dgvQuanAn.Size = new System.Drawing.Size(1201, 370);
             this.dgvQuanAn.TabIndex = 6;
             this.dgvQuanAn.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvQuanAn.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -133,75 +133,6 @@
             this.dgvQuanAn.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvQuanAn.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dgvQuanAn.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvQuanAn_RowEnter);
-            // 
-            // id
-            // 
-            this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.id.DataPropertyName = "MaQuan";
-            this.id.FillWeight = 226.5833F;
-            this.id.HeaderText = "id";
-            this.id.MinimumWidth = 6;
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 50;
-            // 
-            // TenQuan
-            // 
-            this.TenQuan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.TenQuan.DataPropertyName = "TenQuan";
-            this.TenQuan.FillWeight = 149.8677F;
-            this.TenQuan.HeaderText = "Tên quán";
-            this.TenQuan.MinimumWidth = 6;
-            this.TenQuan.Name = "TenQuan";
-            this.TenQuan.ReadOnly = true;
-            this.TenQuan.Width = 110;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.FillWeight = 12.17096F;
-            this.DiaChi.HeaderText = "Địa Chỉ";
-            this.DiaChi.MinimumWidth = 6;
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.ReadOnly = true;
-            this.DiaChi.Width = 250;
-            // 
-            // SDT
-            // 
-            this.SDT.DataPropertyName = "Sdt";
-            this.SDT.FillWeight = 12.17096F;
-            this.SDT.HeaderText = "Số Điện Thoại";
-            this.SDT.MinimumWidth = 6;
-            this.SDT.Name = "SDT";
-            this.SDT.ReadOnly = true;
-            // 
-            // Email
-            // 
-            this.Email.DataPropertyName = "Email";
-            this.Email.FillWeight = 12.17096F;
-            this.Email.HeaderText = "Email";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            // 
-            // MoTa
-            // 
-            this.MoTa.DataPropertyName = "MoTa";
-            this.MoTa.FillWeight = 12.17096F;
-            this.MoTa.HeaderText = "Mô Tả";
-            this.MoTa.MinimumWidth = 6;
-            this.MoTa.Name = "MoTa";
-            this.MoTa.ReadOnly = true;
-            // 
-            // NgayDangKy
-            // 
-            this.NgayDangKy.DataPropertyName = "NgayDangKy";
-            this.NgayDangKy.FillWeight = 12.17096F;
-            this.NgayDangKy.HeaderText = "Ngày Đăng Ký";
-            this.NgayDangKy.MinimumWidth = 6;
-            this.NgayDangKy.Name = "NgayDangKy";
-            this.NgayDangKy.ReadOnly = true;
             // 
             // btnTimKiem
             // 
@@ -532,6 +463,75 @@
             this.btnVaoQuan.Text = "Vào Quán";
             this.btnVaoQuan.Click += new System.EventHandler(this.btnVaoQuan_Click);
             // 
+            // id
+            // 
+            this.id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.id.DataPropertyName = "MaQuan";
+            this.id.FillWeight = 226.5833F;
+            this.id.HeaderText = "id";
+            this.id.MinimumWidth = 6;
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 50;
+            // 
+            // TenQuan
+            // 
+            this.TenQuan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.TenQuan.DataPropertyName = "TenQuan";
+            this.TenQuan.FillWeight = 149.8677F;
+            this.TenQuan.HeaderText = "Tên quán";
+            this.TenQuan.MinimumWidth = 6;
+            this.TenQuan.Name = "TenQuan";
+            this.TenQuan.ReadOnly = true;
+            this.TenQuan.Width = 150;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.DiaChi.DataPropertyName = "DiaChi";
+            this.DiaChi.FillWeight = 12.17096F;
+            this.DiaChi.HeaderText = "Địa Chỉ";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.ReadOnly = true;
+            this.DiaChi.Width = 250;
+            // 
+            // SDT
+            // 
+            this.SDT.DataPropertyName = "Sdt";
+            this.SDT.FillWeight = 12.17096F;
+            this.SDT.HeaderText = "Số Điện Thoại";
+            this.SDT.MinimumWidth = 6;
+            this.SDT.Name = "SDT";
+            this.SDT.ReadOnly = true;
+            // 
+            // Email
+            // 
+            this.Email.DataPropertyName = "Email";
+            this.Email.FillWeight = 12.17096F;
+            this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 6;
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            // 
+            // MoTa
+            // 
+            this.MoTa.DataPropertyName = "MoTa";
+            this.MoTa.FillWeight = 12.17096F;
+            this.MoTa.HeaderText = "Mô Tả";
+            this.MoTa.MinimumWidth = 6;
+            this.MoTa.Name = "MoTa";
+            this.MoTa.ReadOnly = true;
+            // 
+            // NgayDangKy
+            // 
+            this.NgayDangKy.DataPropertyName = "NgayDangKy";
+            this.NgayDangKy.FillWeight = 12.17096F;
+            this.NgayDangKy.HeaderText = "Ngày Đăng Ký";
+            this.NgayDangKy.MinimumWidth = 6;
+            this.NgayDangKy.Name = "NgayDangKy";
+            this.NgayDangKy.ReadOnly = true;
+            // 
             // FQuanLyQuanAn
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -572,13 +572,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2DataGridView dgvQuanAn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenQuan;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MoTa;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayDangKy;
         private Guna.UI2.WinForms.Guna2Button btnTimKiem;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2Button btnThem;
@@ -601,5 +594,12 @@
         private Guna.UI2.WinForms.Guna2MessageDialog guna2MessageDialog1;
         private Guna.UI2.WinForms.Guna2Button btnReset;
         private Guna.UI2.WinForms.Guna2Button btnVaoQuan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenQuan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MoTa;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayDangKy;
     }
 }
