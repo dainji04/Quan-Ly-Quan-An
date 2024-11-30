@@ -170,22 +170,11 @@ namespace QuanLyQuanAn.Components
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-            CQuanAn qa = xulyQuan.tim(txtSearch.Text);
-            if (qa != null)
-            {
-                txtMaQuan.Text = qa.MaQuan;
-                txtTenQuan.Text = qa.TenQuan;
-                txtDiaChi.Text = qa.DiaChi;
-                txtSdt.Text = qa.Sdt;
-                txtEmail.Text = qa.Email;
-                txtMoTa.Text = qa.MoTa;
-                dtpThanhLap.Value = qa.NgayDangKy;
-            }
+            List<CQuanAn> filtered = xulyQuan.tim(txtSearch.Text, cbxChoose.Text);
 
-            CQuanAn temp = xulyQuan.tim(txtSearch.Text);
-            if (temp != null)
+            if (filtered != null)
             {
-                dgvQuanAn.DataSource = new List<CQuanAn> { temp };
+                dgvQuanAn.DataSource = filtered.ToList();
             }
             else if (txtSearch.Text == string.Empty)
             {
@@ -199,6 +188,7 @@ namespace QuanLyQuanAn.Components
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            txtSearch.Text = "";
             txtMaQuan.Text = "";
             txtTenQuan.Text = "";
             txtDiaChi.Text = "";
@@ -206,6 +196,7 @@ namespace QuanLyQuanAn.Components
             txtEmail.Text = "";
             txtMoTa.Text = "";
             dtpThanhLap.Value = DateTime.Now;
+            hienthi();
         }
 
         private void btnVaoQuan_Click(object sender, EventArgs e)

@@ -5,8 +5,10 @@ using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
+using System.Web.UI.WebControls;
 using System.Windows.Forms;
 using QuanLyQuanAn.Class;
+using static System.Net.WebRequestMethods;
 
 namespace QuanLyQuanAn.Controller
 {
@@ -14,7 +16,7 @@ namespace QuanLyQuanAn.Controller
     {
         private List<CQuanAn> quanAn = new List<CQuanAn>();
         internal List<CQuanAn> QuanAn { get => quanAn; set => quanAn = value; }
-        
+
         public void docFile()
         {
             try
@@ -53,12 +55,12 @@ namespace QuanLyQuanAn.Controller
             }
         }
 
-        public CQuanAn tim(string ma)
+        public CQuanAn tim(string text)
         {
             docFile();
             foreach (CQuanAn qa in QuanAn)
             {
-                if (qa.MaQuan == ma)
+                if (qa.MaQuan == text)
                 {
                     return qa;
                 }
@@ -66,5 +68,81 @@ namespace QuanLyQuanAn.Controller
             return null;
         }
 
+        public List<CQuanAn> tim(string text, string loai)
+        {
+            docFile();
+            List<CQuanAn> result = new List<CQuanAn>();
+
+            if (loai == "id") result.Add(tim(text));
+
+            else if (loai == "tên")
+            {
+                for (int i = 0; i < QuanAn.Count; i++)
+                {
+                    if (QuanAn[i].TenQuan.Contains(text))
+                    {
+                        result.Add(QuanAn[i]);
+                    }
+                }
+            }
+
+            else if(loai == "địa chỉ")
+            {
+                for (int i = 0; i < QuanAn.Count; i++)
+                {
+                    if (QuanAn[i].DiaChi.Contains(text))
+                    {
+                        result.Add(QuanAn[i]);
+                    }
+                }
+            }
+
+            else if (loai == "sđt")
+            {
+                for (int i = 0; i < QuanAn.Count; i++)
+                {
+                    if (QuanAn[i].Sdt.Contains(text))
+                    {
+                        result.Add(QuanAn[i]);
+                    }
+                }
+            }
+
+            else if (loai == "email")
+            {
+                for (int i = 0; i < QuanAn.Count; i++)
+                {
+                    if (QuanAn[i].Email.Contains(text))
+                    {
+                        result.Add(QuanAn[i]);
+                    }
+                }
+            }
+
+            else if (loai == "mô tả")
+            {
+                for (int i = 0; i < QuanAn.Count; i++)
+                {
+                    if (QuanAn[i].MoTa.Contains(text))
+                    {
+                        result.Add(QuanAn[i]);
+                    }
+                }
+            }
+
+            else if (loai == "ngày đăng ký")
+            {
+                for (int i = 0; i < QuanAn.Count; i++)
+                {
+                    if (QuanAn[i].NgayDangKy.Day == Convert.ToInt32(text))
+                    {
+                        result.Add(QuanAn[i]);
+                    }
+                }
+            }
+
+
+            return (result.Count > 0) ? result : null;
+        }
     }
 }
