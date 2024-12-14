@@ -97,7 +97,7 @@ namespace QuanLyQuanAn.Controller
                 }
             }
 
-            else if (loai == "sđt")
+            else if (loai == "sdt")
             {
                 for (int i = 0; i < QuanAn.Count; i++)
                 {
