@@ -37,71 +37,7 @@ namespace QuanLyQuanAn.Components
             hienthi();
             lblBanSo.Text = CurrentBan;
             XuLyMon.docFile();
-            int i = 0;
-            foreach (CFood mon in XuLyMon.DsMon)
-            {
-                Panel pnl = new Panel();
-                Label lblTen = new Label();
-                Label lblGia = new Label();
-                Guna.UI2.WinForms.Guna2PictureBox pic = new Guna.UI2.WinForms.Guna2PictureBox();
-                Button btnThem = new Button();
-
-                pic.Image = mon.Hinhanh;
-                pic.Location = new Point(15, 15); // Margin top and left = 15px
-                pic.Size = new Size(pnl.Width - 30, 160); // Width = panel width - left and right margins (15px each)
-                pic.SizeMode = PictureBoxSizeMode.StretchImage;
-                pic.BorderRadius = 20;
-
-                lblTen.Text = mon.Tenmon;
-                lblTen.Location = new Point(20, 200); // Position the label inside the panel
-                lblTen.ForeColor = Color.White;
-                lblTen.Size = new Size(160, 20);
-                lblTen.Font = new Font("Times New Roman", 14);
-                lblTen.BackColor = Color.Transparent; // Make the label background transparent
-
-                lblGia.Text = mon.Giatien.ToString() + "$";
-                lblGia.Location = new Point(20, 230); // Position the label inside the panel
-                lblGia.ForeColor = Color.White;
-                lblGia.Font = new Font("Times New Roman", 14, FontStyle.Bold);
-                lblGia.BackColor = Color.Transparent; // Make the label background transparent
-
-                btnThem.Text = "Thêm";
-                btnThem.Location = new Point(50, 280);
-                btnThem.Size = new Size(pnl.Width-100, 40);
-                btnThem.BackColor = Color.White;
-                
-                btnThem.Click += (s, eArgs) =>
-                {
-                    if(XuLyMon.XulyThemMon(mon.Ma, currentBan, currentQuan.MaQuan))
-                    {
-                        hienthi();
-                    }
-                    else
-                    {
-                        pnlOrder.Controls.Clear();
-                        hienthi();
-                    }
-                };
-                
-                pnl.Text = mon.Tenmon;
-                pnl.Size = new Size(200, 339);
-                pnl.Location = new Point(10 + (i % 3) * (200 + 30), 10 + (i / 3) * (339 + 15));
-                pnl.Paint += panel1_Paint;
-                pnl.BackColor = Color.Black;
-
-                pnl.HorizontalScroll.Maximum = 0;
-                pnl.AutoScroll = false;
-                pnl.VerticalScroll.Visible = false;
-                pnl.AutoScroll = true;
-
-                pnl.Controls.Add(pic);
-                pnl.Controls.Add(lblTen);
-                pnl.Controls.Add(lblGia);
-                pnl.Controls.Add(btnThem);
-                pnlFood.Controls.Add(pnl);
-
-                i++;
-            }
+            hienthiDSMON(XuLyMon.DsMon);
         }
         public void hienthi()
         {
@@ -234,6 +170,105 @@ namespace QuanLyQuanAn.Components
             pnlOrder.Controls.Clear();
 
             XuLyMon.ghiFile(currentBan, currentQuan.MaQuan);
+        }
+
+        private void btnDrink_Click(object sender, EventArgs e)
+        {
+            XuLyMon.timKiemTheoLoai("drink");
+            hienthiDSMON(XuLyMon.Filter);
+        }
+
+        private void btnAll_Click(object sender, EventArgs e)
+        {
+            hienthiDSMON(XuLyMon.DsMon);
+        }
+
+        private void btnFood_Click(object sender, EventArgs e)
+        {
+            XuLyMon.timKiemTheoLoai("food");
+            hienthiDSMON(XuLyMon.Filter);
+        }
+
+        private void btnDessert_Click(object sender, EventArgs e)
+        {
+            XuLyMon.timKiemTheoLoai("dessert");
+            hienthiDSMON(XuLyMon.Filter);
+        }
+
+        private void btnSoup_Click(object sender, EventArgs e)
+        {
+            XuLyMon.timKiemTheoLoai("soup");
+            hienthiDSMON(XuLyMon.Filter);
+        }
+
+        private void hienthiDSMON(List<CFood> ds)
+        {
+            pnlFood.Controls.Clear();
+            int i = 0;
+            foreach (CFood mon in ds)
+            {
+                Panel pnl = new Panel();
+                Label lblTen = new Label();
+                Label lblGia = new Label();
+                Guna.UI2.WinForms.Guna2PictureBox pic = new Guna.UI2.WinForms.Guna2PictureBox();
+                Button btnThem = new Button();
+
+                pic.Image = mon.Hinhanh;
+                pic.Location = new Point(15, 15); // Margin top and left = 15px
+                pic.Size = new Size(pnl.Width - 30, 160); // Width = panel width - left and right margins (15px each)
+                pic.SizeMode = PictureBoxSizeMode.StretchImage;
+                pic.BorderRadius = 20;
+
+                lblTen.Text = mon.Tenmon;
+                lblTen.Location = new Point(20, 200); // Position the label inside the panel
+                lblTen.ForeColor = Color.White;
+                lblTen.Size = new Size(160, 20);
+                lblTen.Font = new Font("Times New Roman", 14);
+                lblTen.BackColor = Color.Transparent; // Make the label background transparent
+
+                lblGia.Text = mon.Giatien.ToString() + "$";
+                lblGia.Location = new Point(20, 230); // Position the label inside the panel
+                lblGia.ForeColor = Color.White;
+                lblGia.Font = new Font("Times New Roman", 14, FontStyle.Bold);
+                lblGia.BackColor = Color.Transparent; // Make the label background transparent
+
+                btnThem.Text = "Thêm";
+                btnThem.Location = new Point(50, 280);
+                btnThem.Size = new Size(pnl.Width - 100, 40);
+                btnThem.BackColor = Color.White;
+
+                btnThem.Click += (s, eArgs) =>
+                {
+                    if (XuLyMon.XulyThemMon(mon.Ma, currentBan, currentQuan.MaQuan))
+                    {
+                        hienthi();
+                    }
+                    else
+                    {
+                        pnlOrder.Controls.Clear();
+                        hienthi();
+                    }
+                };
+
+                pnl.Text = mon.Tenmon;
+                pnl.Size = new Size(200, 339);
+                pnl.Location = new Point(10 + (i % 3) * (200 + 30), 10 + (i / 3) * (339 + 15));
+                pnl.Paint += panel1_Paint;
+                pnl.BackColor = Color.Black;
+
+                pnl.HorizontalScroll.Maximum = 0;
+                pnl.AutoScroll = false;
+                pnl.VerticalScroll.Visible = false;
+                pnl.AutoScroll = true;
+
+                pnl.Controls.Add(pic);
+                pnl.Controls.Add(lblTen);
+                pnl.Controls.Add(lblGia);
+                pnl.Controls.Add(btnThem);
+                pnlFood.Controls.Add(pnl);
+
+                i++;
+            }
         }
     }
 }

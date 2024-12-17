@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FOrder));
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlFood = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
@@ -42,25 +40,13 @@
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.btnAll = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDessert = new Guna.UI2.WinForms.Guna2Button();
+            this.btnDrink = new Guna.UI2.WinForms.Guna2Button();
+            this.btnSoup = new Guna.UI2.WinForms.Guna2Button();
+            this.btnFood = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.ErrorImage = null;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(190, 7);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(50, 51);
-            this.guna2PictureBox1.TabIndex = 18;
-            this.guna2PictureBox1.TabStop = false;
-            this.guna2PictureBox1.UseTransparentBackground = true;
-            this.guna2PictureBox1.Click += new System.EventHandler(this.guna2PictureBox1_Click);
             // 
             // guna2Panel1
             // 
@@ -209,17 +195,106 @@
             this.guna2Button2.Text = "Back";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
+            // btnAll
+            // 
+            this.btnAll.BorderRadius = 20;
+            this.btnAll.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnAll.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnAll.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnAll.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnAll.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAll.ForeColor = System.Drawing.Color.White;
+            this.btnAll.Location = new System.Drawing.Point(179, 11);
+            this.btnAll.Margin = new System.Windows.Forms.Padding(5);
+            this.btnAll.Name = "btnAll";
+            this.btnAll.Size = new System.Drawing.Size(96, 45);
+            this.btnAll.TabIndex = 28;
+            this.btnAll.Text = "All";
+            this.btnAll.Click += new System.EventHandler(this.btnAll_Click);
+            // 
+            // btnDessert
+            // 
+            this.btnDessert.BorderRadius = 20;
+            this.btnDessert.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDessert.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDessert.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDessert.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDessert.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDessert.ForeColor = System.Drawing.Color.White;
+            this.btnDessert.Location = new System.Drawing.Point(391, 11);
+            this.btnDessert.Margin = new System.Windows.Forms.Padding(5);
+            this.btnDessert.Name = "btnDessert";
+            this.btnDessert.Size = new System.Drawing.Size(96, 45);
+            this.btnDessert.TabIndex = 29;
+            this.btnDessert.Text = "Dessert";
+            this.btnDessert.Click += new System.EventHandler(this.btnDessert_Click);
+            // 
+            // btnDrink
+            // 
+            this.btnDrink.BorderRadius = 20;
+            this.btnDrink.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnDrink.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnDrink.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnDrink.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnDrink.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDrink.ForeColor = System.Drawing.Color.White;
+            this.btnDrink.Location = new System.Drawing.Point(603, 11);
+            this.btnDrink.Margin = new System.Windows.Forms.Padding(5);
+            this.btnDrink.Name = "btnDrink";
+            this.btnDrink.Size = new System.Drawing.Size(96, 45);
+            this.btnDrink.TabIndex = 30;
+            this.btnDrink.Text = "Drink";
+            this.btnDrink.Click += new System.EventHandler(this.btnDrink_Click);
+            // 
+            // btnSoup
+            // 
+            this.btnSoup.BorderRadius = 20;
+            this.btnSoup.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnSoup.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnSoup.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnSoup.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnSoup.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSoup.ForeColor = System.Drawing.Color.White;
+            this.btnSoup.Location = new System.Drawing.Point(497, 11);
+            this.btnSoup.Margin = new System.Windows.Forms.Padding(5);
+            this.btnSoup.Name = "btnSoup";
+            this.btnSoup.Size = new System.Drawing.Size(96, 45);
+            this.btnSoup.TabIndex = 31;
+            this.btnSoup.Text = "Soup";
+            this.btnSoup.Click += new System.EventHandler(this.btnSoup_Click);
+            // 
+            // btnFood
+            // 
+            this.btnFood.BorderRadius = 20;
+            this.btnFood.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnFood.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnFood.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnFood.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnFood.Font = new System.Drawing.Font("Times New Roman", 14.26415F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFood.ForeColor = System.Drawing.Color.White;
+            this.btnFood.Location = new System.Drawing.Point(285, 11);
+            this.btnFood.Margin = new System.Windows.Forms.Padding(5);
+            this.btnFood.Name = "btnFood";
+            this.btnFood.Size = new System.Drawing.Size(96, 45);
+            this.btnFood.TabIndex = 32;
+            this.btnFood.Text = "Food";
+            this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
+            // 
             // FOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
             this.ClientSize = new System.Drawing.Size(1160, 771);
+            this.Controls.Add(this.btnAll);
             this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.btnDrink);
             this.Controls.Add(this.guna2Panel3);
+            this.Controls.Add(this.btnDessert);
             this.Controls.Add(this.pnlFood);
+            this.Controls.Add(this.btnFood);
             this.Controls.Add(this.guna2Panel1);
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.btnSoup);
             this.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(40)))), ((int)(((byte)(54)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -228,7 +303,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FOrder";
             this.Load += new System.EventHandler(this.FOrder_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel3.PerformLayout();
             this.ResumeLayout(false);
@@ -236,8 +310,6 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Panel pnlFood;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel3;
@@ -250,5 +322,10 @@
         private Guna.UI2.WinForms.Guna2Button btnThanhToan;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblThanhTien;
+        private Guna.UI2.WinForms.Guna2Button btnAll;
+        private Guna.UI2.WinForms.Guna2Button btnDrink;
+        private Guna.UI2.WinForms.Guna2Button btnDessert;
+        private Guna.UI2.WinForms.Guna2Button btnFood;
+        private Guna.UI2.WinForms.Guna2Button btnSoup;
     }
 }
