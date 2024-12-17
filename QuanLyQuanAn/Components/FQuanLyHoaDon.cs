@@ -41,5 +41,15 @@ namespace QuanLyQuanAn.Components
                 hienthiHD();
             }
         }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show("Bạn có chắc chắn muốn xóa hết dữ liệu không?", "Xác Nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(result == DialogResult.Yes)
+            {
+                XuLyHoaDon.xoaAll();
+                hienthiHD();
+            }
+        }
     }
 }

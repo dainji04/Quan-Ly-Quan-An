@@ -63,5 +63,11 @@ namespace QuanLyQuanAn.Controller
                 }
             }
         }
+
+        public void xoaAll()
+        {
+            dsHoaDon.Clear();
+            ghiFile();
+        }
     }
 }
