@@ -188,6 +188,7 @@ namespace QuanLyQuanAn.Components
 
         private void btnReset_Click(object sender, EventArgs e)
         {
+            hienthi();
             txtSearch.Text = "";
             txtMaQuan.Text = "";
             txtTenQuan.Text = "";
@@ -196,7 +197,6 @@ namespace QuanLyQuanAn.Components
             txtEmail.Text = "";
             txtMoTa.Text = "";
             dtpThanhLap.Value = DateTime.Now;
-            hienthi();
         }
 
         private void btnVaoQuan_Click(object sender, EventArgs e)

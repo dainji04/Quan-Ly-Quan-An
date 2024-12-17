@@ -37,6 +37,7 @@
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.btnQLNS = new Guna.UI2.WinForms.Guna2Button();
+            this.btnQLTK = new Guna.UI2.WinForms.Guna2Button();
             this.btnDangXuat = new Guna.UI2.WinForms.Guna2Button();
             this.btnThoat = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -68,6 +69,7 @@
             this.guna2Panel1.Controls.Add(this.guna2PictureBox3);
             this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel1.Controls.Add(this.btnQLNS);
+            this.guna2Panel1.Controls.Add(this.btnQLTK);
             this.guna2Panel1.Controls.Add(this.btnDangXuat);
             this.guna2Panel1.Controls.Add(this.btnThoat);
             this.guna2Panel1.Controls.Add(this.guna2HtmlLabel5);
@@ -91,7 +93,7 @@
             // 
             this.guna2PictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox8.Image")));
             this.guna2PictureBox8.ImageRotate = 0F;
-            this.guna2PictureBox8.Location = new System.Drawing.Point(24, 543);
+            this.guna2PictureBox8.Location = new System.Drawing.Point(24, 595);
             this.guna2PictureBox8.Name = "guna2PictureBox8";
             this.guna2PictureBox8.Size = new System.Drawing.Size(27, 22);
             this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -102,7 +104,7 @@
             // 
             this.guna2PictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox7.Image")));
             this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(24, 460);
+            this.guna2PictureBox7.Location = new System.Drawing.Point(24, 512);
             this.guna2PictureBox7.Name = "guna2PictureBox7";
             this.guna2PictureBox7.Size = new System.Drawing.Size(27, 22);
             this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -161,6 +163,25 @@
             this.btnQLNS.Text = "Quản Lý Món Ăn";
             this.btnQLNS.Click += new System.EventHandler(this.QLMonAn_Click);
             // 
+            // btnQLTK
+            // 
+            this.btnQLTK.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnQLTK.BorderColor = System.Drawing.Color.Transparent;
+            this.btnQLTK.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnQLTK.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnQLTK.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnQLTK.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnQLTK.FillColor = System.Drawing.Color.Transparent;
+            this.btnQLTK.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLTK.ForeColor = System.Drawing.Color.Black;
+            this.btnQLTK.Location = new System.Drawing.Point(12, 451);
+            this.btnQLTK.Name = "btnQLTK";
+            this.btnQLTK.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(20)))));
+            this.btnQLTK.Size = new System.Drawing.Size(226, 45);
+            this.btnQLTK.TabIndex = 19;
+            this.btnQLTK.Text = "Quản Lý Tài Khoản";
+            this.btnQLTK.Click += new System.EventHandler(this.btnQLTK_Click);
+            // 
             // btnDangXuat
             // 
             this.btnDangXuat.BackColor = System.Drawing.Color.WhiteSmoke;
@@ -172,7 +193,7 @@
             this.btnDangXuat.FillColor = System.Drawing.Color.Transparent;
             this.btnDangXuat.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDangXuat.ForeColor = System.Drawing.Color.Black;
-            this.btnDangXuat.Location = new System.Drawing.Point(12, 451);
+            this.btnDangXuat.Location = new System.Drawing.Point(12, 503);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(20)))));
             this.btnDangXuat.Size = new System.Drawing.Size(226, 45);
@@ -191,7 +212,7 @@
             this.btnThoat.FillColor = System.Drawing.Color.Transparent;
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThoat.ForeColor = System.Drawing.Color.Black;
-            this.btnThoat.Location = new System.Drawing.Point(12, 534);
+            this.btnThoat.Location = new System.Drawing.Point(12, 586);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(20)))));
             this.btnThoat.Size = new System.Drawing.Size(226, 45);
@@ -203,7 +224,7 @@
             // 
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Times New Roman", 10.18868F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(12, 509);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(12, 561);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(37, 19);
             this.guna2HtmlLabel5.TabIndex = 1;
@@ -406,5 +427,6 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Button btnDTMon;
         private Guna.UI2.WinForms.Guna2Button btnDTQuan;
+        private Guna.UI2.WinForms.Guna2Button btnQLTK;
     }
 }

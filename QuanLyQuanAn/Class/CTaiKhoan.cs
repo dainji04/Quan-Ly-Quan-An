@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace QuanLyQuanAn.Class
 {
+    [Serializable]
     internal class CTaiKhoan
     {
         private string tenDangNhap;
@@ -15,6 +16,11 @@ namespace QuanLyQuanAn.Class
         public string TenDangNhap { get => tenDangNhap; set => tenDangNhap = value; }
         public string MatKhau { get => matKhau; set => matKhau = value; }
         public string LoaiTaiKhoan { get => loaiTaiKhoan; set => loaiTaiKhoan = value; }
+
+        public CTaiKhoan()
+        {
+
+        }
 
         public CTaiKhoan(string tenDangNhap, string matKhau, string loaiTaiKhoan)
         {

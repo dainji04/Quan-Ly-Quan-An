@@ -43,8 +43,9 @@ namespace QuanLyQuanAn
         {
             if(CONST.TAIKHOAN.LoaiTaiKhoan != "admin")
             {
-                btnDTMon.Enabled = false;
-                btnDTQuan.Enabled = false;
+                btnDTMon.Visible = false;
+                btnDTQuan.Visible = false;
+                btnQLTK.Visible = false;
             } 
             else
             {
@@ -74,8 +75,8 @@ namespace QuanLyQuanAn
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            login lg = new login();
-            lg.Show();
+            login login = new login();
+            login.Show();
             this.Hide();
         }
         private void QuanAnUI_FormClosed(object sender, FormClosedEventArgs e)
@@ -125,6 +126,17 @@ namespace QuanLyQuanAn
             quanAnPage.Controls.Clear();
             quanAnPage.Controls.Add(qlhd);
             qlhd.Show();
+        }
+
+        private void btnQLTK_Click(object sender, EventArgs e)
+        {
+            FQuanLyTaiKhoan qltk = new FQuanLyTaiKhoan();
+            qltk.TopLevel = false;
+            qltk.FormBorderStyle = FormBorderStyle.None;
+            qltk.Dock = DockStyle.Fill;
+            quanAnPage.Controls.Clear();
+            quanAnPage.Controls.Add(qltk);
+            qltk.Show();
         }
     }
 }

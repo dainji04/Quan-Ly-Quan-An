@@ -48,11 +48,6 @@ namespace QuanLyQuanAn.Controller
             catch (Exception e)
             {
                 MessageBox.Show(e.Message);
-                //var result = MessageBox.Show("Có Lỗi khi thêm vào database", "Thông Báo", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
-                //if (result == DialogResult.Retry)
-                //{
-                //    ghiFile();
-                //}
             }
         }
 

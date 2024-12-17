@@ -128,6 +128,12 @@
     <Compile Include="Views\FHoaDon.Designer.cs">
       <DependentUpon>FHoaDon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Components\FQuanLyTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Components\FQuanLyTaiKhoan.Designer.cs">
+      <DependentUpon>FQuanLyTaiKhoan.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Components\FQuanLyHoaDon.resx">
       <DependentUpon>FQuanLyHoaDon.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +172,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FHoaDon.resx">
       <DependentUpon>FHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\FQuanLyTaiKhoan.resx">
+      <DependentUpon>FQuanLyTaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
