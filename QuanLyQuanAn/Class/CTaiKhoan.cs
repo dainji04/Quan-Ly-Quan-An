@@ -13,15 +13,16 @@ namespace QuanLyQuanAn.Class
         private string matKhau;
         private string loaiTaiKhoan;
 
-        public string TenDangNhap { get => tenDangNhap; set => tenDangNhap = value; }
-        public string MatKhau { get => matKhau; set => matKhau = value; }
-        public string LoaiTaiKhoan { get => loaiTaiKhoan; set => loaiTaiKhoan = value; }
-
+        public string TenDangNhap 
+        { get => tenDangNhap; set => tenDangNhap = value; }
+        public string MatKhau 
+        { get => matKhau; set => matKhau = value; }
+        public string LoaiTaiKhoan 
+        { get => loaiTaiKhoan; set => loaiTaiKhoan = value; }
         public CTaiKhoan()
         {
 
         }
-
         public CTaiKhoan(string tenDangNhap, string matKhau, string loaiTaiKhoan)
         {
             this.TenDangNhap = tenDangNhap;

@@ -13,12 +13,16 @@ namespace QuanLyQuanAn.Class
         private double drink;
         private double dessert;
         private double soup;
-        public string TenQuan { get => tenQuan; set => tenQuan = value; }
-        public double Food { get => food; set => food = value; }
-        public double Drink { get => drink; set => drink = value; }
-        public double Dessert { get => dessert; set => dessert = value; }
-        public double Soup { get => soup; set => soup = value; }
-
+        public string TenQuan 
+        { get => tenQuan; set => tenQuan = value; }
+        public double Food 
+        { get => food; set => food = value; }
+        public double Drink 
+        { get => drink; set => drink = value; }
+        public double Dessert 
+        { get => dessert; set => dessert = value; }
+        public double Soup 
+        { get => soup; set => soup = value; }
         public CDoanhThuQuan()
         {
             TenQuan = "";
@@ -27,6 +31,5 @@ namespace QuanLyQuanAn.Class
             Dessert = 0;
             Soup = 0;
         }
-
     }
 }

@@ -15,11 +15,30 @@ namespace QuanLyQuanAn.Class
         private DateTime ngayLap;
         private double tongTien;
         private List<CFood> dsMon;
-        public string Ma { get => ma; set => ma = value; }
-        public string TenQuan { get => tenQuan; set => tenQuan = value; }
-        public string SoBan { get => soBan; set => soBan = value; }
-        public DateTime NgayLap { get => ngayLap; set => ngayLap = value; }
-        public double TongTien { get => tongTien; set => tongTien = value; }
-        internal List<CFood> DsMon { get => dsMon; set => dsMon = value; }
+        public string Ma 
+        { get => ma; set => ma = value; }
+        public string TenQuan 
+        { get => tenQuan; set => tenQuan = value; }
+        public string SoBan 
+        { get => soBan; set => soBan = value; }
+        public DateTime NgayLap 
+        { get => ngayLap; set => ngayLap = value; }
+        public double TongTien 
+        { get => tongTien; set => tongTien = value; }
+        internal List<CFood> DsMon 
+        { get => dsMon; set => dsMon = value; }
+        public CHoaDon()
+        {
+
+        }
+        public CHoaDon(string ma, string tenQuan, string soBan, DateTime ngayLap, double tongTien, List<CFood> dsMon)
+        {
+            Ma = ma;
+            TenQuan = tenQuan;
+            SoBan = soBan;
+            NgayLap = ngayLap;
+            TongTien = tongTien;
+            DsMon = dsMon;
+        }
     }
 }

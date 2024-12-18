@@ -16,16 +16,21 @@ namespace QuanLyQuanAn.Class
         private string m_loaimon;
         private Image m_hinhanh;
         private int soluong = 1;
-
         private double m_tongtien;
-        public string Ma { get => m_ma; set => m_ma = value; }
-        public string Tenmon { get => m_tenmon; set => m_tenmon = value; }
-        public double Giatien { get => m_giatien; set => m_giatien = value; }
-        public int Soluong { get => soluong; set => soluong = value; }
-        public string Loaimon { get => m_loaimon; set => m_loaimon = value; }
-        public Image Hinhanh { get => m_hinhanh; set => m_hinhanh = value; }
-        public double Tongtien { get => m_tongtien = Giatien*Soluong; set => m_tongtien = value; }
-
+        public string Ma 
+        { get => m_ma; set => m_ma = value; }
+        public string Tenmon 
+        { get => m_tenmon; set => m_tenmon = value; }
+        public double Giatien 
+        { get => m_giatien; set => m_giatien = value; }
+        public int Soluong 
+        { get => soluong; set => soluong = value; }
+        public string Loaimon 
+        { get => m_loaimon; set => m_loaimon = value; }
+        public Image Hinhanh 
+        { get => m_hinhanh; set => m_hinhanh = value; }
+        public double Tongtien 
+        { get => m_tongtien = Giatien*Soluong; set => m_tongtien = value; }
         public CFood()
         {
             m_ma = "";
