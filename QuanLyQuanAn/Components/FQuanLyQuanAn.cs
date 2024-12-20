@@ -95,7 +95,7 @@ namespace QuanLyQuanAn.Components
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -115,12 +115,12 @@ namespace QuanLyQuanAn.Components
                     }
                     catch
                     {
-                        MessageBox.Show("Xóa csdl thất bại");
+                        MessageBox.Show("Xóa csdl thất bại, vui lòng liên hệ quản trị viên!!", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     }
 
                     xulyQuan.QuanAn.Remove(qa);
                     xulyQuan.ghiFile();
-                    MessageBox.Show("Xóa thành công");
+                    MessageBox.Show("Xóa thành công", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtMaQuan.Text = "";
                     txtTenQuan.Text = "";
                     txtDiaChi.Text = "";
@@ -130,6 +130,10 @@ namespace QuanLyQuanAn.Components
                     dtpThanhLap.Value = DateTime.Now;
                     txtSearch.Text = "";
                 }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy quán ăn", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 txtSearch.Focus();
                 hienthi();
             }
@@ -137,13 +141,7 @@ namespace QuanLyQuanAn.Components
 
         private void dgvQuanAn_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-            txtMaQuan.Text = dgvQuanAn.Rows[e.RowIndex].Cells[0].Value.ToString();
-            txtTenQuan.Text = dgvQuanAn.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtDiaChi.Text = dgvQuanAn.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtSdt.Text = dgvQuanAn.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtEmail.Text = dgvQuanAn.Rows[e.RowIndex].Cells[4].Value.ToString();
-            txtMoTa.Text = dgvQuanAn.Rows[e.RowIndex].Cells[5].Value.ToString();
-            dtpThanhLap.Value = Convert.ToDateTime(dgvQuanAn.Rows[e.RowIndex].Cells[6].Value);
+             
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -162,11 +160,13 @@ namespace QuanLyQuanAn.Components
                     qa.MoTa = txtMoTa.Text;
                     qa.NgayDangKy = dtpThanhLap.Value;
                     xulyQuan.ghiFile();
-                    MessageBox.Show("Sửa thành công");
-                    //isFixed = true;
-                    //this.Close();
+                    MessageBox.Show("Sửa thành công", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     hienthi();
                 }
+                else
+                {
+                    MessageBox.Show("Không tìm thấy quán ăn", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }    
             }
         }
 
@@ -178,13 +178,9 @@ namespace QuanLyQuanAn.Components
             {
                 dgvQuanAn.DataSource = filtered.ToList();
             }
-            else if (txtSearch.Text == string.Empty)
-            {
-                hienthi();
-            }
             else
             {
-                MessageBox.Show("Không tìm thấy quán ăn");
+                MessageBox.Show("Không tìm thấy quán ăn", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -203,19 +199,32 @@ namespace QuanLyQuanAn.Components
 
         private void btnVaoQuan_Click(object sender, EventArgs e)
         {
-            CQuanAn qa = new CQuanAn();
-            qa.MaQuan = txtMaQuan.Text;
-            qa.TenQuan = txtTenQuan.Text;
-            qa.DiaChi = txtDiaChi.Text;
-            qa.Sdt = txtSdt.Text;
-            qa.Email = txtSdt.Text;
-            qa.MoTa = txtSdt.Text;
-            qa.NgayDangKy = dtpThanhLap.Value;
-            //CurrentMaQuan = qa.MaQuan;
-            FDatBan f = new FDatBan();
-            f.MaQuan = qa.MaQuan;
-            this.ParentForm.Hide();
-            f.Show();
+            if(xulyQuan.tim(txtMaQuan.Text) != null)
+            {
+                MessageBox.Show("Thành công, ấn OK để vào quán.", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                FDatBan f = new FDatBan();
+                f.MaQuan = txtMaQuan.Text;
+                this.ParentForm.Hide();
+                f.Show();
+            }
+            else
+            {
+                MessageBox.Show("Không tìm thấy quán ăn", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }    
+        }
+
+        private void dgvQuanAn_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvQuanAn.Rows[e.RowIndex].Cells[0].Value != null)
+            {
+                txtMaQuan.Text = dgvQuanAn.Rows[e.RowIndex].Cells[0].Value.ToString();
+                txtTenQuan.Text = dgvQuanAn.Rows[e.RowIndex].Cells[1].Value.ToString();
+                txtDiaChi.Text = dgvQuanAn.Rows[e.RowIndex].Cells[2].Value.ToString();
+                txtSdt.Text = dgvQuanAn.Rows[e.RowIndex].Cells[3].Value.ToString();
+                txtEmail.Text = dgvQuanAn.Rows[e.RowIndex].Cells[4].Value.ToString();
+                txtMoTa.Text = dgvQuanAn.Rows[e.RowIndex].Cells[5].Value.ToString();
+                dtpThanhLap.Value = Convert.ToDateTime(dgvQuanAn.Rows[e.RowIndex].Cells[6].Value);
+            }    
         }
     }
 }

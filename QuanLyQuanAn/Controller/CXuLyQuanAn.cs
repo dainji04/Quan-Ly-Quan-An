@@ -72,14 +72,20 @@ namespace QuanLyQuanAn.Controller
         {
             docFile();
             List<CQuanAn> result = new List<CQuanAn>();
-
-            if (loai == "id") result.Add(tim(text));
+            text = text.ToLower();
+            if (loai == "id") {
+                CQuanAn tmp = tim(text);
+                if (tmp != null)
+                {
+                    result.Add(tmp);
+                }
+            }
 
             else if (loai == "tên")
             {
                 for (int i = 0; i < QuanAn.Count; i++)
                 {
-                    if (QuanAn[i].TenQuan.Contains(text))
+                    if (QuanAn[i].TenQuan.ToLower().Contains(text))
                     {
                         result.Add(QuanAn[i]);
                     }
@@ -90,7 +96,7 @@ namespace QuanLyQuanAn.Controller
             {
                 for (int i = 0; i < QuanAn.Count; i++)
                 {
-                    if (QuanAn[i].DiaChi.Contains(text))
+                    if (QuanAn[i].DiaChi.ToLower().Contains(text))
                     {
                         result.Add(QuanAn[i]);
                     }
@@ -112,7 +118,7 @@ namespace QuanLyQuanAn.Controller
             {
                 for (int i = 0; i < QuanAn.Count; i++)
                 {
-                    if (QuanAn[i].Email.Contains(text))
+                    if (QuanAn[i].Email.ToLower().Contains(text))
                     {
                         result.Add(QuanAn[i]);
                     }
@@ -123,14 +129,14 @@ namespace QuanLyQuanAn.Controller
             {
                 for (int i = 0; i < QuanAn.Count; i++)
                 {
-                    if (QuanAn[i].MoTa.Contains(text))
+                    if (QuanAn[i].MoTa.ToLower().Contains(text))
                     {
                         result.Add(QuanAn[i]);
                     }
                 }
             }
 
-            else if (loai == "ngày đăng ký")
+            else if (loai == "ngày")
             {
                 for (int i = 0; i < QuanAn.Count; i++)
                 {
