@@ -59,10 +59,18 @@ namespace QuanLyQuanAn
             qlqa.FormBorderStyle = FormBorderStyle.None;
             qlqa.Dock = DockStyle.Fill;
             qlqa.Show();
+            btnQLQA.FillColor = Color.FromArgb(237, 98, 20);
         }
 
         private void QuanLyQuanAn_Click(object sender, EventArgs e)
         {
+            btnQLQA.FillColor = Color.FromArgb(237, 98, 20);
+            btnQLNS.FillColor = Color.Transparent;
+            btnLSHD.FillColor = Color.Transparent;
+            btnDTQuan.FillColor = Color.Transparent;
+            btnDTMon.FillColor = Color.Transparent;
+            btnQLTK.FillColor = Color.Transparent;
+
             quanAnPage.Controls.Clear();
             FQuanLyQuanAn qlqa = new FQuanLyQuanAn(); // Assume FQuanLyQuanAn is now a UserControl
             qlqa.TopLevel = false;
@@ -86,6 +94,13 @@ namespace QuanLyQuanAn
 
         private void QLMonAn_Click(object sender, EventArgs e)
         {
+            btnQLQA.FillColor = Color.Transparent;
+            btnQLNS.FillColor = Color.FromArgb(237, 98, 20);
+            btnLSHD.FillColor = Color.Transparent;
+            btnDTQuan.FillColor = Color.Transparent;
+            btnDTMon.FillColor = Color.Transparent;
+            btnQLTK.FillColor = Color.Transparent;
+
             FQuanLyMon qlmon = new FQuanLyMon();
             quanAnPage.Controls.Clear();
             qlmon.TopLevel = false;
@@ -97,6 +112,13 @@ namespace QuanLyQuanAn
 
         private void btnDTQuan_Click(object sender, EventArgs e)
         {
+            btnQLQA.FillColor = Color.Transparent;
+            btnQLNS.FillColor = Color.Transparent;
+            btnLSHD.FillColor = Color.Transparent;
+            btnDTQuan.FillColor = Color.FromArgb(237, 98, 20);
+            btnDTMon.FillColor = Color.Transparent;
+            btnQLTK.FillColor = Color.Transparent;
+
             FDoanhThuQuan dtquan = new FDoanhThuQuan();
             dtquan.Dock = DockStyle.Fill;
             dtquan.TopLevel = false;
@@ -108,6 +130,13 @@ namespace QuanLyQuanAn
 
         private void btnDTMon_Click(object sender, EventArgs e)
         {
+            btnQLQA.FillColor = Color.Transparent;
+            btnQLNS.FillColor = Color.Transparent;
+            btnLSHD.FillColor = Color.Transparent;
+            btnDTQuan.FillColor = Color.Transparent;
+            btnDTMon.FillColor = Color.FromArgb(237, 98, 20);
+            btnQLTK.FillColor = Color.Transparent;
+
             FDoanhThuMon dtmon = new FDoanhThuMon();
             dtmon.Dock = DockStyle.Fill;
             dtmon.TopLevel = false;
@@ -119,6 +148,13 @@ namespace QuanLyQuanAn
 
         private void btnLSHD_Click(object sender, EventArgs e)
         {
+            btnQLQA.FillColor = Color.Transparent;
+            btnQLNS.FillColor = Color.Transparent;
+            btnLSHD.FillColor = Color.FromArgb(237, 98, 20);
+            btnDTQuan.FillColor = Color.Transparent;
+            btnDTMon.FillColor = Color.Transparent;
+            btnQLTK.FillColor = Color.Transparent;
+
             FQuanLyHoaDon qlhd = new FQuanLyHoaDon();
             qlhd.Dock = DockStyle.Fill;
             qlhd.TopLevel = false;
@@ -130,6 +166,13 @@ namespace QuanLyQuanAn
 
         private void btnQLTK_Click(object sender, EventArgs e)
         {
+            btnQLQA.FillColor = Color.Transparent;
+            btnQLNS.FillColor = Color.Transparent;
+            btnLSHD.FillColor = Color.Transparent;
+            btnDTQuan.FillColor = Color.Transparent;
+            btnDTMon.FillColor = Color.Transparent;
+            btnQLTK.FillColor = Color.FromArgb(237, 98, 20);
+
             FQuanLyTaiKhoan qltk = new FQuanLyTaiKhoan();
             qltk.TopLevel = false;
             qltk.FormBorderStyle = FormBorderStyle.None;

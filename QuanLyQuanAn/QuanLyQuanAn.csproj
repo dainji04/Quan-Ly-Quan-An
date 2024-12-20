@@ -81,16 +81,16 @@
     <Compile Include="Controller\CXuLyDoanhThuMon.cs" />
     <Compile Include="Controller\CXuLyDoanhThuQuan.cs" />
     <Compile Include="GLOBAL_CONSTANTS\CONST.cs" />
-    <Compile Include="Views\FDoanhThuMon.cs">
+    <Compile Include="Components\FDoanhThuMon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FDoanhThuMon.Designer.cs">
+    <Compile Include="Components\FDoanhThuMon.Designer.cs">
       <DependentUpon>FDoanhThuMon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\FDoanhThuQuan.cs">
+    <Compile Include="Components\FDoanhThuQuan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\FDoanhThuQuan.Designer.cs">
+    <Compile Include="Components\FDoanhThuQuan.Designer.cs">
       <DependentUpon>FDoanhThuQuan.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\FOrder.cs">
@@ -102,10 +102,10 @@
     <Compile Include="Controller\CXuLyHoaDon.cs" />
     <Compile Include="Controller\CXuLyQuanAn.cs" />
     <Compile Include="Controller\XuLyMon.cs" />
-    <Compile Include="login.cs">
+    <Compile Include="Views\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
+    <Compile Include="Views\login.Designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -143,16 +143,16 @@
     <EmbeddedResource Include="Components\FQuanLyQuanAn.resx">
       <DependentUpon>FQuanLyQuanAn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FDoanhThuMon.resx">
+    <EmbeddedResource Include="Components\FDoanhThuMon.resx">
       <DependentUpon>FDoanhThuMon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\FDoanhThuQuan.resx">
+    <EmbeddedResource Include="Components\FDoanhThuQuan.resx">
       <DependentUpon>FDoanhThuQuan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\FOrder.resx">
       <DependentUpon>FOrder.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="login.resx">
+    <EmbeddedResource Include="Views\login.resx">
       <DependentUpon>login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanAnUI));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -51,7 +50,6 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.quanAnPage = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
@@ -153,7 +151,7 @@
             this.btnQLNS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnQLNS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnQLNS.FillColor = System.Drawing.Color.Transparent;
-            this.btnQLNS.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLNS.Font = new System.Drawing.Font("Times New Roman", 12.22642F);
             this.btnQLNS.ForeColor = System.Drawing.Color.Black;
             this.btnQLNS.Location = new System.Drawing.Point(12, 157);
             this.btnQLNS.Name = "btnQLNS";
@@ -316,7 +314,7 @@
             this.btnQLQA.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btnQLQA.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnQLQA.FillColor = System.Drawing.Color.Transparent;
-            this.btnQLQA.Font = new System.Drawing.Font("Times New Roman", 12.22642F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLQA.Font = new System.Drawing.Font("Times New Roman", 12.22642F);
             this.btnQLQA.ForeColor = System.Drawing.Color.Black;
             this.btnQLQA.Location = new System.Drawing.Point(12, 106);
             this.btnQLQA.Name = "btnQLQA";
@@ -372,11 +370,6 @@
             this.quanAnPage.Size = new System.Drawing.Size(1235, 840);
             this.quanAnPage.TabIndex = 1;
             // 
-            // guna2DragControl1
-            // 
-            this.guna2DragControl1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2DragControl1.UseTransparentDrag = true;
-            // 
             // QuanAnUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
@@ -424,7 +417,6 @@
         private Guna.UI2.WinForms.Guna2Button btnThoat;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2Panel quanAnPage;
-        private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2Button btnDTMon;
         private Guna.UI2.WinForms.Guna2Button btnDTQuan;
         private Guna.UI2.WinForms.Guna2Button btnQLTK;

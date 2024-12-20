@@ -24,6 +24,7 @@ namespace QuanLyQuanAn.Views
         private CQuanAn quanAn;
         private string maHD;
         private string tongTien;
+        private List<CFood> dsFood = new List<CFood>();
         public string CurrentBan { get => currentBan; set => currentBan = value; }
         internal CQuanAn QuanAn { get => quanAn; set => quanAn = value; }
         public string MaHD { get => maHD; set => maHD = value; }
@@ -33,8 +34,6 @@ namespace QuanLyQuanAn.Views
         {
             InitializeComponent();
         }
-
-        
 
         private void FHoaDon_Load(object sender, EventArgs e)
         {
@@ -62,6 +61,10 @@ namespace QuanLyQuanAn.Views
             lblSDT.Text = QuanAn.Sdt;
             lblEmail.Text = QuanAn.Email;
         }
+        private void hienthi(List<CFood> ds)
+        {
+            
+        }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
@@ -80,7 +83,6 @@ namespace QuanLyQuanAn.Views
             od.Show();
 
             this.Close();
-
         }
     }
 }

@@ -715,7 +715,7 @@
   <data name="guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAAxtJREFUaEPtmctt3DAQhreEBSQm8SnpIOkg6WDTgfXY+5bgErYEl+ASXIJL0NFA
+        DgAACw4BQL7hQQAAAxtJREFUaEPtmctt3DAQhreEBSQm8SnpIOkg6WDTgfXY+5bgErYEl+ASXIJL0NFA
         rF1eDOSYzFAjheKOJL6k6KAP+AHDokacGXL42N3GxsbyyHL/WRYfvso8/S7z5CBzca8E/6cm66LK9nvs
         6CUTp7pIny65qC5F+mdAUh6TA73aQ9lB55d0FKP8VqTnS56+MJ0dknyHDJGJDrRV5+lzr22eVHWRPOIz
         ahYPrfOy91FLmU68ZvsvNw5wap0KyRSmWw0Zmw+O64FMKuo8ufcJiJdD8LGDb/R1Xcv0hUwqlF2mnYsw
@@ -861,7 +861,7 @@
     <value>-4, 0</value>
   </data>
   <data name="guna2Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1098, 640</value>
+    <value>1098, 642</value>
   </data>
   <data name="guna2Panel1.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

@@ -41,6 +41,7 @@ namespace QuanLyQuanAn.Components
                 btnSua.Enabled = false;
                 btnReset.Enabled = false;
             }
+            cbxChoose.SelectedIndex = 0;
         }
 
         private void hienthi()
@@ -82,13 +83,14 @@ namespace QuanLyQuanAn.Components
                         int index = i + 1;
                         string pathFile = "..\\..\\Database\\Quan" + txtMaQuan.Text + "\\Ban " + index + ".dat";
                         FileStream fs = File.Create(pathFile);
+                        fs.Close(); 
                     }
-                    MessageBox.Show("Them thanh cong");
+                    MessageBox.Show("ADDED SUCCESS", "SUCCESS", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     hienthi();
                 }
                 else
                 {
-                    MessageBox.Show("Ma Quan da ton tai");
+                    MessageBox.Show("FAILED, mã đã tồn tại", "FAILED", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
             else
@@ -108,7 +110,7 @@ namespace QuanLyQuanAn.Components
                     try
                     {
                         string path = "..\\..\\Database\\Quan" + txtMaQuan.Text;
-                        //Directory.CreateDirectory(path);
+                        
                         Directory.Delete(path, true);
                     }
                     catch

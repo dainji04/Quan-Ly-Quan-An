@@ -32,6 +32,8 @@
             this.pnlban = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pnlInfo = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
+            this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.lblNgayDK = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblMoTa = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -41,8 +43,6 @@
             this.lblTenQuan = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblMaQuan = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnRefresh = new Guna.UI2.WinForms.Guna2Button();
-            this.btnHome = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.pnlInfo.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -91,6 +91,41 @@
             this.pnlInfo.Size = new System.Drawing.Size(467, 714);
             this.pnlInfo.TabIndex = 2;
             // 
+            // btnHome
+            // 
+            this.btnHome.BackColor = System.Drawing.Color.Transparent;
+            this.btnHome.BorderRadius = 20;
+            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(20)))));
+            this.btnHome.Font = new System.Drawing.Font("Times New Roman", 16.30189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.ForeColor = System.Drawing.Color.White;
+            this.btnHome.Location = new System.Drawing.Point(63, 636);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(159, 45);
+            this.btnHome.TabIndex = 20;
+            this.btnHome.Text = "Home";
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
+            this.btnRefresh.BorderRadius = 20;
+            this.btnRefresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnRefresh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnRefresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnRefresh.Font = new System.Drawing.Font("Times New Roman", 16.30189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(249, 636);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(180, 45);
+            this.btnRefresh.TabIndex = 20;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
@@ -114,9 +149,8 @@
             this.lblNgayDK.Location = new System.Drawing.Point(27, 460);
             this.lblNgayDK.MaximumSize = new System.Drawing.Size(300, 0);
             this.lblNgayDK.Name = "lblNgayDK";
-            this.lblNgayDK.Size = new System.Drawing.Size(14, 25);
+            this.lblNgayDK.Size = new System.Drawing.Size(3, 2);
             this.lblNgayDK.TabIndex = 1;
-            this.lblNgayDK.Text = "1";
             // 
             // lblMoTa
             // 
@@ -126,9 +160,8 @@
             this.lblMoTa.Location = new System.Drawing.Point(27, 390);
             this.lblMoTa.MaximumSize = new System.Drawing.Size(300, 0);
             this.lblMoTa.Name = "lblMoTa";
-            this.lblMoTa.Size = new System.Drawing.Size(14, 25);
+            this.lblMoTa.Size = new System.Drawing.Size(3, 2);
             this.lblMoTa.TabIndex = 2;
-            this.lblMoTa.Text = "1";
             // 
             // lblEmail
             // 
@@ -138,9 +171,8 @@
             this.lblEmail.Location = new System.Drawing.Point(27, 250);
             this.lblEmail.MaximumSize = new System.Drawing.Size(300, 0);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(14, 25);
+            this.lblEmail.Size = new System.Drawing.Size(3, 2);
             this.lblEmail.TabIndex = 3;
-            this.lblEmail.Text = "1";
             // 
             // lblSdt
             // 
@@ -150,9 +182,8 @@
             this.lblSdt.Location = new System.Drawing.Point(27, 320);
             this.lblSdt.MaximumSize = new System.Drawing.Size(300, 0);
             this.lblSdt.Name = "lblSdt";
-            this.lblSdt.Size = new System.Drawing.Size(14, 25);
+            this.lblSdt.Size = new System.Drawing.Size(3, 2);
             this.lblSdt.TabIndex = 4;
-            this.lblSdt.Text = "1";
             // 
             // lblDiaChi
             // 
@@ -162,9 +193,8 @@
             this.lblDiaChi.Location = new System.Drawing.Point(27, 180);
             this.lblDiaChi.MaximumSize = new System.Drawing.Size(300, 0);
             this.lblDiaChi.Name = "lblDiaChi";
-            this.lblDiaChi.Size = new System.Drawing.Size(14, 25);
+            this.lblDiaChi.Size = new System.Drawing.Size(3, 2);
             this.lblDiaChi.TabIndex = 5;
-            this.lblDiaChi.Text = "1";
             // 
             // lblTenQuan
             // 
@@ -174,9 +204,8 @@
             this.lblTenQuan.Location = new System.Drawing.Point(27, 110);
             this.lblTenQuan.MaximumSize = new System.Drawing.Size(300, 0);
             this.lblTenQuan.Name = "lblTenQuan";
-            this.lblTenQuan.Size = new System.Drawing.Size(14, 25);
+            this.lblTenQuan.Size = new System.Drawing.Size(3, 2);
             this.lblTenQuan.TabIndex = 6;
-            this.lblTenQuan.Text = "1";
             // 
             // lblMaQuan
             // 
@@ -186,9 +215,8 @@
             this.lblMaQuan.Location = new System.Drawing.Point(27, 40);
             this.lblMaQuan.MaximumSize = new System.Drawing.Size(300, 0);
             this.lblMaQuan.Name = "lblMaQuan";
-            this.lblMaQuan.Size = new System.Drawing.Size(14, 25);
+            this.lblMaQuan.Size = new System.Drawing.Size(3, 2);
             this.lblMaQuan.TabIndex = 7;
-            this.lblMaQuan.Text = "1";
             // 
             // guna2HtmlLabel1
             // 
@@ -201,41 +229,6 @@
             this.guna2HtmlLabel1.TabIndex = 18;
             this.guna2HtmlLabel1.Text = "Dainji ";
             this.guna2HtmlLabel1.Click += new System.EventHandler(this.guna2HtmlLabel1_Click);
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.Transparent;
-            this.btnRefresh.BorderRadius = 20;
-            this.btnRefresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnRefresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnRefresh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnRefresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnRefresh.Font = new System.Drawing.Font("Times New Roman", 16.30189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(249, 636);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(180, 45);
-            this.btnRefresh.TabIndex = 20;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // btnHome
-            // 
-            this.btnHome.BackColor = System.Drawing.Color.Transparent;
-            this.btnHome.BorderRadius = 20;
-            this.btnHome.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnHome.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnHome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnHome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(98)))), ((int)(((byte)(20)))));
-            this.btnHome.Font = new System.Drawing.Font("Times New Roman", 16.30189F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHome.ForeColor = System.Drawing.Color.White;
-            this.btnHome.Location = new System.Drawing.Point(63, 636);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(159, 45);
-            this.btnHome.TabIndex = 20;
-            this.btnHome.Text = "Home";
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // FDatBan
             // 
