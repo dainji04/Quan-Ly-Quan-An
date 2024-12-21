@@ -140,7 +140,7 @@
   <data name="guna2PictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAH8AAAB/CAYAAADGvR0TAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAwWRJREFUeF6MvXVYVW0X9atgB3Z3d3d3d3cHKCgt3d2diiAgjYiFYGEjJnZjopTd
+        DgAACw4BQL7hQQAAwWRJREFUeF6MvXVYVW0X9atgB3Z3d3d3d3cHKCgt3d2diiAgjYiFYGEjJnZjopTd
         8fzOXBt93+f9vnOu6/wxrvtea2+2sMecY46xdljuRpgLN8IduRFiz7UwB66GKLDjcqgdl0JsuBhiJas1
         l8PkONyWS6EWcpuVHFtxJcyWa9sduRpux9XtdlyLcFYhb6cLeZGu5EW5k7fLg5tRAmUV3Irx5tZuP4EP
         t+L8uR0fwN2EAO4nBPEgMZgHqjWAB8nBPEwOlTWEh3t28DjtD9KjeJIezZOD8Tw6vIdbWVlcPZXLxQu3
@@ -32922,4 +32922,7 @@
         BAkSJEiQIEGCBAkSJEiQIEGCBAkSJEiQIEGCBAkSJEiQoP+TEon+P/NJHhJ7MzTUAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="msgThanhToan.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

@@ -61,6 +61,7 @@
             this.lblEmail = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblSDT = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.msgThanhToan = new Guna.UI2.WinForms.Guna2MessageDialog();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -445,6 +446,15 @@
             this.guna2PictureBox3.TabIndex = 22;
             this.guna2PictureBox3.TabStop = false;
             // 
+            // msgThanhToan
+            // 
+            this.msgThanhToan.Buttons = Guna.UI2.WinForms.MessageDialogButtons.OK;
+            this.msgThanhToan.Caption = "Thông báo";
+            this.msgThanhToan.Icon = Guna.UI2.WinForms.MessageDialogIcon.Information;
+            this.msgThanhToan.Parent = this;
+            this.msgThanhToan.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
+            this.msgThanhToan.Text = "Thanh toán thành công, chọn OK để quay về giao diện đặt món.";
+            // 
             // FHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
@@ -518,5 +528,6 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel lblEmail;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblSDT;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2MessageDialog msgThanhToan;
     }
 }

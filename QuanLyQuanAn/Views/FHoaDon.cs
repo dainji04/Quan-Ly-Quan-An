@@ -75,14 +75,18 @@ namespace QuanLyQuanAn.Views
 
         private void btnTongTien_Click(object sender, EventArgs e)
         {
-            isThanhToan = true;
-            FOrder od = new FOrder();
-            od.CurrentQuan = QuanAn;
-            od.CurrentBan = currentBan;
+            var result = msgThanhToan.Show();
+            if (result == DialogResult.OK)
+            {
+                isThanhToan = true;
+                FOrder od = new FOrder();
+                od.CurrentQuan = QuanAn;
+                od.CurrentBan = currentBan;
 
-            od.Show();
+                od.Show();
 
-            this.Close();
+                this.Close();
+            }
         }
     }
 }
