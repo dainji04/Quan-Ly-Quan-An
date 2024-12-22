@@ -159,11 +159,11 @@ namespace QuanLyQuanAn.Components
             hienthi();
 
             FHoaDon fhd = new FHoaDon();
-            this.Close();
             fhd.CurrentBan = currentBan;
             fhd.QuanAn = CurrentQuan;
             fhd.MaHD = hd.Ma;
             fhd.TongTien = lblThanhTien.Text;
+            fhd.DsFood = XuLyMon.DsOrder;
             fhd.Show();
 
             XuLyMon.DsOrder.Clear();

@@ -61,6 +61,7 @@ namespace QuanLyQuanAn.Controller
             if (tim(tk.TenDangNhap) == null)
             {
                 listTaiKhoan.Add(tk);
+                MessageBox.Show("Thêm Tài Khoản Thành Công!!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ghiFile();
             }
             else
@@ -77,6 +78,7 @@ namespace QuanLyQuanAn.Controller
                 tmp.TenDangNhap = tk.TenDangNhap;
                 tmp.MatKhau = tk.MatKhau;
                 tmp.LoaiTaiKhoan = tk.LoaiTaiKhoan;
+                MessageBox.Show("Sửa Tài Khoản Thành Công!!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ghiFile();
             }
             else
@@ -91,6 +93,7 @@ namespace QuanLyQuanAn.Controller
             if (tmp != null)
             {
                 listTaiKhoan.Remove(tmp);
+                MessageBox.Show("Xóa Tài Khoản Thành Công!!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ghiFile();
             }
             else

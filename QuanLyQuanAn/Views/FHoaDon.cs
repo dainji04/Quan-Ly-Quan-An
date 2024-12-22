@@ -10,8 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using QuanLyQuanAn.Controller;
-using QuanLyQuanAn.Class;
 using QuanLyQuanAn.Components;
 
 namespace QuanLyQuanAn.Views
@@ -24,11 +22,12 @@ namespace QuanLyQuanAn.Views
         private CQuanAn quanAn;
         private string maHD;
         private string tongTien;
-        private List<CFood> dsFood = new List<CFood>();
+        List<CFood> dsFood = new List<CFood>();
         public string CurrentBan { get => currentBan; set => currentBan = value; }
         internal CQuanAn QuanAn { get => quanAn; set => quanAn = value; }
         public string MaHD { get => maHD; set => maHD = value; }
         public string TongTien { get => tongTien; set => tongTien = value; }
+        internal List<CFood> DsFood { get => dsFood; set => dsFood = value; }
 
         public FHoaDon()
         {
@@ -39,7 +38,7 @@ namespace QuanLyQuanAn.Views
         {
             xulymon.docFile(currentBan, quanAn.MaQuan);
 
-            var query = from mon in xulymon.DsOrder
+            var query = from mon in dsFood
                         select new
                         {
                             MaMon = mon.Ma,
@@ -79,11 +78,11 @@ namespace QuanLyQuanAn.Views
             if (result == DialogResult.OK)
             {
                 isThanhToan = true;
-                FOrder od = new FOrder();
-                od.CurrentQuan = QuanAn;
-                od.CurrentBan = currentBan;
+                //FOrder od = new FOrder();
+                //od.CurrentQuan = QuanAn;
+                //od.CurrentBan = currentBan;
 
-                od.Show();
+                //od.Show();
 
                 this.Close();
             }

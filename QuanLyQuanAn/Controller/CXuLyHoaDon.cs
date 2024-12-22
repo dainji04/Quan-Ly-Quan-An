@@ -63,7 +63,16 @@ namespace QuanLyQuanAn.Controller
                 }
             }
         }
-
+        public CHoaDon tim(string ma)
+        {
+            docFile();
+            foreach (CHoaDon hd in dsHoaDon)
+            {
+                if (hd.Ma == ma)
+                    return hd;
+            }
+            return null;
+        }
         public void xoaAll()
         {
             dsHoaDon.Clear();

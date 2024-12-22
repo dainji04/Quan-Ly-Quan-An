@@ -56,5 +56,12 @@ namespace QuanLyQuanAn.Views
             qltk.suaTaiKhoan(tk);
             hienthi();
         }
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtTenTK.Text = "";
+            txtPwd.Text = "";
+            cboRole.SelectedIndex = 0;
+        }
     }
 }

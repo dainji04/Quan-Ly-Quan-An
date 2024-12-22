@@ -173,15 +173,24 @@ namespace QuanLyQuanAn.Components
                         food.Tenmon = txtTenMon.Text;
                         food.Giatien = double.Parse(txtGia.Text);
                         food.Loaimon = cbxLoai.Text;
-
                         food.Hinhanh = ptbImage.Image;
+
                         XuLyMon.DsMon.Add(food);
                         XuLyMon.ghiFile();
-                        this.Close();
+                        MessageBox.Show("Thêm món thành công", "Thành Công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        hienthiMon();
                     }
-                    catch
+                    catch (Exception err)
                     {
-                        MessageBox.Show("Có lỗi khi thêm món ăn", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        switch (err.Message)
+                        {
+                            case "Input string was not in a correct format.":
+                                MessageBox.Show("Vui lòng nhập đúng định dạng giá tiền", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                break;
+                            default:
+                                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                break;
+                        }
                     }
                 }
                 else
@@ -237,16 +246,23 @@ namespace QuanLyQuanAn.Components
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            var result = MessageBox.Show("Bạn có chắc chắn muốn thêm món ăn này?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            var result = MessageBox.Show("Bạn có chắc chắn muốn xoá món này?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
             {
                 CFood f = XuLyMon.tim(txtMa.Text);
-                XuLyMon.DsMon.Remove(f);
-                XuLyMon.ghiFile();
-                MessageBox.Show("Xóa món thành công");
-                resetBtn();
-                txtMa.Focus();
-                hienthiMon();
+                if(f!=null)
+                {
+                    XuLyMon.DsMon.Remove(f);
+                    XuLyMon.ghiFile();
+                    MessageBox.Show("Xóa món thành công");
+                    resetBtn();
+                    txtMa.Focus();
+                    hienthiMon();
+                }
+                else
+                {
+                    MessageBox.Show("Mã món ăn không tồn tại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }    
             }
         }
 

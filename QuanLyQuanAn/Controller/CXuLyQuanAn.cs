@@ -68,6 +68,19 @@ namespace QuanLyQuanAn.Controller
             return null;
         }
 
+        public CQuanAn timTen(string ten)
+        {
+            docFile();
+            foreach (CQuanAn qa in QuanAn)
+            {
+                if (qa.TenQuan == ten)
+                {
+                    return qa;
+                }
+            }
+            return null;
+        }
+
         public List<CQuanAn> tim(string text, string loai)
         {
             docFile();

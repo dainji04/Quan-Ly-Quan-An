@@ -453,7 +453,7 @@
             this.msgThanhToan.Icon = Guna.UI2.WinForms.MessageDialogIcon.Information;
             this.msgThanhToan.Parent = this;
             this.msgThanhToan.Style = Guna.UI2.WinForms.MessageDialogStyle.Default;
-            this.msgThanhToan.Text = "Thanh toán thành công, chọn OK để quay về giao diện đặt món.";
+            this.msgThanhToan.Text = "Thanh toán thành công, chọn OK để quay lại.";
             // 
             // FHoaDon
             // 
