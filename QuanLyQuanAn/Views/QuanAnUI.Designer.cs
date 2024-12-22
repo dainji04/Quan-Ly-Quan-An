@@ -50,6 +50,8 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.quanAnPage = new Guna.UI2.WinForms.Guna2Panel();
+            this.msgLogout = new Guna.UI2.WinForms.Guna2MessageDialog();
+            this.msgExit = new Guna.UI2.WinForms.Guna2MessageDialog();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
@@ -370,6 +372,24 @@
             this.quanAnPage.Size = new System.Drawing.Size(1235, 840);
             this.quanAnPage.TabIndex = 1;
             // 
+            // msgLogout
+            // 
+            this.msgLogout.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo;
+            this.msgLogout.Caption = null;
+            this.msgLogout.Icon = Guna.UI2.WinForms.MessageDialogIcon.Question;
+            this.msgLogout.Parent = this;
+            this.msgLogout.Style = Guna.UI2.WinForms.MessageDialogStyle.Light;
+            this.msgLogout.Text = "Bạn có muốn đăng xuất ?";
+            // 
+            // msgExit
+            // 
+            this.msgExit.Buttons = Guna.UI2.WinForms.MessageDialogButtons.YesNo;
+            this.msgExit.Caption = null;
+            this.msgExit.Icon = Guna.UI2.WinForms.MessageDialogIcon.Question;
+            this.msgExit.Parent = this;
+            this.msgExit.Style = Guna.UI2.WinForms.MessageDialogStyle.Dark;
+            this.msgExit.Text = "Bạn có muốn thoát?";
+            // 
             // QuanAnUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
@@ -420,5 +440,7 @@
         private Guna.UI2.WinForms.Guna2Button btnDTMon;
         private Guna.UI2.WinForms.Guna2Button btnDTQuan;
         private Guna.UI2.WinForms.Guna2Button btnQLTK;
+        private Guna.UI2.WinForms.Guna2MessageDialog msgLogout;
+        private Guna.UI2.WinForms.Guna2MessageDialog msgExit;
     }
 }

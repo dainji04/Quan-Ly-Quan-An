@@ -36,7 +36,11 @@ namespace QuanLyQuanAn
 
         private void guna2Button7_Click(object sender, EventArgs e)
         {
-            this.Close();
+            var result = msgExit.Show();
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void QuanAnUI_Load(object sender, EventArgs e)
@@ -83,9 +87,13 @@ namespace QuanLyQuanAn
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            login login = new login();
-            login.Show();
-            this.Hide();
+            var result = msgLogout.Show();
+            if(result == DialogResult.Yes)
+            {
+                login login = new login();
+                login.Show();
+                this.Hide();
+            }    
         }
         private void QuanAnUI_FormClosed(object sender, FormClosedEventArgs e)
         {

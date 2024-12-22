@@ -28,9 +28,16 @@ namespace QuanLyQuanAn.Views
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            CTaiKhoan tk = new CTaiKhoan(txtTenTK.Text, txtPwd.Text, cboRole.Text);
-            qltk.themTaiKhoan(tk);
-            hienthi();
+           if(txtTenTK.Text != string.Empty && txtPwd.Text != string.Empty)
+           {
+                CTaiKhoan tk = new CTaiKhoan(txtTenTK.Text, txtPwd.Text, cboRole.Text);
+                qltk.themTaiKhoan(tk);
+                hienthi();
+           }    
+           else
+           {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+           }    
         }
 
         private void FQuanLyTaiKhoan_Load(object sender, EventArgs e)
@@ -52,9 +59,16 @@ namespace QuanLyQuanAn.Views
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-            CTaiKhoan tk = new CTaiKhoan(txtTenTK.Text, txtPwd.Text, cboRole.Text);
-            qltk.suaTaiKhoan(tk);
-            hienthi();
+            if (txtTenTK.Text != string.Empty && txtPwd.Text != string.Empty)
+            {
+                CTaiKhoan tk = new CTaiKhoan(txtTenTK.Text, txtPwd.Text, cboRole.Text);
+                qltk.suaTaiKhoan(tk);
+                hienthi();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin", "thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void btnReset_Click(object sender, EventArgs e)
